@@ -1,0 +1,7 @@
+*.o
+*.d
+*.log
+*.bin
+*.elf
+*.hex
+.DS_Store
