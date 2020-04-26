@@ -1,0 +1,2 @@
+adc.c:3:6:adc_init	0	static
+adc.c:13:10:get_adc	0	static

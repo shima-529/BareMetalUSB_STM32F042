@@ -1,0 +1,473 @@
+#include "stm32f0xx.h"
+#ifdef __cplusplus
+extern "C"{
+#endif
+#include <usb_desc/usb_packet.h>
+#include <usb_desc/usb_descriptor.h>
+#include <stdio.h>
+#include <string.h>
+#include "usb.h"
+/* #define iprintf(...) */
+
+/* Pointer Notation
+ * - type = uintptr_t : This is an pointer for PMA.
+ *                      Local offset of PMA is stored.
+ * - type = void * or others
+ *                    : This is an pointer for main memory.
+ */
+
+/* xfer/recv calls
+ * - On reception of SETUP packet ==> call send() if necessary
+ * - On IN/OUT ==> call send_next() or stop()
+ */
+volatile char usb_is_ready;
+
+// External Descriptors {{{
+extern const USBDeviceDescriptor dev_desc_hid;
+extern const USBStringDescriptor string_desc[];
+extern const __attribute__((aligned(2))) uint8_t conf_desc_mouse[];
+extern const __attribute__((aligned(2))) uint8_t conf_desc_keyb[];
+extern const uint8_t __attribute__((aligned(2))) ReportDescriptorForMouse[50];
+extern const uint8_t __attribute__((aligned(2))) ReportDescriptorForKeyBoard[63];
+// }}}
+
+// Some macros {{{
+#define MIN(x, y) ((x) < (y) ? (x) : (y))
+#define MIN3(x, y, z) (MIN(x, y) < (z) ? MIN(x, y) : (z))
+#define SUPPRESS_WARN(x) (void)(x)
+#define USB_PMASIZE 1024
+#define USB_EPnR(n) *(volatile uint16_t *)((uintptr_t)&USB->EP0R + 4 * (n))
+enum USBSetupPacketRequest {
+	GET_STATUS = 0, CLEAR_FEATURE = 1, SET_FEATURE = 3,
+	SET_ADDRESS = 5, GET_DESCRIPTOR = 6, SET_DESCRIPTOR = 7,
+	GET_CONFIGURATION = 8, SET_CONFIGURATION = 9,
+	GET_INTERFACE = 10, SET_INTERFACE = 11, SYNCH_FRAME = 12
+};
+enum USBDescriptorType {
+	DEVICE = 1, CONFIGURATION = 2, STRING = 3, INTERFACE = 4,
+	ENDPOINT = 5, DEVICE_QUALIFIER = 6,
+	OTHER_SPEED_CONFIGURATION = 7, INTERFACE_POWER = 8,
+	HID_REPORT = 0x22
+};
+// }}}
+
+// Dependent data for USB Functionality Selection {{{
+typedef struct {
+	const USBDeviceDescriptor *dev_desc;
+	const uint8_t *conf_desc;
+	const uint8_t *hid_report_desc;
+	const uint8_t hid_report_desc_length;
+	const uint8_t report_length;
+} USBDeviceDeps;
+// }}}
+static volatile const USBDeviceDeps deps[DEVTYPE_LEN] = {
+		[HID_MOUSE] = {
+				.dev_desc = &dev_desc_hid,
+				.conf_desc = conf_desc_mouse,
+				.hid_report_desc = ReportDescriptorForMouse,
+				.hid_report_desc_length = sizeof(ReportDescriptorForMouse),
+				.report_length = 3,
+		},
+		[HID_KEYBOARD] = {
+				.dev_desc = &dev_desc_hid,
+				.conf_desc = conf_desc_keyb,
+				.hid_report_desc = ReportDescriptorForKeyBoard,
+				.hid_report_desc_length = sizeof(ReportDescriptorForKeyBoard),
+				.report_length = 8,
+		},
+};
+volatile static USBDeviceType dev_type;
+
+// Vars for PMA buffer {{{
+typedef struct {
+	uint16_t setup_packet;
+	uint16_t device_desc;
+	uint16_t config_desc;
+	uint16_t string_desc[10];
+	uint16_t report_desc;
+	uint16_t report;
+} PMAOffsets;
+typedef struct {
+	PMAOffsets offsets;
+	uint16_t sp;
+} PMAInfo;
+// }}}
+volatile static PMAInfo pma_allocation_info;
+
+// Struct for USB Peripheral & EP {{{
+typedef struct {
+	uint16_t addr_tx;
+	uint16_t count_tx;
+	uint16_t addr_rx;
+	uint16_t count_rx;
+} PacketBuffer;
+typedef enum {
+	ST_RESET, SETUP, IN, REPETITIVE_IN, OUT, STATUS_IN, STATUS_OUT,
+	FSM_LENGTH
+} EP_fsm;
+typedef struct {
+	uint16_t ptr;
+	uint16_t completed_length;
+	uint16_t whole_length;
+} DataInfo;
+typedef struct {
+	uint8_t packet_size;
+	PacketBuffer *pb_ptr;
+	DataInfo xfer_info;
+	DataInfo recv_info;
+	EP_fsm fsm;
+	USBSetupPacket last_setup;
+} USBEndpointInfo;
+// }}}
+volatile static USBEndpointInfo ep_info[2];
+
+// Utility Funcs {{{
+static uint16_t alloc(int size) {
+	const uint16_t ret = pma_allocation_info.sp;
+	pma_allocation_info.sp += size;
+	if( size & 1 ) pma_allocation_info.sp++;
+	return ret;
+}
+static void pma_out(void *dest, const uintptr_t src, int size) {
+	const volatile uint16_t *src_p = (void *)(src + USB_PMAADDR);
+	volatile uint16_t *dest_p = dest;
+	if( size & 1 ) size++;
+	const uint16_t wSize = size / 2;
+
+	for(int i = 0; i < wSize; i++) {
+		dest_p[i] = src_p[i];
+	}
+}
+static void pma_in(const uintptr_t dest, const void *src, int size) {
+	const volatile uint16_t *src_p = src;
+	volatile uint16_t *dest_p = (void *)(dest + USB_PMAADDR);
+	if( size & 1 ) size++;
+	const uint16_t wSize = size / 2;
+
+	for(int i = 0; i < wSize; i++) {
+		dest_p[i] = src_p[i];
+	}
+}
+static void dump_setup_packet(void) {
+	iprintf("bmResuestType: 0x%02x\n", ep_info[0].last_setup.bmRequestType);
+	iprintf("bRequest: %d\n", ep_info[0].last_setup.bRequest);
+	iprintf("wValue: 0x%x\n", ep_info[0].last_setup.wValue);
+	iprintf("wIndex: 0x%x\n", ep_info[0].last_setup.wIndex);
+	iprintf("wLength: 0x%x\n", ep_info[0].last_setup.wLength);
+}
+static void dump_fsm(void) {
+	const char *table[FSM_LENGTH] = {
+			"ST_RESET",
+			"SETUP",
+			"IN",
+			"REPETITIVE_IN",
+			"OUT",
+			"STATUS_IN",
+			"STATUS_OUT",
+	};
+	SUPPRESS_WARN(table);
+	iprintf("** %s\n", table[ep_info[0].fsm]);
+}
+// }}}
+
+// Init global Funcs {{{
+void usb_init(void) {
+	RCC->APB1ENR |= RCC_APB1ENR_USBEN;
+
+	USB->CNTR &= ~USB_CNTR_PDWN;
+	for(volatile int i=0; i<100; i++); // wait for voltage to be stable
+	USB->CNTR &= ~USB_CNTR_FRES;
+	USB->BCDR |= USB_BCDR_DPPU; // pull-up DP so as to notify the connection to the host
+
+	USB->CNTR = USB_CNTR_RESETM; // enable reset interrupt
+	NVIC_SetPriority(USB_IRQn, 0); // Highest Priority
+	NVIC_EnableIRQ(USB_IRQn);
+}
+void usb_device_init(USBDeviceType type) {
+	dev_type = type;
+}
+// }}}
+
+// Fundamental xfer/recv Funcs {{{
+static void usb_endpoint_set_status(int endp, uint16_t status, uint16_t mask) {
+	const uint16_t reg = USB_EPnR(endp);
+	USB_EPnR(endp) = (reg & (USB_EPREG_MASK | mask)) ^ status;
+}
+static void usb_ep_send(int ep_num, uint16_t addr, uint16_t size) {
+	ep_info[ep_num].pb_ptr->addr_tx = addr;
+	ep_info[ep_num].pb_ptr->count_tx = size;
+	usb_endpoint_set_status(ep_num, USB_EP_TX_VALID, USB_EPTX_STAT);
+}
+static void usb_ep_receive(int ep_num, uint16_t addr, uint16_t size) {
+	if( ep_info[ep_num].pb_ptr->addr_rx == 0 ) {
+		ep_info[ep_num].pb_ptr->addr_rx = addr;
+		if( size > 62 ) {
+			ep_info[ep_num].pb_ptr->count_rx = ((size / 32) - 1) << 10;
+			ep_info[ep_num].pb_ptr->count_rx |= 1 << 15;
+		}else{
+			ep_info[ep_num].pb_ptr->count_rx = size << 10;
+		}
+	}
+	usb_endpoint_set_status(ep_num, USB_EP_RX_VALID, USB_EPRX_STAT);
+}
+// }}}
+
+static void search_and_set_descriptor(uint16_t wValue) {
+	const uint8_t desc_type = (wValue >> 8) & 0xFF;
+	volatile DataInfo *xfer_info = &ep_info[0].xfer_info;
+	volatile PMAOffsets *offsets = &pma_allocation_info.offsets;
+
+	switch( desc_type ) {
+	case DEVICE:
+	{
+		const int len = deps[dev_type].dev_desc->bLength;
+		if( offsets->device_desc == 0 ) {
+			offsets->device_desc = alloc(len);
+			pma_in(offsets->device_desc, deps[dev_type].dev_desc, len);
+		}
+		xfer_info->ptr = offsets->device_desc;
+		xfer_info->whole_length = len;
+		break;
+	}
+	case CONFIGURATION:
+	{
+		const int len = deps[dev_type].conf_desc[2] | (deps[dev_type].conf_desc[3] << 8);
+		if( offsets->config_desc == 0 ) {
+			offsets->config_desc = alloc(len);
+			pma_in(offsets->config_desc, deps[dev_type].conf_desc, len);
+		}
+		xfer_info->ptr = offsets->config_desc;
+		xfer_info->whole_length = len;
+		break;
+	}
+	case STRING:
+	{
+		const uint8_t desc_no = wValue & 0xFF;
+		const int len = string_desc[desc_no].bLength;
+		if( offsets->string_desc[desc_no] == 0 ) {
+			offsets->string_desc[desc_no] = alloc(len);
+			pma_in(offsets->string_desc[desc_no], &string_desc[desc_no], len);
+		}
+		xfer_info->ptr = offsets->string_desc[desc_no];
+		xfer_info->whole_length = len;
+		break;
+	}
+	case HID_REPORT:
+	{
+		const int len = deps[dev_type].hid_report_desc_length;
+		if( offsets->report_desc == 0 ) {
+			offsets->report_desc = alloc(len);
+			pma_in(offsets->report_desc, deps[dev_type].hid_report_desc, len);
+		}
+		xfer_info->ptr = offsets->report_desc;
+		xfer_info->whole_length = len;
+		usb_is_ready = 1;
+		break;
+	}
+	default:
+		break;
+	}
+	xfer_info->completed_length = 0;
+}
+
+// EP0 Handler/Preparer {{{
+static void usb_ep0_handle_setup(void) {
+//	const static uint16_t non_zero = 1;
+//	const static uint16_t zero = 0;
+//	static uint16_t addr[2] = {};
+	static uint16_t state = 0;
+	static uint16_t state_addr = 0;
+	volatile DataInfo *xfer_info = &ep_info[0].xfer_info;
+	const volatile USBEndpointInfo *p = &ep_info[0];
+	const volatile USBSetupPacket *last_setup = &p->last_setup;
+	if( last_setup->bRequest == GET_DESCRIPTOR ) {
+		search_and_set_descriptor(last_setup->wValue);
+		usb_ep_send(0, xfer_info->ptr, MIN3(last_setup->wLength, p->packet_size, xfer_info->whole_length));
+	}
+	if( last_setup->bRequest == GET_CONFIGURATION ) {
+		if( state_addr == 0 ) {
+			state_addr = alloc(1);
+		}
+		pma_in(state_addr, (const void *)&state, 1);
+		xfer_info->ptr = state_addr;
+		xfer_info->whole_length = 1;
+		usb_ep_send(0, xfer_info->ptr, xfer_info->whole_length);
+	}
+	if( last_setup->bRequest == SET_CONFIGURATION ) {
+		state = last_setup->wValue;
+	}
+}
+static void usb_ep0_handle_status(void) {
+	if( ep_info[0].last_setup.bRequest == SET_ADDRESS ) {
+		USB->DADDR = USB_DADDR_EF | (ep_info[0].last_setup.wValue & 0x7F);
+	}
+}
+
+static void usb_ep0_prepare_for_setup(void) {
+	if( pma_allocation_info.offsets.setup_packet == 0 ) {
+		pma_allocation_info.offsets.setup_packet = alloc(64);
+	}
+	usb_ep_receive(0, pma_allocation_info.offsets.setup_packet, sizeof(USBSetupPacket));
+}
+static void usb_ep0_prepare_for_next_in(void) {
+	// Now data is left to be xferred.
+	// This means the last IN transaction is completed but the data length is not enough.
+	volatile DataInfo *xfer_info = &ep_info[0].xfer_info;
+	const uint16_t length_xferred = ep_info[0].xfer_info.completed_length;
+
+	xfer_info->completed_length += length_xferred;
+	const uint16_t next_pos = xfer_info->completed_length + xfer_info->ptr;
+	usb_ep_send(0, next_pos, xfer_info->whole_length - ep_info[0].packet_size);
+}
+static void usb_ep0_prepare_for_status(void) {
+	if( ep_info[0].fsm == STATUS_OUT ) {
+		usb_ep_receive(0, ep_info[0].recv_info.ptr, 0);
+	}
+	if( ep_info[0].fsm == STATUS_IN ) {
+		usb_ep_send(0, ep_info[0].xfer_info.ptr, 0);
+	}
+}
+void usb_ep0_handle_current_transaction(void) {
+	const EP_fsm now_state = ep_info[0].fsm;
+	switch(now_state) {
+		case SETUP:
+			usb_ep0_handle_setup();
+			break;
+		case STATUS_IN:
+		case STATUS_OUT:
+			usb_ep0_handle_status();
+			break;
+		default:
+			break;
+	}
+}
+void usb_ep0_prepare_for_next_transaction(void) {
+	const EP_fsm next_state = ep_info[0].fsm;
+	switch(next_state) {
+		case REPETITIVE_IN:
+			usb_ep0_prepare_for_next_in();
+			break;
+		case STATUS_IN:
+		case STATUS_OUT:
+			usb_ep0_prepare_for_status();
+			break;
+		case SETUP:
+			usb_ep0_prepare_for_setup();
+			break;
+		default:
+			break;
+	}
+}
+// }}}
+
+// Inputs:  current state, g_current_setup_packet
+// Outputs: next state
+static EP_fsm next_state_ep0(void) {
+	const volatile USBEndpointInfo *p = &ep_info[0];
+	const volatile USBSetupPacket *last_setup = &p->last_setup;
+	switch(p->fsm) {
+	case SETUP:
+		if( last_setup->bmRequestType & 0x80 ) {
+			return (last_setup->wLength != 0) ? IN : STATUS_IN;
+		}else{
+			return (last_setup->wLength != 0) ? OUT : STATUS_IN;
+		}
+		break;
+	case IN:
+	case REPETITIVE_IN:
+	{
+		const volatile DataInfo *xfer_info = &p->xfer_info;
+		const int length_to_be_xferred = xfer_info->whole_length - xfer_info->completed_length;
+		if( length_to_be_xferred > p->packet_size ) {
+			return REPETITIVE_IN;
+		}
+		return STATUS_OUT;
+		break;
+	}
+	case OUT:
+		return STATUS_IN;
+		break;
+	default:
+		break;
+	}
+	return SETUP;
+}
+
+volatile int8_t __attribute__((aligned(2))) report[8] = {};
+void USB_IRQHandler(void) {
+	uint16_t flag = USB->ISTR;
+
+	if( flag & USB_ISTR_RESET ) {
+		iprintf("\nRESET\n");
+		usb_is_ready = 0;
+		USB->ISTR &= ~USB_ISTR_RESET;
+		USB->CNTR |= USB_CNTR_CTRM | USB_CNTR_RESETM;
+		memset((void *)&pma_allocation_info, 0, sizeof(PMAInfo));
+		memset((void *)ep_info,              0, sizeof(USBEndpointInfo) * 2);
+		USB->BTABLE = alloc(sizeof(PacketBuffer) * 2);
+		USB->DADDR = USB_DADDR_EF; // enable the functionality
+
+		// initialize EP0
+		ep_info[0].fsm = ST_RESET;
+		ep_info[0].packet_size = 64;
+		ep_info[0].pb_ptr = (PacketBuffer *)((uintptr_t)USB->BTABLE + USB_PMAADDR);
+		ep_info[0].pb_ptr->addr_rx = 0;
+		USB_EPnR(0) = USB_EP_CONTROL;
+		usb_ep0_prepare_for_setup();
+		// initialize EP1
+		ep_info[1].packet_size = 64;
+		ep_info[1].pb_ptr = (PacketBuffer *)((uintptr_t)USB->BTABLE + USB_PMAADDR + sizeof(PacketBuffer) * 1);
+		USB_EPnR(1) = USB_EP_INTERRUPT | 0x01;
+		pma_allocation_info.offsets.report = alloc(deps[dev_type].report_length); // size of report, in this case.
+		pma_in(pma_allocation_info.offsets.report, (const void *)report, deps[dev_type].report_length);
+		usb_ep_send(
+				1,
+				pma_allocation_info.offsets.report,
+				deps[dev_type].report_length
+		);
+	}
+
+	while( (flag = USB->ISTR) & USB_ISTR_CTR ) {
+		const uint16_t ep_num = flag & USB_ISTR_EP_ID;
+		const uint16_t epreg = USB_EPnR(ep_num);
+
+		if( ep_num == 0 ) {
+			if( epreg & USB_EP_CTR_RX ) {
+				// DIR == 1 : IRQ by SETUP transaction. CTR_RX is set.
+				USB_EPnR(0) = epreg & ~USB_EP_CTR_RX & USB_EPREG_MASK;
+				if( epreg & USB_EP_SETUP ) {
+					ep_info[ep_num].fsm = SETUP;
+					pma_out(
+							(void *)&ep_info[ep_num].last_setup,
+							pma_allocation_info.offsets.setup_packet,
+							sizeof(USBSetupPacket)
+					);
+					dump_setup_packet();
+				}
+				dump_fsm();
+				usb_ep0_handle_current_transaction();
+				ep_info[ep_num].fsm = next_state_ep0();
+				usb_ep0_prepare_for_next_transaction();
+			}
+			if( epreg & USB_EP_CTR_TX ){
+				// DIR = 0 : IRQ by IN direction. CTR_TX is set.
+				USB_EPnR(0) = epreg & ~USB_EP_CTR_TX & USB_EPREG_MASK;
+				dump_fsm();
+				usb_ep0_handle_current_transaction();
+				ep_info[ep_num].fsm = next_state_ep0();
+				usb_ep0_prepare_for_next_transaction();
+			}
+		}else { // EP is assumed to be an Interrupt Transfer, dir = IN.
+			const uint8_t report_length = deps[dev_type].report_length;
+			USB_EPnR(ep_num) = epreg & ~USB_EP_CTR_TX & USB_EPREG_MASK;
+			pma_in(pma_allocation_info.offsets.report, (const void *)report, report_length);
+			usb_ep_send(ep_num, pma_allocation_info.offsets.report, report_length);
+			if( USB_EPnR(ep_num) & USB_EP_CTR_RX ) {
+				GPIOB->ODR |= 1 << 1;
+			}
+		}
+	}
+}
+#ifdef __cplusplus
+} // extern "C"
+#endif

@@ -1,0 +1,3 @@
+sysclk_systick.c:3:6:ms_wait	8	static
+sysclk_systick.c:13:6:sysclk_HSI48_init	0	static
+sysclk_systick.c:20:6:sysclk_PLL48_init	0	static

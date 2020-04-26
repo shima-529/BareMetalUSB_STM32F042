@@ -1,0 +1,4 @@
+timer.c:3:6:tim_irq_init	0	static
+timer.c:13:6:tim_pwm_init	8	static
+timer.c:29:6:tim_encoder_init	12	static
+timer.c:48:6:TIM2_IRQHandler	0	static

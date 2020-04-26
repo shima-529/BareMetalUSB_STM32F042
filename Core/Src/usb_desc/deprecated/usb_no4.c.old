@@ -1,0 +1,306 @@
+#include "stm32f0xx.h"
+#include <usb_struct.h>
+#include <usb_desc/usb_packet.h>
+#include <usb_desc/usb_descriptor.h>
+#include <stdio.h>
+#include <string.h>
+
+//#define iprintf(...)
+
+/* CHANGED
+ * - packed
+ */
+
+/* Pointer Notation
+ * - type = uintptr_t : This is an pointer for PMA.
+ *                      Local offset of PMA is stored.
+ * - type = void * or others
+ *                    : This is an pointer for main memory.
+ */
+
+// External Descriptors
+extern const USBDeviceDescriptor dev_desc;
+extern const uint8_t dev_desc2[];
+
+// Struct for USB Peripheral
+typedef struct {
+	uint16_t addr_tx;
+	uint16_t count_tx;
+	uint16_t addr_rx;
+	uint16_t count_rx;
+} PacketBuffer;
+volatile static PacketBuffer *g_packet_buffer;
+
+// Some macros
+#define MIN(x, y) ((x) < (y) ? (x) : (y))
+#define USB_PMASIZE 1024
+#define USB_EPnR(n) *(volatile uint16_t *)(&USB->EP0R + 2 * (n))
+enum USBSetupPacketRequest {
+	GET_STATUS = 0, CLEAR_FEATURE = 1, SET_FEATURE = 3,
+	SET_ADDRESS = 5, GET_DESCRIPTOR = 6, SET_DESCRIPTOR = 7,
+	GET_CONFIGURATION = 8, SET_CONFIGURATION = 9,
+	GET_INTERFACE = 10, SET_INTERFACE = 11, SYNCH_FRAME = 12
+};
+enum USBDescriptorType {
+	DEVICE = 1, CONFIGURATION = 2, STRING = 3, INTERFACE = 4,
+	ENDPOINT = 5, DEVICE_QUALIFIER = 6,
+	OTHER_SPEED_CONFIGURATION = 7, INTERFACE_POWER = 8
+};
+
+// SETUP Packet Buffer in main memory
+volatile static USBSetupPacket g_last_setup;
+volatile static const uintptr_t addr = 8;
+
+// Vars for PMA buffer
+typedef struct {
+	uint16_t setup_packet;
+	uint16_t device_desc;
+} PMAOffsets;
+typedef struct {
+	volatile PMAOffsets offsets;
+	uint16_t sp;
+} PMAInfo;
+volatile static PMAInfo pma_info;
+
+// FSM
+typedef enum  {
+	ST_RESET, SETUP, IN, OUT, STATUS_IN, STATUS_OUT, ST_ERROR
+} EP0_fsm;
+static volatile EP0_fsm ep0_fsm;
+
+// Storage Var for the coming xfer
+typedef struct {
+	uint16_t ptr;
+	uint16_t len;
+} NextXferInfo;
+volatile static NextXferInfo next_xfer;
+
+// Here begin Utility Funcs
+static uint16_t alloc(int size) {
+	const uint16_t ret = pma_info.sp;
+	pma_info.sp += size;
+	return ret;
+}
+
+static void pma_out(void *dest, const uintptr_t src, int size) {
+	const volatile uint16_t *src_p = (void *)(src + USB_PMAADDR);
+	volatile uint16_t *dest_p = dest;
+	if( size & 1 ) size++;
+	const uint16_t wSize = size / 2;
+
+	for(int i = 0; i < wSize; i++) {
+		dest_p[i] = src_p[i];
+	}
+}
+static void pma_in(const uintptr_t dest, const void *src, int size) {
+	const volatile uint16_t *src_p = src;
+	volatile uint16_t *dest_p = (void *)(dest + USB_PMAADDR);
+	if( size & 1 ) size++;
+	const uint16_t wSize = size / 2;
+
+	for(int i = 0; i < wSize; i++) {
+		dest_p[i] = src_p[i];
+	}
+}
+
+void usb_init(void) {
+	RCC->APB1ENR |= RCC_APB1ENR_USBEN;
+
+	USB->CNTR &= ~USB_CNTR_PDWN;
+	for(volatile int i=0; i<100; i++); // wait for voltage to be stable
+	USB->CNTR &= ~USB_CNTR_FRES;
+	USB->BCDR |= USB_BCDR_DPPU; // pull-up DP so as to notify the connection to the host
+
+	USB->CNTR = USB_CNTR_RESETM; // enable reset interrupt
+	NVIC_SetPriority(USB_IRQn, 0); // Highest Priority
+	NVIC_EnableIRQ(USB_IRQn);
+}
+
+static void usb_endpoint_set_status(int endp, uint16_t status, uint16_t mask) {
+	const uint16_t reg = USB_EPnR(endp);
+//	iprintf("Set Status! 0x%x\n", (reg & (USB_EPREG_MASK | mask)) ^ status);
+	USB_EPnR(endp) = (reg & (USB_EPREG_MASK | mask)) ^ status;
+}
+
+static void set_descriptor(uint16_t wValue) {
+	const uint8_t desc_type = (wValue >> 8) & 0xFF;
+	const uint16_t wLength = g_last_setup.wLength;
+	volatile PMAOffsets *offsets = &pma_info.offsets;
+
+	switch( desc_type ) {
+	case DEVICE: // Device Descriptor
+		if( offsets->device_desc == 0 ) {
+			offsets->device_desc = alloc(sizeof(USBDeviceDescriptor));
+			pma_in(offsets->device_desc, &dev_desc, sizeof(USBDeviceDescriptor));
+		}
+		next_xfer.ptr = offsets->device_desc;
+		next_xfer.len = MIN(wLength, sizeof(USBDeviceDescriptor));
+		break;
+	case CONFIGURATION:
+		GPIOB->ODR |= 1 << 1;
+		break;
+//	case STRING:
+//		break;
+//	case INTERFACE:
+//		break;
+//	case ENDPOINT:
+//		break;
+	default:
+		break;
+	}
+}
+static void usb_ep0_send(uint16_t addr, uint16_t size) {
+	g_packet_buffer[0].addr_tx = addr;
+	g_packet_buffer[0].count_tx = size;
+	usb_endpoint_set_status(0, USB_EP_TX_VALID, USB_EPTX_STAT);
+//	iprintf("SEND: EP0R: 0x%x\n", USB->EP0R);
+}
+
+static void usb_ep0_receive(uint16_t addr, uint16_t size) {
+	g_packet_buffer[0].addr_rx = addr;
+	if( size > 62 ) {
+		g_packet_buffer[0].count_rx = ((size / 32) - 1) << 10;
+		g_packet_buffer[0].count_rx |= 1 << 15;
+	}else{
+		g_packet_buffer[0].count_rx = size << 10;
+	}
+	usb_endpoint_set_status(0, USB_EP_RX_VALID, USB_EPRX_STAT);
+//	iprintf("RECV: EP0R: 0x%x\n", USB->EP0R);
+}
+
+static void usb_ep0_handle_setup(void) {
+	const volatile USBSetupPacket *p = &g_last_setup;
+	if( p->bmRequestType & 0x80 ) {
+		if( p->bRequest == GET_DESCRIPTOR ) {
+			set_descriptor(p->wValue);
+			usb_ep0_send(next_xfer.ptr, next_xfer.len);
+		}
+	}
+}
+static void usb_ep0_prepare_for_status(void) {
+	if( ep0_fsm == STATUS_OUT ) {
+		iprintf("Ready for STATUS_OUT...\n");
+		usb_ep0_receive(0, 0);
+	}
+	if( ep0_fsm == STATUS_IN ) {
+//		iprintf("Ready for STATUS_IN...\n");
+		usb_ep0_send(0, 0);
+	}
+}
+
+static void usb_ep0_handle_status(void) {
+	if( g_last_setup.bRequest == SET_ADDRESS ) {
+		USB->DADDR = USB_DADDR_EF | (g_last_setup.wValue & 0x7F);
+	}
+	// prepare for the next SETUP transaction
+	iprintf("Ready for SETUP...\n");
+	iprintf("Setup Packet Addr: 0x%x\n", pma_info.offsets.setup_packet);
+	usb_ep0_receive(pma_info.offsets.setup_packet,
+			sizeof(USBSetupPacket)
+	);
+}
+
+// Inputs:  current state, g_current_setup_packet
+// Outputs: next state
+static EP0_fsm next_state_ep0(void) {
+	const volatile USBSetupPacket *p = &g_last_setup;
+	switch(ep0_fsm) {
+	case SETUP:
+		if( p->bmRequestType & 0x80 ) {
+			return (p->wLength != 0) ? IN : STATUS_IN;
+		}else{
+			return (p->wLength != 0) ? OUT : STATUS_IN;
+		}
+		break;
+	case IN:
+		return STATUS_OUT;
+		break;
+	case OUT:
+		return STATUS_IN;
+		break;
+	case STATUS_IN:
+		break;
+	case STATUS_OUT:
+		break;
+	default:
+		break;
+	}
+	return ST_ERROR;
+}
+
+void USB_IRQHandler(void) {
+	uint16_t flag = USB->ISTR;
+
+	if( flag & USB_ISTR_RESET ) {
+		iprintf("\nRESET\n");
+		USB->ISTR &= ~USB_ISTR_RESET;
+		USB->CNTR |= USB_CNTR_CTRM | USB_CNTR_RESETM;
+		memset((void *)&pma_info, 0, sizeof(PMAInfo));
+		ep0_fsm = ST_RESET;
+		USB->BTABLE = alloc(sizeof(PacketBuffer) * 1);
+		g_packet_buffer = (PacketBuffer *)((uintptr_t)USB->BTABLE + USB_PMAADDR);
+		USB->DADDR = USB_DADDR_EF; // enable the functionality
+
+		// initialize EP
+		USB->EP0R = USB_EP_CONTROL;
+		pma_info.offsets.setup_packet = alloc(sizeof(USBSetupPacket));
+		usb_ep0_receive(
+				pma_info.offsets.setup_packet,
+				sizeof(USBSetupPacket)
+		);
+		GPIOB->ODR &= ~(1 << 1);
+	}
+
+	while( (flag = USB->ISTR) & USB_ISTR_CTR ) {
+		const uint16_t ep_num = flag & USB_ISTR_EP_ID;
+		const uint16_t epreg = USB_EPnR(ep_num);
+
+		if( ep_num == 0 ) {
+			if( epreg & USB_EP_CTR_RX ) {
+				// DIR == 1 : IRQ by SETUP transaction. CTR_RX is set.
+				USB_EPnR(0) = epreg & ~USB_EP_CTR_RX & USB_EPREG_MASK;
+				if( epreg & USB_EP_SETUP ) {
+					ep0_fsm = SETUP;
+					pma_out(
+							(void *)&g_last_setup,
+							pma_info.offsets.setup_packet,
+							sizeof(USBSetupPacket)
+					);
+					iprintf("** SETUP\n");
+					iprintf("bmResuestType: %d\n", g_last_setup.bmRequestType);
+					iprintf("bRequest: %d\n", g_last_setup.bRequest);
+					iprintf("wLength: 0x%x\n", g_last_setup.wLength);
+					iprintf("wValue: 0x%x\n", g_last_setup.wValue);
+					usb_ep0_handle_setup();
+					ep0_fsm = next_state_ep0();
+					usb_ep0_prepare_for_status();
+				}
+				else{
+					// IRQ by OUT transaction
+					if( ep0_fsm == STATUS_OUT ) {
+						iprintf("** STATUS OUT\n");
+						usb_ep0_handle_status();
+					}else if( ep0_fsm == OUT ) {
+						iprintf("** OUT\n");
+						ep0_fsm = next_state_ep0();
+						usb_ep0_prepare_for_status();
+					}
+				}
+			}
+			if( epreg & USB_EP_CTR_TX ){
+				// DIR = 0 : IRQ by IN transaction. CTR_TX is set.
+				USB_EPnR(0) = epreg & ~USB_EP_CTR_TX & USB_EPREG_MASK;
+				if( ep0_fsm == STATUS_IN ) {
+					iprintf("** STATUS IN\n");
+					usb_ep0_handle_status();
+				}else if( ep0_fsm == IN ) {
+					iprintf("** IN\n");
+					ep0_fsm = next_state_ep0();
+					usb_ep0_prepare_for_status();
+				}
+			}
+		}else{
+			iprintf("Else\n");
+		}
+	}
+}

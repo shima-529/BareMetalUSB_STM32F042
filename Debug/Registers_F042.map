@@ -1,0 +1,2468 @@
+Archive member included to satisfy reference by file (symbol)
+
+/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-errno.o)
+                              Core/Src/syscalls.o (__errno)
+/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-exit.o)
+                              /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o (exit)
+/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-impure.o)
+                              /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-exit.o) (_global_impure_ptr)
+/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
+                              /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o (__libc_init_array)
+/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memcpy-stub.o)
+                              Core/Src/main.o (memcpy)
+/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memmove.o)
+                              Core/Src/usb/usb_cdc.o (memmove)
+/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memset.o)
+                              /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o (memset)
+/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_thumb1_case_sqi.o)
+                              Core/Src/usb/usb.o (__gnu_thumb1_case_sqi)
+/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_udivsi3.o)
+                              Core/Src/system_stm32f0xx.o (__aeabi_uidiv)
+/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_divsi3.o)
+                              Core/Src/system_stm32f0xx.o (__aeabi_idiv)
+/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_dvmd_tls.o)
+                              /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+
+Allocating common symbols
+Common symbol       size              file
+
+adc_data            0x4               Core/Src/dma.o
+sp                  0x4               Core/Src/syscalls.o
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crti.o
+ .data          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crti.o
+ .bss           0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crti.o
+ .data          0x0000000000000000        0x4 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+ .text          0x0000000000000000       0x78 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o
+ .data          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o
+ .bss           0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o
+ .ARM.exidx     0x0000000000000000        0x8 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o
+ .ARM.attributes
+                0x0000000000000000       0x1b /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/adc.o
+ .text          0x0000000000000000        0x0 Core/Src/adc.o
+ .data          0x0000000000000000        0x0 Core/Src/adc.o
+ .bss           0x0000000000000000        0x0 Core/Src/adc.o
+ .text.adc_init
+                0x0000000000000000       0x44 Core/Src/adc.o
+ .text.get_adc  0x0000000000000000       0x20 Core/Src/adc.o
+ .debug_info    0x0000000000000000      0x3d1 Core/Src/adc.o
+ .debug_abbrev  0x0000000000000000      0x13c Core/Src/adc.o
+ .debug_loc     0x0000000000000000       0x21 Core/Src/adc.o
+ .debug_aranges
+                0x0000000000000000       0x28 Core/Src/adc.o
+ .debug_ranges  0x0000000000000000       0x18 Core/Src/adc.o
+ .debug_macro   0x0000000000000000      0x190 Core/Src/adc.o
+ .debug_macro   0x0000000000000000      0xa4e Core/Src/adc.o
+ .debug_macro   0x0000000000000000       0x2e Core/Src/adc.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/adc.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/adc.o
+ .debug_macro   0x0000000000000000       0x8e Core/Src/adc.o
+ .debug_macro   0x0000000000000000       0x51 Core/Src/adc.o
+ .debug_macro   0x0000000000000000       0xef Core/Src/adc.o
+ .debug_macro   0x0000000000000000       0x6a Core/Src/adc.o
+ .debug_macro   0x0000000000000000      0x1df Core/Src/adc.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/adc.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/adc.o
+ .debug_macro   0x0000000000000000       0xb5 Core/Src/adc.o
+ .debug_macro   0x0000000000000000      0x391 Core/Src/adc.o
+ .debug_macro   0x0000000000000000     0xf1e6 Core/Src/adc.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/adc.o
+ .debug_macro   0x0000000000000000      0x127 Core/Src/adc.o
+ .debug_macro   0x0000000000000000      0x174 Core/Src/adc.o
+ .debug_macro   0x0000000000000000       0x53 Core/Src/adc.o
+ .debug_macro   0x0000000000000000      0x946 Core/Src/adc.o
+ .debug_macro   0x0000000000000000      0x46b Core/Src/adc.o
+ .debug_macro   0x0000000000000000      0x12f Core/Src/adc.o
+ .debug_macro   0x0000000000000000      0x130 Core/Src/adc.o
+ .debug_macro   0x0000000000000000      0x199 Core/Src/adc.o
+ .debug_macro   0x0000000000000000      0x1ed Core/Src/adc.o
+ .debug_macro   0x0000000000000000       0x34 Core/Src/adc.o
+ .debug_macro   0x0000000000000000       0x43 Core/Src/adc.o
+ .debug_macro   0x0000000000000000       0x28 Core/Src/adc.o
+ .debug_macro   0x0000000000000000       0xb0 Core/Src/adc.o
+ .debug_macro   0x0000000000000000      0x182 Core/Src/adc.o
+ .debug_macro   0x0000000000000000      0x22c Core/Src/adc.o
+ .debug_macro   0x0000000000000000       0x5f Core/Src/adc.o
+ .debug_macro   0x0000000000000000       0xa5 Core/Src/adc.o
+ .debug_macro   0x0000000000000000       0x4c Core/Src/adc.o
+ .debug_macro   0x0000000000000000      0x15b Core/Src/adc.o
+ .debug_macro   0x0000000000000000      0x12e Core/Src/adc.o
+ .debug_line    0x0000000000000000      0x671 Core/Src/adc.o
+ .debug_str     0x0000000000000000    0x675ed Core/Src/adc.o
+ .comment       0x0000000000000000       0x7c Core/Src/adc.o
+ .debug_frame   0x0000000000000000       0x30 Core/Src/adc.o
+ .ARM.attributes
+                0x0000000000000000       0x31 Core/Src/adc.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/dma.o
+ .text          0x0000000000000000        0x0 Core/Src/dma.o
+ .data          0x0000000000000000        0x0 Core/Src/dma.o
+ .bss           0x0000000000000000        0x0 Core/Src/dma.o
+ .text.dma_adc_init
+                0x0000000000000000       0x68 Core/Src/dma.o
+ .debug_info    0x0000000000000000      0x35a Core/Src/dma.o
+ .debug_abbrev  0x0000000000000000      0x140 Core/Src/dma.o
+ .debug_aranges
+                0x0000000000000000       0x20 Core/Src/dma.o
+ .debug_ranges  0x0000000000000000       0x10 Core/Src/dma.o
+ .debug_macro   0x0000000000000000      0x19a Core/Src/dma.o
+ .debug_macro   0x0000000000000000      0xa4e Core/Src/dma.o
+ .debug_macro   0x0000000000000000       0x2e Core/Src/dma.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/dma.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/dma.o
+ .debug_macro   0x0000000000000000       0x8e Core/Src/dma.o
+ .debug_macro   0x0000000000000000       0x51 Core/Src/dma.o
+ .debug_macro   0x0000000000000000       0xef Core/Src/dma.o
+ .debug_macro   0x0000000000000000       0x6a Core/Src/dma.o
+ .debug_macro   0x0000000000000000      0x1df Core/Src/dma.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/dma.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/dma.o
+ .debug_macro   0x0000000000000000       0xb5 Core/Src/dma.o
+ .debug_macro   0x0000000000000000      0x391 Core/Src/dma.o
+ .debug_macro   0x0000000000000000     0xf1e6 Core/Src/dma.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/dma.o
+ .debug_macro   0x0000000000000000      0x127 Core/Src/dma.o
+ .debug_macro   0x0000000000000000      0x174 Core/Src/dma.o
+ .debug_macro   0x0000000000000000       0x53 Core/Src/dma.o
+ .debug_macro   0x0000000000000000      0x946 Core/Src/dma.o
+ .debug_macro   0x0000000000000000      0x46b Core/Src/dma.o
+ .debug_macro   0x0000000000000000      0x12f Core/Src/dma.o
+ .debug_macro   0x0000000000000000      0x130 Core/Src/dma.o
+ .debug_macro   0x0000000000000000      0x199 Core/Src/dma.o
+ .debug_macro   0x0000000000000000      0x1ed Core/Src/dma.o
+ .debug_macro   0x0000000000000000       0x34 Core/Src/dma.o
+ .debug_macro   0x0000000000000000       0x43 Core/Src/dma.o
+ .debug_macro   0x0000000000000000       0x28 Core/Src/dma.o
+ .debug_macro   0x0000000000000000       0xb0 Core/Src/dma.o
+ .debug_macro   0x0000000000000000      0x182 Core/Src/dma.o
+ .debug_macro   0x0000000000000000      0x22c Core/Src/dma.o
+ .debug_macro   0x0000000000000000       0x5f Core/Src/dma.o
+ .debug_macro   0x0000000000000000       0xa5 Core/Src/dma.o
+ .debug_macro   0x0000000000000000       0x4c Core/Src/dma.o
+ .debug_macro   0x0000000000000000      0x15b Core/Src/dma.o
+ .debug_macro   0x0000000000000000      0x12e Core/Src/dma.o
+ .debug_line    0x0000000000000000      0x666 Core/Src/dma.o
+ .debug_str     0x0000000000000000    0x675e5 Core/Src/dma.o
+ .comment       0x0000000000000000       0x7c Core/Src/dma.o
+ .debug_frame   0x0000000000000000       0x28 Core/Src/dma.o
+ .ARM.attributes
+                0x0000000000000000       0x31 Core/Src/dma.o
+ COMMON         0x0000000000000000        0x4 Core/Src/dma.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/flash.o
+ .text          0x0000000000000000        0x0 Core/Src/flash.o
+ .data          0x0000000000000000        0x0 Core/Src/flash.o
+ .bss           0x0000000000000000        0x0 Core/Src/flash.o
+ .text.flash_init
+                0x0000000000000000       0x18 Core/Src/flash.o
+ .text.flash_erase_sector
+                0x0000000000000000       0x48 Core/Src/flash.o
+ .text.flash_write
+                0x0000000000000000       0x38 Core/Src/flash.o
+ .debug_info    0x0000000000000000      0xa6d Core/Src/flash.o
+ .debug_abbrev  0x0000000000000000      0x1da Core/Src/flash.o
+ .debug_loc     0x0000000000000000       0x6e Core/Src/flash.o
+ .debug_aranges
+                0x0000000000000000       0x30 Core/Src/flash.o
+ .debug_ranges  0x0000000000000000       0x20 Core/Src/flash.o
+ .debug_macro   0x0000000000000000      0x2e6 Core/Src/flash.o
+ .debug_macro   0x0000000000000000      0xa4e Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x2e Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x8e Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x51 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0xef Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x6a Core/Src/flash.o
+ .debug_macro   0x0000000000000000      0x1df Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0xb5 Core/Src/flash.o
+ .debug_macro   0x0000000000000000      0x391 Core/Src/flash.o
+ .debug_macro   0x0000000000000000     0xf1e6 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/flash.o
+ .debug_macro   0x0000000000000000      0x127 Core/Src/flash.o
+ .debug_macro   0x0000000000000000      0x174 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x53 Core/Src/flash.o
+ .debug_macro   0x0000000000000000      0x946 Core/Src/flash.o
+ .debug_macro   0x0000000000000000      0x46b Core/Src/flash.o
+ .debug_macro   0x0000000000000000      0x12f Core/Src/flash.o
+ .debug_macro   0x0000000000000000      0x130 Core/Src/flash.o
+ .debug_macro   0x0000000000000000      0x199 Core/Src/flash.o
+ .debug_macro   0x0000000000000000      0x1ed Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x34 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x43 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x28 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0xb0 Core/Src/flash.o
+ .debug_macro   0x0000000000000000      0x182 Core/Src/flash.o
+ .debug_macro   0x0000000000000000      0x22c Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x5f Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0xa5 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x4c Core/Src/flash.o
+ .debug_macro   0x0000000000000000      0x15b Core/Src/flash.o
+ .debug_macro   0x0000000000000000      0x12e Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x46 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x18 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x34 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x16 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x35 Core/Src/flash.o
+ .debug_macro   0x0000000000000000      0x32a Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x52 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x1f Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x43 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x20 Core/Src/flash.o
+ .debug_macro   0x0000000000000000      0x1a3 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x52 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x40 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x40 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0xd7 Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x3d Core/Src/flash.o
+ .debug_macro   0x0000000000000000       0x16 Core/Src/flash.o
+ .debug_macro   0x0000000000000000      0x145 Core/Src/flash.o
+ .debug_line    0x0000000000000000      0x884 Core/Src/flash.o
+ .debug_str     0x0000000000000000    0x6b63a Core/Src/flash.o
+ .comment       0x0000000000000000       0x7c Core/Src/flash.o
+ .debug_frame   0x0000000000000000       0x54 Core/Src/flash.o
+ .ARM.attributes
+                0x0000000000000000       0x31 Core/Src/flash.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/i2c.o
+ .text          0x0000000000000000        0x0 Core/Src/i2c.o
+ .data          0x0000000000000000        0x0 Core/Src/i2c.o
+ .bss           0x0000000000000000        0x0 Core/Src/i2c.o
+ .text.i2c_init
+                0x0000000000000000       0xa8 Core/Src/i2c.o
+ .text.i2c_send
+                0x0000000000000000       0x60 Core/Src/i2c.o
+ .debug_info    0x0000000000000000      0x3f1 Core/Src/i2c.o
+ .debug_abbrev  0x0000000000000000      0x143 Core/Src/i2c.o
+ .debug_loc     0x0000000000000000       0x82 Core/Src/i2c.o
+ .debug_aranges
+                0x0000000000000000       0x28 Core/Src/i2c.o
+ .debug_ranges  0x0000000000000000       0x30 Core/Src/i2c.o
+ .debug_macro   0x0000000000000000      0x19a Core/Src/i2c.o
+ .debug_macro   0x0000000000000000      0xa4e Core/Src/i2c.o
+ .debug_macro   0x0000000000000000       0x2e Core/Src/i2c.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/i2c.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/i2c.o
+ .debug_macro   0x0000000000000000       0x8e Core/Src/i2c.o
+ .debug_macro   0x0000000000000000       0x51 Core/Src/i2c.o
+ .debug_macro   0x0000000000000000       0xef Core/Src/i2c.o
+ .debug_macro   0x0000000000000000       0x6a Core/Src/i2c.o
+ .debug_macro   0x0000000000000000      0x1df Core/Src/i2c.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/i2c.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/i2c.o
+ .debug_macro   0x0000000000000000       0xb5 Core/Src/i2c.o
+ .debug_macro   0x0000000000000000      0x391 Core/Src/i2c.o
+ .debug_macro   0x0000000000000000     0xf1e6 Core/Src/i2c.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/i2c.o
+ .debug_macro   0x0000000000000000      0x127 Core/Src/i2c.o
+ .debug_macro   0x0000000000000000      0x174 Core/Src/i2c.o
+ .debug_macro   0x0000000000000000       0x53 Core/Src/i2c.o
+ .debug_macro   0x0000000000000000      0x946 Core/Src/i2c.o
+ .debug_macro   0x0000000000000000      0x46b Core/Src/i2c.o
+ .debug_macro   0x0000000000000000      0x12f Core/Src/i2c.o
+ .debug_macro   0x0000000000000000      0x130 Core/Src/i2c.o
+ .debug_macro   0x0000000000000000      0x199 Core/Src/i2c.o
+ .debug_macro   0x0000000000000000      0x1ed Core/Src/i2c.o
+ .debug_macro   0x0000000000000000       0x34 Core/Src/i2c.o
+ .debug_macro   0x0000000000000000       0x43 Core/Src/i2c.o
+ .debug_macro   0x0000000000000000       0x28 Core/Src/i2c.o
+ .debug_macro   0x0000000000000000       0xb0 Core/Src/i2c.o
+ .debug_macro   0x0000000000000000      0x182 Core/Src/i2c.o
+ .debug_macro   0x0000000000000000      0x22c Core/Src/i2c.o
+ .debug_macro   0x0000000000000000       0x5f Core/Src/i2c.o
+ .debug_macro   0x0000000000000000       0xa5 Core/Src/i2c.o
+ .debug_macro   0x0000000000000000       0x4c Core/Src/i2c.o
+ .debug_macro   0x0000000000000000      0x15b Core/Src/i2c.o
+ .debug_macro   0x0000000000000000      0x12e Core/Src/i2c.o
+ .debug_line    0x0000000000000000      0x6ba Core/Src/i2c.o
+ .debug_str     0x0000000000000000    0x675e8 Core/Src/i2c.o
+ .comment       0x0000000000000000       0x7c Core/Src/i2c.o
+ .debug_frame   0x0000000000000000       0x40 Core/Src/i2c.o
+ .ARM.attributes
+                0x0000000000000000       0x31 Core/Src/i2c.o
+ .group         0x0000000000000000        0xc Core/Src/lcd.o
+ .group         0x0000000000000000        0xc Core/Src/lcd.o
+ .group         0x0000000000000000        0xc Core/Src/lcd.o
+ .group         0x0000000000000000        0xc Core/Src/lcd.o
+ .group         0x0000000000000000        0xc Core/Src/lcd.o
+ .group         0x0000000000000000        0xc Core/Src/lcd.o
+ .group         0x0000000000000000        0xc Core/Src/lcd.o
+ .text          0x0000000000000000        0x0 Core/Src/lcd.o
+ .data          0x0000000000000000        0x0 Core/Src/lcd.o
+ .bss           0x0000000000000000        0x0 Core/Src/lcd.o
+ .text.lcd_cmd  0x0000000000000000       0x14 Core/Src/lcd.o
+ .text.lcd_data
+                0x0000000000000000       0x14 Core/Src/lcd.o
+ .text.lcd_str  0x0000000000000000       0x14 Core/Src/lcd.o
+ .text.lcd_init
+                0x0000000000000000       0x30 Core/Src/lcd.o
+ .rodata.ADDR   0x0000000000000000        0x1 Core/Src/lcd.o
+ .rodata.lcd_init_cmds
+                0x0000000000000000        0x9 Core/Src/lcd.o
+ .debug_info    0x0000000000000000      0x210 Core/Src/lcd.o
+ .debug_abbrev  0x0000000000000000      0x10d Core/Src/lcd.o
+ .debug_loc     0x0000000000000000       0xad Core/Src/lcd.o
+ .debug_aranges
+                0x0000000000000000       0x38 Core/Src/lcd.o
+ .debug_ranges  0x0000000000000000       0x58 Core/Src/lcd.o
+ .debug_macro   0x0000000000000000       0x6d Core/Src/lcd.o
+ .debug_macro   0x0000000000000000      0xa4e Core/Src/lcd.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/lcd.o
+ .debug_macro   0x0000000000000000       0x8e Core/Src/lcd.o
+ .debug_macro   0x0000000000000000       0x51 Core/Src/lcd.o
+ .debug_macro   0x0000000000000000       0xef Core/Src/lcd.o
+ .debug_macro   0x0000000000000000       0x6a Core/Src/lcd.o
+ .debug_macro   0x0000000000000000      0x1df Core/Src/lcd.o
+ .debug_line    0x0000000000000000      0x41b Core/Src/lcd.o
+ .debug_str     0x0000000000000000     0x3bb6 Core/Src/lcd.o
+ .comment       0x0000000000000000       0x7c Core/Src/lcd.o
+ .debug_frame   0x0000000000000000       0x7c Core/Src/lcd.o
+ .ARM.attributes
+                0x0000000000000000       0x31 Core/Src/lcd.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/main.o
+ .text          0x0000000000000000        0x0 Core/Src/main.o
+ .data          0x0000000000000000        0x0 Core/Src/main.o
+ .bss           0x0000000000000000        0x0 Core/Src/main.o
+ .text.usb_mouse_star
+                0x0000000000000000       0x4c Core/Src/main.o
+ .text.usb_keyboard_fuck
+                0x0000000000000000       0x50 Core/Src/main.o
+ .text.usb_keyboard_shellgei
+                0x0000000000000000       0x6c Core/Src/main.o
+ .text.usb_composite
+                0x0000000000000000       0xa0 Core/Src/main.o
+ .rodata        0x0000000000000000        0xa Core/Src/main.o
+ .rodata.keycode
+                0x0000000000000000       0xd2 Core/Src/main.o
+ .rodata.usb_keyboard_fuck.str1.1
+                0x0000000000000000        0x5 Core/Src/main.o
+ .rodata.usb_keyboard_shellgei.str1.1
+                0x0000000000000000       0x30 Core/Src/main.o
+ .debug_macro   0x0000000000000000      0xa4e Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x2e Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x8e Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x51 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0xef Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x6a Core/Src/main.o
+ .debug_macro   0x0000000000000000      0x1df Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0xb5 Core/Src/main.o
+ .debug_macro   0x0000000000000000      0x391 Core/Src/main.o
+ .debug_macro   0x0000000000000000     0xf1e6 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/main.o
+ .debug_macro   0x0000000000000000      0x127 Core/Src/main.o
+ .debug_macro   0x0000000000000000      0x174 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x53 Core/Src/main.o
+ .debug_macro   0x0000000000000000      0x946 Core/Src/main.o
+ .debug_macro   0x0000000000000000      0x46b Core/Src/main.o
+ .debug_macro   0x0000000000000000      0x12f Core/Src/main.o
+ .debug_macro   0x0000000000000000      0x130 Core/Src/main.o
+ .debug_macro   0x0000000000000000      0x199 Core/Src/main.o
+ .debug_macro   0x0000000000000000      0x1ed Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x34 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x43 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x28 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0xb0 Core/Src/main.o
+ .debug_macro   0x0000000000000000      0x182 Core/Src/main.o
+ .debug_macro   0x0000000000000000      0x22c Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x5f Core/Src/main.o
+ .debug_macro   0x0000000000000000       0xa5 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x4c Core/Src/main.o
+ .debug_macro   0x0000000000000000      0x15b Core/Src/main.o
+ .debug_macro   0x0000000000000000      0x12e Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x46 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x18 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x34 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x16 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x35 Core/Src/main.o
+ .debug_macro   0x0000000000000000      0x32a Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x52 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x1f Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x43 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x20 Core/Src/main.o
+ .debug_macro   0x0000000000000000      0x1a3 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x52 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x40 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x40 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0xd7 Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x3d Core/Src/main.o
+ .debug_macro   0x0000000000000000       0x16 Core/Src/main.o
+ .debug_macro   0x0000000000000000      0x145 Core/Src/main.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/spi.o
+ .text          0x0000000000000000        0x0 Core/Src/spi.o
+ .data          0x0000000000000000        0x0 Core/Src/spi.o
+ .bss           0x0000000000000000        0x0 Core/Src/spi.o
+ .text.spi_init
+                0x0000000000000000       0x68 Core/Src/spi.o
+ .text.spi_send
+                0x0000000000000000       0x20 Core/Src/spi.o
+ .debug_info    0x0000000000000000      0x3c3 Core/Src/spi.o
+ .debug_abbrev  0x0000000000000000      0x122 Core/Src/spi.o
+ .debug_loc     0x0000000000000000       0x21 Core/Src/spi.o
+ .debug_aranges
+                0x0000000000000000       0x28 Core/Src/spi.o
+ .debug_ranges  0x0000000000000000       0x30 Core/Src/spi.o
+ .debug_macro   0x0000000000000000      0x190 Core/Src/spi.o
+ .debug_macro   0x0000000000000000      0xa4e Core/Src/spi.o
+ .debug_macro   0x0000000000000000       0x2e Core/Src/spi.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/spi.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/spi.o
+ .debug_macro   0x0000000000000000       0x8e Core/Src/spi.o
+ .debug_macro   0x0000000000000000       0x51 Core/Src/spi.o
+ .debug_macro   0x0000000000000000       0xef Core/Src/spi.o
+ .debug_macro   0x0000000000000000       0x6a Core/Src/spi.o
+ .debug_macro   0x0000000000000000      0x1df Core/Src/spi.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/spi.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/spi.o
+ .debug_macro   0x0000000000000000       0xb5 Core/Src/spi.o
+ .debug_macro   0x0000000000000000      0x391 Core/Src/spi.o
+ .debug_macro   0x0000000000000000     0xf1e6 Core/Src/spi.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/spi.o
+ .debug_macro   0x0000000000000000      0x127 Core/Src/spi.o
+ .debug_macro   0x0000000000000000      0x174 Core/Src/spi.o
+ .debug_macro   0x0000000000000000       0x53 Core/Src/spi.o
+ .debug_macro   0x0000000000000000      0x946 Core/Src/spi.o
+ .debug_macro   0x0000000000000000      0x46b Core/Src/spi.o
+ .debug_macro   0x0000000000000000      0x12f Core/Src/spi.o
+ .debug_macro   0x0000000000000000      0x130 Core/Src/spi.o
+ .debug_macro   0x0000000000000000      0x199 Core/Src/spi.o
+ .debug_macro   0x0000000000000000      0x1ed Core/Src/spi.o
+ .debug_macro   0x0000000000000000       0x34 Core/Src/spi.o
+ .debug_macro   0x0000000000000000       0x43 Core/Src/spi.o
+ .debug_macro   0x0000000000000000       0x28 Core/Src/spi.o
+ .debug_macro   0x0000000000000000       0xb0 Core/Src/spi.o
+ .debug_macro   0x0000000000000000      0x182 Core/Src/spi.o
+ .debug_macro   0x0000000000000000      0x22c Core/Src/spi.o
+ .debug_macro   0x0000000000000000       0x5f Core/Src/spi.o
+ .debug_macro   0x0000000000000000       0xa5 Core/Src/spi.o
+ .debug_macro   0x0000000000000000       0x4c Core/Src/spi.o
+ .debug_macro   0x0000000000000000      0x15b Core/Src/spi.o
+ .debug_macro   0x0000000000000000      0x12e Core/Src/spi.o
+ .debug_line    0x0000000000000000      0x688 Core/Src/spi.o
+ .debug_str     0x0000000000000000    0x675eb Core/Src/spi.o
+ .comment       0x0000000000000000       0x7c Core/Src/spi.o
+ .debug_frame   0x0000000000000000       0x38 Core/Src/spi.o
+ .ARM.attributes
+                0x0000000000000000       0x31 Core/Src/spi.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/syscalls.o
+ .text          0x0000000000000000        0x0 Core/Src/syscalls.o
+ .data          0x0000000000000000        0x0 Core/Src/syscalls.o
+ .bss           0x0000000000000000        0x0 Core/Src/syscalls.o
+ .text.initialise_monitor_handles
+                0x0000000000000000        0x2 Core/Src/syscalls.o
+ .text._getpid  0x0000000000000000        0x4 Core/Src/syscalls.o
+ .text._kill    0x0000000000000000       0x10 Core/Src/syscalls.o
+ .text._exit    0x0000000000000000        0xc Core/Src/syscalls.o
+ .text._read    0x0000000000000000       0x1c Core/Src/syscalls.o
+ .text._write   0x0000000000000000       0x1c Core/Src/syscalls.o
+ .text._close   0x0000000000000000        0x6 Core/Src/syscalls.o
+ .text._fstat   0x0000000000000000        0xa Core/Src/syscalls.o
+ .text._isatty  0x0000000000000000        0x4 Core/Src/syscalls.o
+ .text._lseek   0x0000000000000000        0x4 Core/Src/syscalls.o
+ .text._open    0x0000000000000000        0xa Core/Src/syscalls.o
+ .text._wait    0x0000000000000000       0x10 Core/Src/syscalls.o
+ .text._unlink  0x0000000000000000       0x10 Core/Src/syscalls.o
+ .text._times   0x0000000000000000        0x6 Core/Src/syscalls.o
+ .text._stat    0x0000000000000000        0xa Core/Src/syscalls.o
+ .text._link    0x0000000000000000       0x10 Core/Src/syscalls.o
+ .text._fork    0x0000000000000000       0x10 Core/Src/syscalls.o
+ .text._execve  0x0000000000000000       0x10 Core/Src/syscalls.o
+ .bss.__env     0x0000000000000000        0x4 Core/Src/syscalls.o
+ .data.environ  0x0000000000000000        0x4 Core/Src/syscalls.o
+ .debug_info    0x0000000000000000      0xf86 Core/Src/syscalls.o
+ .debug_abbrev  0x0000000000000000      0x2be Core/Src/syscalls.o
+ .debug_loc     0x0000000000000000      0x41f Core/Src/syscalls.o
+ .debug_aranges
+                0x0000000000000000       0xa8 Core/Src/syscalls.o
+ .debug_ranges  0x0000000000000000       0x98 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000      0x243 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000      0xa4e Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x40 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x18 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x94 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x34 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x57 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000      0x174 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000      0x330 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x52 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x1f Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x43 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x20 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000      0x1a3 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x35 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x6a Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x52 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x40 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x40 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0xd7 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x3d Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x35 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000      0x122 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x16 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x16 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x29 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000      0x241 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x16 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000      0x145 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000      0x189 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x16 Core/Src/syscalls.o
+ .debug_macro   0x0000000000000000       0x88 Core/Src/syscalls.o
+ .debug_line    0x0000000000000000      0x76b Core/Src/syscalls.o
+ .debug_str     0x0000000000000000     0x8827 Core/Src/syscalls.o
+ .comment       0x0000000000000000       0x7c Core/Src/syscalls.o
+ .debug_frame   0x0000000000000000      0x184 Core/Src/syscalls.o
+ .ARM.attributes
+                0x0000000000000000       0x31 Core/Src/syscalls.o
+ COMMON         0x0000000000000000        0x4 Core/Src/syscalls.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysclk_systick.o
+ .text          0x0000000000000000        0x0 Core/Src/sysclk_systick.o
+ .data          0x0000000000000000        0x0 Core/Src/sysclk_systick.o
+ .bss           0x0000000000000000        0x0 Core/Src/sysclk_systick.o
+ .text.sysclk_PLL48_init
+                0x0000000000000000       0x3c Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000      0xa4e Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000       0x2e Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000       0x8e Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000       0x51 Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000       0xef Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000       0x6a Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000      0x1df Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000       0xb5 Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000      0x391 Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000     0xf1e6 Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000      0x127 Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000      0x174 Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000       0x53 Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000      0x946 Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000      0x46b Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000      0x12f Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000      0x130 Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000      0x199 Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000      0x1ed Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000       0x34 Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000       0x43 Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000       0x28 Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000       0xb0 Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000      0x182 Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000      0x22c Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000       0x5f Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000       0xa5 Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000       0x4c Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000      0x15b Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000000      0x12e Core/Src/sysclk_systick.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/sysmem.o
+ .text          0x0000000000000000        0x0 Core/Src/sysmem.o
+ .data          0x0000000000000000        0x0 Core/Src/sysmem.o
+ .bss           0x0000000000000000        0x0 Core/Src/sysmem.o
+ .text._sbrk    0x0000000000000000       0x34 Core/Src/sysmem.o
+ .bss.heap_end.5149
+                0x0000000000000000        0x4 Core/Src/sysmem.o
+ .debug_info    0x0000000000000000      0x936 Core/Src/sysmem.o
+ .debug_abbrev  0x0000000000000000      0x1e8 Core/Src/sysmem.o
+ .debug_loc     0x0000000000000000       0x4a Core/Src/sysmem.o
+ .debug_aranges
+                0x0000000000000000       0x20 Core/Src/sysmem.o
+ .debug_ranges  0x0000000000000000       0x10 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000      0x1ae Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000      0xa4e Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x40 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x18 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x94 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x34 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000      0x174 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x57 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x52 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x1f Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x43 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x20 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000      0x1a3 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000      0x23b Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x16 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x35 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000      0x330 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x6a Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x52 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x40 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x40 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0xd7 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x3d Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000       0x16 Core/Src/sysmem.o
+ .debug_macro   0x0000000000000000      0x145 Core/Src/sysmem.o
+ .debug_line    0x0000000000000000      0x59f Core/Src/sysmem.o
+ .debug_str     0x0000000000000000     0x7a66 Core/Src/sysmem.o
+ .comment       0x0000000000000000       0x7c Core/Src/sysmem.o
+ .debug_frame   0x0000000000000000       0x28 Core/Src/sysmem.o
+ .ARM.attributes
+                0x0000000000000000       0x31 Core/Src/sysmem.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/system_stm32f0xx.o
+ .text          0x0000000000000000        0x0 Core/Src/system_stm32f0xx.o
+ .data          0x0000000000000000        0x0 Core/Src/system_stm32f0xx.o
+ .bss           0x0000000000000000        0x0 Core/Src/system_stm32f0xx.o
+ .text.SystemCoreClockUpdate
+                0x0000000000000000       0x70 Core/Src/system_stm32f0xx.o
+ .data.SystemCoreClock
+                0x0000000000000000        0x4 Core/Src/system_stm32f0xx.o
+ .rodata.AHBPrescTable
+                0x0000000000000000       0x10 Core/Src/system_stm32f0xx.o
+ .rodata.APBPrescTable
+                0x0000000000000000        0x8 Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000      0xa4e Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000       0x2e Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000       0x8e Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000       0x51 Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000       0xef Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000       0x6a Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000      0x1df Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000       0xb5 Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000      0x391 Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000     0xf1e6 Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000      0x127 Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000      0x174 Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000       0x53 Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000      0x946 Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000      0x46b Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000      0x12f Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000      0x130 Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000      0x199 Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000      0x1ed Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000       0x34 Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000       0x43 Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000       0x28 Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000       0xb0 Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000      0x182 Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000      0x22c Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000       0x5f Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000       0xa5 Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000       0x4c Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000      0x15b Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000000      0x12e Core/Src/system_stm32f0xx.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/timer.o
+ .text          0x0000000000000000        0x0 Core/Src/timer.o
+ .data          0x0000000000000000        0x0 Core/Src/timer.o
+ .bss           0x0000000000000000        0x0 Core/Src/timer.o
+ .text.tim_irq_init
+                0x0000000000000000       0x3c Core/Src/timer.o
+ .text.tim_pwm_init
+                0x0000000000000000       0x6c Core/Src/timer.o
+ .text.tim_encoder_init
+                0x0000000000000000       0x88 Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0xa4e Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x2e Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x8e Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x51 Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0xef Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x6a Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x1df Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0xb5 Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x391 Core/Src/timer.o
+ .debug_macro   0x0000000000000000     0xf1e6 Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x127 Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x174 Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x53 Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x946 Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x46b Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x12f Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x130 Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x199 Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x1ed Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x34 Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x43 Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x28 Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0xb0 Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x182 Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x22c Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x5f Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0xa5 Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x4c Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x15b Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x12e Core/Src/timer.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usart.o
+ .text          0x0000000000000000        0x0 Core/Src/usart.o
+ .data          0x0000000000000000        0x0 Core/Src/usart.o
+ .bss           0x0000000000000000        0x0 Core/Src/usart.o
+ .text.usart_send
+                0x0000000000000000       0x14 Core/Src/usart.o
+ .text.usart_str
+                0x0000000000000000       0x20 Core/Src/usart.o
+ .text.usart_get
+                0x0000000000000000       0x14 Core/Src/usart.o
+ .text.__io_putchar
+                0x0000000000000000       0x18 Core/Src/usart.o
+ .debug_macro   0x0000000000000000      0xa4e Core/Src/usart.o
+ .debug_macro   0x0000000000000000       0x2e Core/Src/usart.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/usart.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/usart.o
+ .debug_macro   0x0000000000000000       0x8e Core/Src/usart.o
+ .debug_macro   0x0000000000000000       0x51 Core/Src/usart.o
+ .debug_macro   0x0000000000000000       0xef Core/Src/usart.o
+ .debug_macro   0x0000000000000000       0x6a Core/Src/usart.o
+ .debug_macro   0x0000000000000000      0x1df Core/Src/usart.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/usart.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/usart.o
+ .debug_macro   0x0000000000000000       0xb5 Core/Src/usart.o
+ .debug_macro   0x0000000000000000      0x391 Core/Src/usart.o
+ .debug_macro   0x0000000000000000     0xf1e6 Core/Src/usart.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/usart.o
+ .debug_macro   0x0000000000000000      0x127 Core/Src/usart.o
+ .debug_macro   0x0000000000000000      0x174 Core/Src/usart.o
+ .debug_macro   0x0000000000000000       0x53 Core/Src/usart.o
+ .debug_macro   0x0000000000000000      0x946 Core/Src/usart.o
+ .debug_macro   0x0000000000000000      0x46b Core/Src/usart.o
+ .debug_macro   0x0000000000000000      0x12f Core/Src/usart.o
+ .debug_macro   0x0000000000000000      0x130 Core/Src/usart.o
+ .debug_macro   0x0000000000000000      0x199 Core/Src/usart.o
+ .debug_macro   0x0000000000000000      0x1ed Core/Src/usart.o
+ .debug_macro   0x0000000000000000       0x34 Core/Src/usart.o
+ .debug_macro   0x0000000000000000       0x43 Core/Src/usart.o
+ .debug_macro   0x0000000000000000       0x28 Core/Src/usart.o
+ .debug_macro   0x0000000000000000       0xb0 Core/Src/usart.o
+ .debug_macro   0x0000000000000000      0x182 Core/Src/usart.o
+ .debug_macro   0x0000000000000000      0x22c Core/Src/usart.o
+ .debug_macro   0x0000000000000000       0x5f Core/Src/usart.o
+ .debug_macro   0x0000000000000000       0xa5 Core/Src/usart.o
+ .debug_macro   0x0000000000000000       0x4c Core/Src/usart.o
+ .debug_macro   0x0000000000000000      0x15b Core/Src/usart.o
+ .debug_macro   0x0000000000000000      0x12e Core/Src/usart.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb.o
+ .text          0x0000000000000000        0x0 Core/Src/usb/usb.o
+ .data          0x0000000000000000        0x0 Core/Src/usb/usb.o
+ .bss           0x0000000000000000        0x0 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x8e Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x51 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0xef Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x6a Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000      0x1df Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x2e Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0xb5 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000     0xf1e6 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000      0x127 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x53 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000      0x946 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000      0x46b Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000      0x12f Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000      0x130 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000      0x199 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000      0x1ed Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x34 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x43 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x28 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0xb0 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000      0x182 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000      0x22c Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x5f Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0xa5 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x4c Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000      0x15b Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000      0x12e Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x18 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x46 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x16 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x52 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x1f Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x20 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000      0x1a3 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x16 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x29 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x52 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x40 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x40 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0xd7 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x3d Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000000       0x16 Core/Src/usb/usb.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_cdc.o
+ .text          0x0000000000000000        0x0 Core/Src/usb/usb_cdc.o
+ .data          0x0000000000000000        0x0 Core/Src/usb/usb_cdc.o
+ .bss           0x0000000000000000        0x0 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000      0xb1a Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x8e Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x51 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0xef Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x6a Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000      0x1df Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x2e Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0xb5 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000      0x391 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000     0xf1e6 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000      0x127 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000      0x17b Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x53 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000      0x946 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000      0x46b Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000      0x12f Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000      0x130 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000      0x199 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000      0x1ed Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x34 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x43 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x28 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0xb0 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000      0x182 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000      0x22c Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x5f Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0xa5 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x4c Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000      0x15b Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000      0x12e Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000      0x168 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000      0x3ed Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x28 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x41 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x12 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x20 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x18 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x6e Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x2e Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x19 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x76 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x19 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x18 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x46 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x34 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x16 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x35 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x52 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x1f Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x43 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x20 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000      0x1a3 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000      0x34d Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x16 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x29 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0xde Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000      0x120 Core/Src/usb/usb_cdc.o
+ .debug_macro   0x0000000000000000       0x16 Core/Src/usb/usb_cdc.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/usb_hid.o
+ .text          0x0000000000000000        0x0 Core/Src/usb/usb_hid.o
+ .data          0x0000000000000000        0x0 Core/Src/usb/usb_hid.o
+ .bss           0x0000000000000000        0x0 Core/Src/usb/usb_hid.o
+ .text._ZN12_GLOBAL__N_17Handler2Rx12null_handlerEi
+                0x0000000000000000        0x2 Core/Src/usb/usb_hid.o
+ .text._ZN12_GLOBAL__N_17Handler2Tx10ep_handlerEi
+                0x0000000000000000       0x48 Core/Src/usb/usb_hid.o
+ .text._ZN12_GLOBAL__N_14Init2epEi
+                0x0000000000000000       0xa4 Core/Src/usb/usb_hid.o
+ .text.usb_hid_mouse_init
+                0x0000000000000000       0x74 Core/Src/usb/usb_hid.o
+ .text.usb_hid_keyboard_init
+                0x0000000000000000       0x70 Core/Src/usb/usb_hid.o
+ .text.usb_hid_composite_init
+                0x0000000000000000       0x80 Core/Src/usb/usb_hid.o
+ .bss.dev_type  0x0000000000000000        0x1 Core/Src/usb/usb_hid.o
+ .bss.report    0x0000000000000000       0x10 Core/Src/usb/usb_hid.o
+ .rodata._ZL4deps
+                0x0000000000000000       0x3c Core/Src/usb/usb_hid.o
+ .debug_info    0x0000000000000000     0x1b71 Core/Src/usb/usb_hid.o
+ .debug_abbrev  0x0000000000000000      0x521 Core/Src/usb/usb_hid.o
+ .debug_loc     0x0000000000000000       0x6b Core/Src/usb/usb_hid.o
+ .debug_aranges
+                0x0000000000000000       0x48 Core/Src/usb/usb_hid.o
+ .debug_ranges  0x0000000000000000       0x38 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000      0x46c Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000      0xb1a Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x8e Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x51 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0xef Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x6a Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000      0x1df Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x2e Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0xb5 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000      0x391 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000     0xf1e6 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000      0x127 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000      0x17b Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x53 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000      0x946 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000      0x46b Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000      0x12f Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000      0x130 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000      0x199 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000      0x1ed Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x34 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x43 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x28 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0xb0 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000      0x182 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000      0x22c Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x5f Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0xa5 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x4c Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000      0x15b Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000      0x12e Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000      0x168 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000      0x3ed Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x28 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x41 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x12 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x20 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x18 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x6e Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x2e Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x19 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x76 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x19 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x18 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x46 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x34 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x16 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x35 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x52 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x1f Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x43 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x20 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000      0x1a3 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000      0x34d Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x16 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x29 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0xde Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000      0x120 Core/Src/usb/usb_hid.o
+ .debug_macro   0x0000000000000000       0x16 Core/Src/usb/usb_hid.o
+ .debug_line    0x0000000000000000      0xfa1 Core/Src/usb/usb_hid.o
+ .debug_str     0x0000000000000000    0x6f6ac Core/Src/usb/usb_hid.o
+ .comment       0x0000000000000000       0x7c Core/Src/usb/usb_hid.o
+ .debug_frame   0x0000000000000000       0xb4 Core/Src/usb/usb_hid.o
+ .ARM.attributes
+                0x0000000000000000       0x31 Core/Src/usb/usb_hid.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb/utils.o
+ .text          0x0000000000000000        0x0 Core/Src/usb/utils.o
+ .data          0x0000000000000000        0x0 Core/Src/usb/utils.o
+ .bss           0x0000000000000000        0x0 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000      0xb1a Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x8e Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x51 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0xef Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x6a Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000      0x1df Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x2e Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0xb5 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000      0x391 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000     0xf1e6 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000      0x127 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000      0x17b Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x53 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000      0x946 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000      0x46b Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000      0x12f Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000      0x130 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000      0x199 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000      0x1ed Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x34 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x43 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x28 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0xb0 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000      0x182 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000      0x22c Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x5f Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0xa5 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x4c Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000      0x15b Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000      0x12e Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000      0x168 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000      0x3ed Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x46 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x18 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x34 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x16 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x35 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000      0x34d Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x52 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x1f Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x43 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x20 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000      0x1a3 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x52 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x40 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x10 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x40 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0xd7 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x1c Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x3d Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000       0x16 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000      0x137 Core/Src/usb/utils.o
+ .debug_macro   0x0000000000000000      0x11d Core/Src/usb/utils.o
+ .group         0x0000000000000000        0xc Core/Src/usb_desc/usb_desc.o
+ .group         0x0000000000000000        0xc Core/Src/usb_desc/usb_desc.o
+ .group         0x0000000000000000        0xc Core/Src/usb_desc/usb_desc.o
+ .group         0x0000000000000000        0xc Core/Src/usb_desc/usb_desc.o
+ .group         0x0000000000000000        0xc Core/Src/usb_desc/usb_desc.o
+ .group         0x0000000000000000        0xc Core/Src/usb_desc/usb_desc.o
+ .group         0x0000000000000000        0xc Core/Src/usb_desc/usb_desc.o
+ .text          0x0000000000000000        0x0 Core/Src/usb_desc/usb_desc.o
+ .data          0x0000000000000000        0x0 Core/Src/usb_desc/usb_desc.o
+ .bss           0x0000000000000000        0x0 Core/Src/usb_desc/usb_desc.o
+ .rodata.ReportDescriptorForKeyBoard
+                0x0000000000000000       0x3f Core/Src/usb_desc/usb_desc.o
+ .rodata.ReportDescriptorForMouse
+                0x0000000000000000       0x32 Core/Src/usb_desc/usb_desc.o
+ .rodata.conf_desc_keyb
+                0x0000000000000000       0x22 Core/Src/usb_desc/usb_desc.o
+ .rodata.conf_desc_keyb_mouse
+                0x0000000000000000       0x3b Core/Src/usb_desc/usb_desc.o
+ .rodata.conf_desc_mouse
+                0x0000000000000000       0x22 Core/Src/usb_desc/usb_desc.o
+ .rodata.dev_desc_hid
+                0x0000000000000000       0x12 Core/Src/usb_desc/usb_desc.o
+ .debug_macro   0x0000000000000000      0xa4e Core/Src/usb_desc/usb_desc.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/usb_desc/usb_desc.o
+ .debug_macro   0x0000000000000000       0x8e Core/Src/usb_desc/usb_desc.o
+ .debug_macro   0x0000000000000000       0x51 Core/Src/usb_desc/usb_desc.o
+ .debug_macro   0x0000000000000000       0xef Core/Src/usb_desc/usb_desc.o
+ .debug_macro   0x0000000000000000       0x6a Core/Src/usb_desc/usb_desc.o
+ .debug_macro   0x0000000000000000      0x1df Core/Src/usb_desc/usb_desc.o
+ .text          0x0000000000000000       0x14 Core/Startup/startup_stm32f042k6tx.o
+ .data          0x0000000000000000        0x0 Core/Startup/startup_stm32f042k6tx.o
+ .bss           0x0000000000000000        0x0 Core/Startup/startup_stm32f042k6tx.o
+ .text          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-errno.o)
+ .data          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-errno.o)
+ .bss           0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-errno.o)
+ .text.__errno  0x0000000000000000        0xc /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-errno.o)
+ .debug_frame   0x0000000000000000       0x20 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-errno.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-errno.o)
+ .text          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-exit.o)
+ .text.exit     0x0000000000000000       0x2c /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000000       0x28 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-exit.o)
+ .text          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x0000000000000000        0x4 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-impure.o)
+ .data.impure_data
+                0x0000000000000000       0x60 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x0000000000000000        0x4 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
+ .text          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memcpy-stub.o)
+ .data          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memcpy-stub.o)
+ .text          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memmove.o)
+ .data          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memmove.o)
+ .bss           0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memmove.o)
+ .text          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_thumb1_case_sqi.o)
+ .bss           0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_thumb1_case_sqi.o)
+ .text          0x0000000000000000      0x114 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_udivsi3.o)
+ .data          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_udivsi3.o)
+ .bss           0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_udivsi3.o)
+ .debug_frame   0x0000000000000000       0x20 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x0000000000000000       0x1e /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_udivsi3.o)
+ .text          0x0000000000000000      0x1d4 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_divsi3.o)
+ .data          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_divsi3.o)
+ .bss           0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_divsi3.o)
+ .debug_frame   0x0000000000000000       0x20 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x0000000000000000       0x1e /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_divsi3.o)
+ .text          0x0000000000000000        0x4 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_dvmd_tls.o)
+ .data          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_dvmd_tls.o)
+ .bss           0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x0000000000000000       0x1e /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_dvmd_tls.o)
+ .text          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtend.o
+ .data          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtend.o
+ .bss           0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtend.o
+ .eh_frame      0x0000000000000000        0x4 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtend.o
+ .ARM.attributes
+                0x0000000000000000       0x2c /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtend.o
+ .text          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
+ .data          0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
+ .bss           0x0000000000000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x0000000020000000 0x0000000000001800 xrw
+FLASH            0x0000000008000000 0x0000000000008000 xr
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crti.o
+LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o
+LOAD Core/Src/adc.o
+LOAD Core/Src/dma.o
+LOAD Core/Src/flash.o
+LOAD Core/Src/i2c.o
+LOAD Core/Src/lcd.o
+LOAD Core/Src/main.o
+LOAD Core/Src/spi.o
+LOAD Core/Src/syscalls.o
+LOAD Core/Src/sysclk_systick.o
+LOAD Core/Src/sysmem.o
+LOAD Core/Src/system_stm32f0xx.o
+LOAD Core/Src/timer.o
+LOAD Core/Src/usart.o
+LOAD Core/Src/usb/usb.o
+LOAD Core/Src/usb/usb_cdc.o
+LOAD Core/Src/usb/usb_hid.o
+LOAD Core/Src/usb/utils.o
+LOAD Core/Src/usb_desc/usb_desc.o
+LOAD Core/Startup/startup_stm32f042k6tx.o
+START GROUP
+LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a
+LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libsupc++_nano.a
+END GROUP
+LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a
+LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a
+LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a
+START GROUP
+LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a
+LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a
+END GROUP
+START GROUP
+LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a
+LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a
+END GROUP
+LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtend.o
+LOAD /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
+                0x0000000020001800                _estack = (ORIGIN (RAM) + LENGTH (RAM))
+                0x0000000000000200                _Min_Heap_Size = 0x200
+                0x0000000000000400                _Min_Stack_Size = 0x400
+
+.isr_vector     0x0000000008000000       0xc0
+                0x0000000008000000                . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x0000000008000000       0xc0 Core/Startup/startup_stm32f042k6tx.o
+                0x0000000008000000                g_pfnVectors
+                0x00000000080000c0                . = ALIGN (0x4)
+
+.text           0x00000000080000c0      0x974
+                0x00000000080000c0                . = ALIGN (0x4)
+ *(.text)
+ .text          0x00000000080000c0       0x48 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+ .text          0x0000000008000108       0x14 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_thumb1_case_sqi.o)
+                0x0000000008000108                __gnu_thumb1_case_sqi
+ *(.text*)
+ .text.usb_cdc_echo_fuck
+                0x000000000800011c       0x20 Core/Src/main.o
+                0x000000000800011c                usb_cdc_echo_fuck
+ .text.startup.main
+                0x000000000800013c       0x34 Core/Src/main.o
+                0x000000000800013c                main
+ .text.ms_wait  0x0000000008000170       0x38 Core/Src/sysclk_systick.o
+                0x0000000008000170                ms_wait
+ .text.sysclk_HSI48_init
+                0x00000000080001a8       0x30 Core/Src/sysclk_systick.o
+                0x00000000080001a8                sysclk_HSI48_init
+ .text.SystemInit
+                0x00000000080001d8        0x2 Core/Src/system_stm32f0xx.o
+                0x00000000080001d8                SystemInit
+ *fill*         0x00000000080001da        0x2 
+ .text.TIM2_IRQHandler
+                0x00000000080001dc       0x24 Core/Src/timer.o
+                0x00000000080001dc                TIM2_IRQHandler
+ .text.usart_init
+                0x0000000008000200       0x8c Core/Src/usart.o
+                0x0000000008000200                usart_init
+ .text._Z8usb_init12USB_InitType
+                0x000000000800028c       0x88 Core/Src/usb/usb.o
+                0x000000000800028c                usb_init(USB_InitType)
+ .text._Z11usb_ep_senditt
+                0x0000000008000314       0x30 Core/Src/usb/usb.o
+                0x0000000008000314                usb_ep_send(int, unsigned short, unsigned short)
+ .text._Z14usb_ep_receiveitt
+                0x0000000008000344       0x50 Core/Src/usb/usb.o
+                0x0000000008000344                usb_ep_receive(int, unsigned short, unsigned short)
+ .text._ZL25usb_ep0_prepare_for_setupv
+                0x0000000008000394       0x24 Core/Src/usb/usb.o
+ .text._ZL34usb_ep0_handle_current_transactionv
+                0x00000000080003b8      0x1f0 Core/Src/usb/usb.o
+ .text.USB_IRQHandler
+                0x00000000080005a8      0x1d4 Core/Src/usb/usb.o
+                0x00000000080005a8                USB_IRQHandler
+ .text._ZN12_GLOBAL__N_17Handler2Tx12null_handlerEi
+                0x000000000800077c        0x2 Core/Src/usb/usb_cdc.o
+ *fill*         0x000000000800077e        0x2 
+ .text._ZN12_GLOBAL__N_14Init3ep3Ei
+                0x0000000008000780       0x38 Core/Src/usb/usb_cdc.o
+ .text._ZN12_GLOBAL__N_14Init3ep2Ei
+                0x00000000080007b8       0x38 Core/Src/usb/usb_cdc.o
+ .text._ZN12_GLOBAL__N_14Init3ep1Ei
+                0x00000000080007f0       0x3c Core/Src/usb/usb_cdc.o
+ .text._ZN12_GLOBAL__N_17Handler2Rx12null_handlerEi
+                0x000000000800082c        0x2 Core/Src/usb/usb_cdc.o
+ *fill*         0x000000000800082e        0x2 
+ .text.usb_cdc_init
+                0x0000000008000830       0x20 Core/Src/usb/usb_cdc.o
+                0x0000000008000830                usb_cdc_init
+ .text.usb_cdc_send
+                0x0000000008000850       0x34 Core/Src/usb/usb_cdc.o
+                0x0000000008000850                usb_cdc_send
+ .text._ZN5Utils5allocEi
+                0x0000000008000884       0x1c Core/Src/usb/utils.o
+                0x0000000008000884                Utils::alloc(int)
+ .text._ZN5Utils7pma_outEPvji
+                0x00000000080008a0       0x34 Core/Src/usb/utils.o
+                0x00000000080008a0                Utils::pma_out(void*, unsigned int, int)
+ .text._ZN5Utils6pma_inEjPKvi
+                0x00000000080008d4       0x30 Core/Src/usb/utils.o
+                0x00000000080008d4                Utils::pma_in(unsigned int, void const*, int)
+ .text._ZN5Utils4Dump12setup_packetEv
+                0x0000000008000904        0x2 Core/Src/usb/utils.o
+                0x0000000008000904                Utils::Dump::setup_packet()
+ .text._ZN5Utils4Dump3fsmEv
+                0x0000000008000906        0x2 Core/Src/usb/utils.o
+                0x0000000008000906                Utils::Dump::fsm()
+ .text.Reset_Handler
+                0x0000000008000908       0x80 Core/Startup/startup_stm32f042k6tx.o
+                0x0000000008000908                Reset_Handler
+ .text.Default_Handler
+                0x0000000008000988        0x2 Core/Startup/startup_stm32f042k6tx.o
+                0x0000000008000988                TIM1_BRK_UP_TRG_COM_IRQHandler
+                0x0000000008000988                TSC_IRQHandler
+                0x0000000008000988                HardFault_Handler
+                0x0000000008000988                SysTick_Handler
+                0x0000000008000988                PendSV_Handler
+                0x0000000008000988                NMI_Handler
+                0x0000000008000988                I2C1_IRQHandler
+                0x0000000008000988                RCC_CRS_IRQHandler
+                0x0000000008000988                SPI1_IRQHandler
+                0x0000000008000988                EXTI2_3_IRQHandler
+                0x0000000008000988                ADC1_IRQHandler
+                0x0000000008000988                TIM17_IRQHandler
+                0x0000000008000988                CEC_CAN_IRQHandler
+                0x0000000008000988                RTC_IRQHandler
+                0x0000000008000988                PVD_VDDIO2_IRQHandler
+                0x0000000008000988                TIM16_IRQHandler
+                0x0000000008000988                TIM3_IRQHandler
+                0x0000000008000988                EXTI4_15_IRQHandler
+                0x0000000008000988                DMA1_Channel1_IRQHandler
+                0x0000000008000988                Default_Handler
+                0x0000000008000988                TIM14_IRQHandler
+                0x0000000008000988                DMA1_Channel4_5_IRQHandler
+                0x0000000008000988                EXTI0_1_IRQHandler
+                0x0000000008000988                SPI2_IRQHandler
+                0x0000000008000988                SVC_Handler
+                0x0000000008000988                WWDG_IRQHandler
+                0x0000000008000988                DMA1_Channel2_3_IRQHandler
+                0x0000000008000988                USART2_IRQHandler
+                0x0000000008000988                FLASH_IRQHandler
+                0x0000000008000988                USART1_IRQHandler
+                0x0000000008000988                TIM1_CC_IRQHandler
+ *fill*         0x000000000800098a        0x2 
+ .text.__libc_init_array
+                0x000000000800098c       0x48 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
+                0x000000000800098c                __libc_init_array
+ .text.memcpy   0x00000000080009d4       0x12 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memcpy-stub.o)
+                0x00000000080009d4                memcpy
+ .text.memmove  0x00000000080009e6       0x26 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memmove.o)
+                0x00000000080009e6                memmove
+ .text.memset   0x0000000008000a0c       0x10 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memset.o)
+                0x0000000008000a0c                memset
+ *(.glue_7)
+ .glue_7        0x0000000008000a1c        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x0000000008000a1c        0x0 linker stubs
+ *(.eh_frame)
+ .eh_frame      0x0000000008000a1c        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+ *(.init)
+ .init          0x0000000008000a1c        0x4 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crti.o
+                0x0000000008000a1c                _init
+ .init          0x0000000008000a20        0x8 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
+ *(.fini)
+ .fini          0x0000000008000a28        0x4 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crti.o
+                0x0000000008000a28                _fini
+ .fini          0x0000000008000a2c        0x8 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
+                0x0000000008000a34                . = ALIGN (0x4)
+                0x0000000008000a34                _etext = .
+
+.vfp11_veneer   0x0000000008000a34        0x0
+ .vfp11_veneer  0x0000000008000a34        0x0 linker stubs
+
+.v4_bx          0x0000000008000a34        0x0
+ .v4_bx         0x0000000008000a34        0x0 linker stubs
+
+.iplt           0x0000000008000a34        0x0
+ .iplt          0x0000000008000a34        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+
+.rodata         0x0000000008000a34      0x160
+                0x0000000008000a34                . = ALIGN (0x4)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.usb_cdc_echo_fuck.str1.1
+                0x0000000008000a34        0x5 Core/Src/main.o
+ *fill*         0x0000000008000a39        0x3 
+ .rodata._ZL9ep_handle
+                0x0000000008000a3c       0x58 Core/Src/usb/usb_cdc.o
+ .rodata.conf_desc_cdc
+                0x0000000008000a94       0x43 Core/Src/usb_desc/usb_desc.o
+                0x0000000008000a94                conf_desc_cdc
+ *fill*         0x0000000008000ad7        0x1 
+ .rodata.dev_desc_cdc
+                0x0000000008000ad8       0x12 Core/Src/usb_desc/usb_desc.o
+                0x0000000008000ad8                dev_desc_cdc
+ .rodata.string_desc
+                0x0000000008000aea       0xa8 Core/Src/usb_desc/usb_desc.o
+                0x0000000008000aea                string_desc
+                0x0000000008000b94                . = ALIGN (0x4)
+ *fill*         0x0000000008000b92        0x2 
+
+.rel.dyn        0x0000000008000b94        0x0
+ .rel.iplt      0x0000000008000b94        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+
+.ARM.extab      0x0000000008000b94        0x0
+                0x0000000008000b94                . = ALIGN (0x4)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x0000000008000b94                . = ALIGN (0x4)
+
+.ARM            0x0000000008000b94        0x0
+                0x0000000008000b94                . = ALIGN (0x4)
+                0x0000000008000b94                __exidx_start = .
+ *(.ARM.exidx*)
+                0x0000000008000b94                __exidx_end = .
+                0x0000000008000b94                . = ALIGN (0x4)
+
+.preinit_array  0x0000000008000b94        0x0
+                0x0000000008000b94                . = ALIGN (0x4)
+                0x0000000008000b94                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array*)
+                0x0000000008000b94                PROVIDE (__preinit_array_end = .)
+                0x0000000008000b94                . = ALIGN (0x4)
+
+.init_array     0x0000000008000b94        0x4
+                0x0000000008000b94                . = ALIGN (0x4)
+                0x0000000008000b94                PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array*)
+ .init_array    0x0000000008000b94        0x4 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+                0x0000000008000b98                PROVIDE (__init_array_end = .)
+                0x0000000008000b98                . = ALIGN (0x4)
+
+.fini_array     0x0000000008000b98        0x4
+                0x0000000008000b98                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array*)
+ .fini_array    0x0000000008000b98        0x4 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+                [!provide]                        PROVIDE (__fini_array_end = .)
+                0x0000000008000b9c                . = ALIGN (0x4)
+                0x0000000008000b9c                _sidata = LOADADDR (.data)
+
+.data           0x0000000020000000        0x0 load address 0x0000000008000b9c
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _sdata = .
+ *(.data)
+ *(.data*)
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _edata = .
+
+.igot.plt       0x0000000020000000        0x0 load address 0x0000000008000b9c
+ .igot.plt      0x0000000020000000        0x0 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+                0x0000000020000000                . = ALIGN (0x4)
+
+.bss            0x0000000020000000      0x13c load address 0x0000000008000b9c
+                0x0000000020000000                _sbss = .
+                0x0000000020000000                __bss_start__ = _sbss
+ *(.bss)
+ .bss           0x0000000020000000       0x1c /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+ *(.bss*)
+ .bss._ZL16line_coding_info
+                0x000000002000001c        0x7 Core/Src/usb/usb.o
+ *fill*         0x0000000020000023        0x1 
+ .bss._ZL16linecoding_adddr
+                0x0000000020000024        0x2 Core/Src/usb/usb.o
+ *fill*         0x0000000020000026        0x2 
+ .bss._ZL4init  0x0000000020000028       0x58 Core/Src/usb/usb.o
+ .bss._ZL8ep0_data
+                0x0000000020000080        0xc Core/Src/usb/usb.o
+ .bss._ZZL20usb_ep0_handle_setupvE10state_addr
+                0x000000002000008c        0x2 Core/Src/usb/usb.o
+ .bss._ZZL20usb_ep0_handle_setupvE12device_state
+                0x000000002000008e        0x2 Core/Src/usb/usb.o
+ .bss.ep_info   0x0000000020000090       0x50 Core/Src/usb/usb.o
+                0x0000000020000090                ep_info
+ .bss.pma_allocation_info
+                0x00000000200000e0       0x1a Core/Src/usb/usb.o
+                0x00000000200000e0                pma_allocation_info
+ .bss.cdc_buf   0x00000000200000fa       0x40 Core/Src/usb/usb_cdc.o
+                0x00000000200000fa                cdc_buf
+ *(COMMON)
+                0x000000002000013c                . = ALIGN (0x4)
+ *fill*         0x000000002000013a        0x2 
+                0x000000002000013c                _ebss = .
+                0x000000002000013c                __bss_end__ = _ebss
+
+._user_heap_stack
+                0x000000002000013c      0x604 load address 0x0000000008000b9c
+                0x0000000020000140                . = ALIGN (0x8)
+ *fill*         0x000000002000013c        0x4 
+                0x0000000020000140                PROVIDE (end = .)
+                [!provide]                        PROVIDE (_end = .)
+                0x0000000020000340                . = (. + _Min_Heap_Size)
+ *fill*         0x0000000020000140      0x200 
+                0x0000000020000740                . = (. + _Min_Stack_Size)
+ *fill*         0x0000000020000340      0x400 
+                0x0000000020000740                . = ALIGN (0x8)
+
+/DISCARD/
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+
+.ARM.attributes
+                0x0000000000000000       0x28
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x0000000000000000       0x1e /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crti.o
+ .ARM.attributes
+                0x000000000000001e       0x2c /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+ .ARM.attributes
+                0x000000000000004a       0x31 Core/Src/main.o
+ .ARM.attributes
+                0x000000000000007b       0x31 Core/Src/sysclk_systick.o
+ .ARM.attributes
+                0x00000000000000ac       0x31 Core/Src/system_stm32f0xx.o
+ .ARM.attributes
+                0x00000000000000dd       0x31 Core/Src/timer.o
+ .ARM.attributes
+                0x000000000000010e       0x31 Core/Src/usart.o
+ .ARM.attributes
+                0x000000000000013f       0x31 Core/Src/usb/usb.o
+ .ARM.attributes
+                0x0000000000000170       0x31 Core/Src/usb/usb_cdc.o
+ .ARM.attributes
+                0x00000000000001a1       0x31 Core/Src/usb/utils.o
+ .ARM.attributes
+                0x00000000000001d2       0x31 Core/Src/usb_desc/usb_desc.o
+ .ARM.attributes
+                0x0000000000000203       0x21 Core/Startup/startup_stm32f042k6tx.o
+ .ARM.attributes
+                0x0000000000000224       0x2c /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x0000000000000250       0x2c /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x000000000000027c       0x2c /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memmove.o)
+ .ARM.attributes
+                0x00000000000002a8       0x2c /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000000000002d4       0x1e /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_thumb1_case_sqi.o)
+ .ARM.attributes
+                0x00000000000002f2       0x1e /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
+OUTPUT(Registers_F042.elf elf32-littlearm)
+
+.debug_info     0x0000000000000000     0x83cd
+ .debug_info    0x0000000000000000     0x1141 Core/Src/main.o
+ .debug_info    0x0000000000001141      0x2bb Core/Src/sysclk_systick.o
+ .debug_info    0x00000000000013fc      0x2a2 Core/Src/system_stm32f0xx.o
+ .debug_info    0x000000000000169e      0x639 Core/Src/timer.o
+ .debug_info    0x0000000000001cd7      0x482 Core/Src/usart.o
+ .debug_info    0x0000000000002159     0x2c5b Core/Src/usb/usb.o
+ .debug_info    0x0000000000004db4     0x1f42 Core/Src/usb/usb_cdc.o
+ .debug_info    0x0000000000006cf6     0x134f Core/Src/usb/utils.o
+ .debug_info    0x0000000000008045      0x366 Core/Src/usb_desc/usb_desc.o
+ .debug_info    0x00000000000083ab       0x22 Core/Startup/startup_stm32f042k6tx.o
+
+.debug_abbrev   0x0000000000000000     0x19ae
+ .debug_abbrev  0x0000000000000000      0x30b Core/Src/main.o
+ .debug_abbrev  0x000000000000030b      0x123 Core/Src/sysclk_systick.o
+ .debug_abbrev  0x000000000000042e      0x12b Core/Src/system_stm32f0xx.o
+ .debug_abbrev  0x0000000000000559      0x168 Core/Src/timer.o
+ .debug_abbrev  0x00000000000006c1      0x17d Core/Src/usart.o
+ .debug_abbrev  0x000000000000083e      0x771 Core/Src/usb/usb.o
+ .debug_abbrev  0x0000000000000faf      0x60b Core/Src/usb/usb_cdc.o
+ .debug_abbrev  0x00000000000015ba      0x30a Core/Src/usb/utils.o
+ .debug_abbrev  0x00000000000018c4       0xd8 Core/Src/usb_desc/usb_desc.o
+ .debug_abbrev  0x000000000000199c       0x12 Core/Startup/startup_stm32f042k6tx.o
+
+.debug_loc      0x0000000000000000      0xf33
+ .debug_loc     0x0000000000000000      0x275 Core/Src/main.o
+ .debug_loc     0x0000000000000275       0x2a Core/Src/sysclk_systick.o
+ .debug_loc     0x000000000000029f       0xe7 Core/Src/system_stm32f0xx.o
+ .debug_loc     0x0000000000000386       0x14 Core/Src/timer.o
+ .debug_loc     0x000000000000039a       0x76 Core/Src/usart.o
+ .debug_loc     0x0000000000000410      0x73b Core/Src/usb/usb.o
+ .debug_loc     0x0000000000000b4b      0x1a1 Core/Src/usb/usb_cdc.o
+ .debug_loc     0x0000000000000cec      0x247 Core/Src/usb/utils.o
+
+.debug_aranges  0x0000000000000000      0x220
+ .debug_aranges
+                0x0000000000000000       0x48 Core/Src/main.o
+ .debug_aranges
+                0x0000000000000048       0x30 Core/Src/sysclk_systick.o
+ .debug_aranges
+                0x0000000000000078       0x28 Core/Src/system_stm32f0xx.o
+ .debug_aranges
+                0x00000000000000a0       0x38 Core/Src/timer.o
+ .debug_aranges
+                0x00000000000000d8       0x40 Core/Src/usart.o
+ .debug_aranges
+                0x0000000000000118       0x48 Core/Src/usb/usb.o
+ .debug_aranges
+                0x0000000000000160       0x48 Core/Src/usb/usb_cdc.o
+ .debug_aranges
+                0x00000000000001a8       0x38 Core/Src/usb/utils.o
+ .debug_aranges
+                0x00000000000001e0       0x18 Core/Src/usb_desc/usb_desc.o
+ .debug_aranges
+                0x00000000000001f8       0x28 Core/Startup/startup_stm32f042k6tx.o
+
+.debug_ranges   0x0000000000000000      0x2f0
+ .debug_ranges  0x0000000000000000       0x78 Core/Src/main.o
+ .debug_ranges  0x0000000000000078       0x38 Core/Src/sysclk_systick.o
+ .debug_ranges  0x00000000000000b0       0x18 Core/Src/system_stm32f0xx.o
+ .debug_ranges  0x00000000000000c8       0x48 Core/Src/timer.o
+ .debug_ranges  0x0000000000000110       0x30 Core/Src/usart.o
+ .debug_ranges  0x0000000000000140      0x130 Core/Src/usb/usb.o
+ .debug_ranges  0x0000000000000270       0x38 Core/Src/usb/usb_cdc.o
+ .debug_ranges  0x00000000000002a8       0x28 Core/Src/usb/utils.o
+ .debug_ranges  0x00000000000002d0       0x20 Core/Startup/startup_stm32f042k6tx.o
+
+.debug_macro    0x0000000000000000     0x385b
+ .debug_macro   0x0000000000000000      0x36d Core/Src/main.o
+ .debug_macro   0x000000000000036d      0x10b Core/Src/main.o
+ .debug_macro   0x0000000000000478      0x190 Core/Src/sysclk_systick.o
+ .debug_macro   0x0000000000000608      0x190 Core/Src/system_stm32f0xx.o
+ .debug_macro   0x0000000000000798      0x190 Core/Src/timer.o
+ .debug_macro   0x0000000000000928      0x190 Core/Src/usart.o
+ .debug_macro   0x0000000000000ab8      0x540 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000000ff8      0xb1a Core/Src/usb/usb.o
+ .debug_macro   0x0000000000001b12       0x1c Core/Src/usb/usb.o
+ .debug_macro   0x0000000000001b2e      0x391 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000001ebf      0x17b Core/Src/usb/usb.o
+ .debug_macro   0x000000000000203a      0x168 Core/Src/usb/usb.o
+ .debug_macro   0x00000000000021a2       0x10 Core/Src/usb/usb.o
+ .debug_macro   0x00000000000021b2      0x3ed Core/Src/usb/usb.o
+ .debug_macro   0x000000000000259f       0x28 Core/Src/usb/usb.o
+ .debug_macro   0x00000000000025c7       0x41 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000002608       0x12 Core/Src/usb/usb.o
+ .debug_macro   0x000000000000261a       0x20 Core/Src/usb/usb.o
+ .debug_macro   0x000000000000263a       0x1c Core/Src/usb/usb.o
+ .debug_macro   0x0000000000002656       0x18 Core/Src/usb/usb.o
+ .debug_macro   0x000000000000266e       0x6e Core/Src/usb/usb.o
+ .debug_macro   0x00000000000026dc       0x2e Core/Src/usb/usb.o
+ .debug_macro   0x000000000000270a       0x19 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000002723       0x76 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000002799       0x19 Core/Src/usb/usb.o
+ .debug_macro   0x00000000000027b2       0x10 Core/Src/usb/usb.o
+ .debug_macro   0x00000000000027c2       0x34 Core/Src/usb/usb.o
+ .debug_macro   0x00000000000027f6       0x35 Core/Src/usb/usb.o
+ .debug_macro   0x000000000000282b       0x43 Core/Src/usb/usb.o
+ .debug_macro   0x000000000000286e      0x34d Core/Src/usb/usb.o
+ .debug_macro   0x0000000000002bbb       0x1c Core/Src/usb/usb.o
+ .debug_macro   0x0000000000002bd7       0xde Core/Src/usb/usb.o
+ .debug_macro   0x0000000000002cb5       0x10 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000002cc5      0x120 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000002de5      0x137 Core/Src/usb/usb.o
+ .debug_macro   0x0000000000002f1c      0x11d Core/Src/usb/usb.o
+ .debug_macro   0x0000000000003039       0x16 Core/Src/usb/usb.o
+ .debug_macro   0x000000000000304f      0x46c Core/Src/usb/usb_cdc.o
+ .debug_macro   0x00000000000034bb      0x339 Core/Src/usb/utils.o
+ .debug_macro   0x00000000000037f4       0x67 Core/Src/usb_desc/usb_desc.o
+
+.debug_line     0x0000000000000000     0x559c
+ .debug_line    0x0000000000000000      0xa15 Core/Src/main.o
+ .debug_line    0x0000000000000a15      0x6b4 Core/Src/sysclk_systick.o
+ .debug_line    0x00000000000010c9      0x68f Core/Src/system_stm32f0xx.o
+ .debug_line    0x0000000000001758      0x6db Core/Src/timer.o
+ .debug_line    0x0000000000001e33      0x6c1 Core/Src/usart.o
+ .debug_line    0x00000000000024f4     0x118d Core/Src/usb/usb.o
+ .debug_line    0x0000000000003681      0xfa1 Core/Src/usb/usb_cdc.o
+ .debug_line    0x0000000000004622      0xb06 Core/Src/usb/utils.o
+ .debug_line    0x0000000000005128      0x3d9 Core/Src/usb_desc/usb_desc.o
+ .debug_line    0x0000000000005501       0x9b Core/Startup/startup_stm32f042k6tx.o
+
+.debug_str      0x0000000000000000    0x72412
+ .debug_str     0x0000000000000000    0x6bde5 Core/Src/main.o
+                                      0x6c0a8 (size before relaxing)
+ .debug_str     0x000000000006bde5       0x4c Core/Src/sysclk_systick.o
+                                      0x675a9 (size before relaxing)
+ .debug_str     0x000000000006be31       0x5f Core/Src/system_stm32f0xx.o
+                                      0x6759d (size before relaxing)
+ .debug_str     0x000000000006be90      0x21e Core/Src/timer.o
+                                      0x67824 (size before relaxing)
+ .debug_str     0x000000000006c0ae       0x6d Core/Src/usart.o
+                                      0x675fb (size before relaxing)
+ .debug_str     0x000000000006c11b     0x5b8a Core/Src/usb/usb.o
+                                      0x712ed (size before relaxing)
+ .debug_str     0x0000000000071ca5      0x42b Core/Src/usb/usb_cdc.o
+                                      0x6fa63 (size before relaxing)
+ .debug_str     0x00000000000720d0      0x1de Core/Src/usb/utils.o
+                                      0x6d6e6 (size before relaxing)
+ .debug_str     0x00000000000722ae      0x12e Core/Src/usb_desc/usb_desc.o
+                                       0x3e1e (size before relaxing)
+ .debug_str     0x00000000000723dc       0x36 Core/Startup/startup_stm32f042k6tx.o
+                                         0x76 (size before relaxing)
+
+.comment        0x0000000000000000       0x7b
+ .comment       0x0000000000000000       0x7b Core/Src/main.o
+                                         0x7c (size before relaxing)
+ .comment       0x000000000000007b       0x7c Core/Src/sysclk_systick.o
+ .comment       0x000000000000007b       0x7c Core/Src/system_stm32f0xx.o
+ .comment       0x000000000000007b       0x7c Core/Src/timer.o
+ .comment       0x000000000000007b       0x7c Core/Src/usart.o
+ .comment       0x000000000000007b       0x7c Core/Src/usb/usb.o
+ .comment       0x000000000000007b       0x7c Core/Src/usb/usb_cdc.o
+ .comment       0x000000000000007b       0x7c Core/Src/usb/utils.o
+ .comment       0x000000000000007b       0x7c Core/Src/usb_desc/usb_desc.o
+
+.debug_frame    0x0000000000000000      0x4a4
+ .debug_frame   0x0000000000000000       0xc4 Core/Src/main.o
+ .debug_frame   0x00000000000000c4       0x48 Core/Src/sysclk_systick.o
+ .debug_frame   0x000000000000010c       0x3c Core/Src/system_stm32f0xx.o
+ .debug_frame   0x0000000000000148       0x64 Core/Src/timer.o
+ .debug_frame   0x00000000000001ac       0x70 Core/Src/usart.o
+ .debug_frame   0x000000000000021c       0xbc Core/Src/usb/usb.o
+ .debug_frame   0x00000000000002d8       0xb8 Core/Src/usb/usb_cdc.o
+ .debug_frame   0x0000000000000390       0x78 Core/Src/usb/utils.o
+ .debug_frame   0x0000000000000408       0x2c /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
+ .debug_frame   0x0000000000000434       0x28 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x000000000000045c       0x28 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memmove.o)
+ .debug_frame   0x0000000000000484       0x20 /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memset.o)

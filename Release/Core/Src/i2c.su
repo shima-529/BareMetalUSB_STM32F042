@@ -1,0 +1,2 @@
+i2c.c:15:6:i2c_init	0	static
+i2c.c:31:6:i2c_send	20	static

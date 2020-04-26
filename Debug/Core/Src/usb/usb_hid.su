@@ -1,0 +1,6 @@
+usb_hid.cpp:60:7:void {anonymous}::Handler::Rx::null_handler(int)	0	static
+usb_hid.cpp:53:7:void {anonymous}::Handler::Tx::ep_handler(int)	16	static
+usb_hid.cpp:41:6:void {anonymous}::Init::ep(int)	32	static
+usb_hid.cpp:66:6:void usb_hid_mouse_init()	168	static
+usb_hid.cpp:77:6:void usb_hid_keyboard_init()	168	static
+usb_hid.cpp:88:6:void usb_hid_composite_init()	168	static

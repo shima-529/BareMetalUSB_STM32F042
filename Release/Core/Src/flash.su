@@ -1,0 +1,3 @@
+flash.c:4:6:flash_init	0	static
+flash.c:9:6:flash_erase_sector	8	static
+flash.c:19:6:flash_write	12	static,ignoring_inline_asm

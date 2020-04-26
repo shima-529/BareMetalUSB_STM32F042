@@ -1,0 +1,6 @@
+usb.cpp:54:6:void usb_init(USB_InitType)	16	static
+usb.cpp:75:6:void usb_ep_send(int, uint16_t, uint16_t)	8	static
+usb.cpp:80:6:void usb_ep_receive(int, uint16_t, uint16_t)	8	static
+usb.cpp:201:13:void usb_ep0_prepare_for_setup()	8	static
+usb.cpp:224:13:void usb_ep0_handle_current_transaction()	40	static
+usb.cpp:290:17:void USB_IRQHandler()	32	static

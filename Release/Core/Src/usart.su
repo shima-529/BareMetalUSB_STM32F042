@@ -1,0 +1,5 @@
+usart.c:3:6:usart_init	0	static
+usart.c:20:6:usart_send	0	static
+usart.c:25:6:usart_str	8	static
+usart.c:35:6:usart_get	0	static
+usart.c:40:5:__io_putchar	8	static

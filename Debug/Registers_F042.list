@@ -1,0 +1,1792 @@
+
+Registers_F042.elf:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .isr_vector   000000c0  08000000  08000000  00010000  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  1 .text         00000974  080000c0  080000c0  000100c0  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .rodata       00000160  08000a34  08000a34  00010a34  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .ARM.extab    00000000  08000b94  08000b94  00010b9c  2**0
+                  CONTENTS
+  4 .ARM          00000000  08000b94  08000b94  00010b9c  2**0
+                  CONTENTS
+  5 .preinit_array 00000000  08000b94  08000b9c  00010b9c  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  6 .init_array   00000004  08000b94  08000b94  00010b94  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  7 .fini_array   00000004  08000b98  08000b98  00010b98  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  8 .data         00000000  20000000  20000000  00010b9c  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  9 .bss          0000013c  20000000  08000b9c  00020000  2**2
+                  ALLOC
+ 10 ._user_heap_stack 00000604  2000013c  08000b9c  0002013c  2**0
+                  ALLOC
+ 11 .ARM.attributes 00000028  00000000  00000000  00010b9c  2**0
+                  CONTENTS, READONLY
+ 12 .debug_info   000083cd  00000000  00000000  00010bc4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_abbrev 000019ae  00000000  00000000  00018f91  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .debug_loc    00000f33  00000000  00000000  0001a93f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .debug_aranges 00000220  00000000  00000000  0001b878  2**3
+                  CONTENTS, READONLY, DEBUGGING
+ 16 .debug_ranges 000002f0  00000000  00000000  0001ba98  2**3
+                  CONTENTS, READONLY, DEBUGGING
+ 17 .debug_macro  0000385b  00000000  00000000  0001bd88  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 18 .debug_line   0000559c  00000000  00000000  0001f5e3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 19 .debug_str    00072412  00000000  00000000  00024b7f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 20 .comment      0000007b  00000000  00000000  00096f91  2**0
+                  CONTENTS, READONLY
+ 21 .debug_frame  000004a4  00000000  00000000  0009700c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+080000c0 <__do_global_dtors_aux>:
+ 80000c0:	b510      	push	{r4, lr}
+ 80000c2:	4c06      	ldr	r4, [pc, #24]	; (80000dc <__do_global_dtors_aux+0x1c>)
+ 80000c4:	7823      	ldrb	r3, [r4, #0]
+ 80000c6:	2b00      	cmp	r3, #0
+ 80000c8:	d107      	bne.n	80000da <__do_global_dtors_aux+0x1a>
+ 80000ca:	4b05      	ldr	r3, [pc, #20]	; (80000e0 <__do_global_dtors_aux+0x20>)
+ 80000cc:	2b00      	cmp	r3, #0
+ 80000ce:	d002      	beq.n	80000d6 <__do_global_dtors_aux+0x16>
+ 80000d0:	4804      	ldr	r0, [pc, #16]	; (80000e4 <__do_global_dtors_aux+0x24>)
+ 80000d2:	e000      	b.n	80000d6 <__do_global_dtors_aux+0x16>
+ 80000d4:	bf00      	nop
+ 80000d6:	2301      	movs	r3, #1
+ 80000d8:	7023      	strb	r3, [r4, #0]
+ 80000da:	bd10      	pop	{r4, pc}
+ 80000dc:	20000000 	.word	0x20000000
+ 80000e0:	00000000 	.word	0x00000000
+ 80000e4:	08000a1c 	.word	0x08000a1c
+
+080000e8 <frame_dummy>:
+ 80000e8:	4b04      	ldr	r3, [pc, #16]	; (80000fc <frame_dummy+0x14>)
+ 80000ea:	b510      	push	{r4, lr}
+ 80000ec:	2b00      	cmp	r3, #0
+ 80000ee:	d003      	beq.n	80000f8 <frame_dummy+0x10>
+ 80000f0:	4903      	ldr	r1, [pc, #12]	; (8000100 <frame_dummy+0x18>)
+ 80000f2:	4804      	ldr	r0, [pc, #16]	; (8000104 <frame_dummy+0x1c>)
+ 80000f4:	e000      	b.n	80000f8 <frame_dummy+0x10>
+ 80000f6:	bf00      	nop
+ 80000f8:	bd10      	pop	{r4, pc}
+ 80000fa:	46c0      	nop			; (mov r8, r8)
+ 80000fc:	00000000 	.word	0x00000000
+ 8000100:	20000004 	.word	0x20000004
+ 8000104:	08000a1c 	.word	0x08000a1c
+
+08000108 <__gnu_thumb1_case_sqi>:
+ 8000108:	b402      	push	{r1}
+ 800010a:	4671      	mov	r1, lr
+ 800010c:	0849      	lsrs	r1, r1, #1
+ 800010e:	0049      	lsls	r1, r1, #1
+ 8000110:	5609      	ldrsb	r1, [r1, r0]
+ 8000112:	0049      	lsls	r1, r1, #1
+ 8000114:	448e      	add	lr, r1
+ 8000116:	bc02      	pop	{r1}
+ 8000118:	4770      	bx	lr
+ 800011a:	46c0      	nop			; (mov r8, r8)
+
+0800011c <usb_cdc_echo_fuck>:
+			ms_wait(10);
+		}
+	}
+}
+
+void usb_cdc_echo_fuck(void) {
+ 800011c:	b510      	push	{r4, lr}
+	usb_cdc_init();
+
+	while(1) {
+		ms_wait(1000);
+ 800011e:	24fa      	movs	r4, #250	; 0xfa
+	usb_cdc_init();
+ 8000120:	f000 fb86 	bl	8000830 <usb_cdc_init>
+		ms_wait(1000);
+ 8000124:	00a4      	lsls	r4, r4, #2
+ 8000126:	0020      	movs	r0, r4
+ 8000128:	f000 f822 	bl	8000170 <ms_wait>
+		usb_cdc_send("Fuck", 4);
+ 800012c:	2104      	movs	r1, #4
+ 800012e:	4802      	ldr	r0, [pc, #8]	; (8000138 <usb_cdc_echo_fuck+0x1c>)
+ 8000130:	f000 fb8e 	bl	8000850 <usb_cdc_send>
+ 8000134:	e7f7      	b.n	8000126 <usb_cdc_echo_fuck+0xa>
+ 8000136:	46c0      	nop			; (mov r8, r8)
+ 8000138:	08000a34 	.word	0x08000a34
+
+0800013c <main>:
+	}
+
+}
+
+int main(void) {
+ 800013c:	b510      	push	{r4, lr}
+	sysclk_HSI48_init();
+ 800013e:	f000 f833 	bl	80001a8 <sysclk_HSI48_init>
+	RCC->AHBENR |= RCC_AHBENR_GPIOBEN;
+ 8000142:	2380      	movs	r3, #128	; 0x80
+ 8000144:	4a08      	ldr	r2, [pc, #32]	; (8000168 <main+0x2c>)
+ 8000146:	02db      	lsls	r3, r3, #11
+ 8000148:	6951      	ldr	r1, [r2, #20]
+ 800014a:	430b      	orrs	r3, r1
+	GPIOB->MODER &= ~GPIO_MODER_MODER1_Msk;
+ 800014c:	210c      	movs	r1, #12
+	RCC->AHBENR |= RCC_AHBENR_GPIOBEN;
+ 800014e:	6153      	str	r3, [r2, #20]
+	GPIOB->MODER &= ~GPIO_MODER_MODER1_Msk;
+ 8000150:	4b06      	ldr	r3, [pc, #24]	; (800016c <main+0x30>)
+ 8000152:	681a      	ldr	r2, [r3, #0]
+ 8000154:	438a      	bics	r2, r1
+ 8000156:	601a      	str	r2, [r3, #0]
+	GPIOB->MODER |= GPIO_MODE_OUTPUT_PP << GPIO_MODER_MODER1_Pos;
+ 8000158:	2204      	movs	r2, #4
+ 800015a:	6819      	ldr	r1, [r3, #0]
+ 800015c:	430a      	orrs	r2, r1
+ 800015e:	601a      	str	r2, [r3, #0]
+	usart_init();
+ 8000160:	f000 f84e 	bl	8000200 <usart_init>
+//	setbuf(stdout, NULL);
+
+//	usb_keyboard_shellgei();
+//	usb_mouse_star();
+//	usb_composite();
+	usb_cdc_echo_fuck();
+ 8000164:	f7ff ffda 	bl	800011c <usb_cdc_echo_fuck>
+ 8000168:	40021000 	.word	0x40021000
+ 800016c:	48000400 	.word	0x48000400
+
+08000170 <ms_wait>:
+#include "stm32f0xx.h"
+
+void ms_wait(unsigned int msec) {
+	SysTick->LOAD = 6000 - 1;
+ 8000170:	4b0b      	ldr	r3, [pc, #44]	; (80001a0 <ms_wait+0x30>)
+ 8000172:	4a0c      	ldr	r2, [pc, #48]	; (80001a4 <ms_wait+0x34>)
+void ms_wait(unsigned int msec) {
+ 8000174:	b510      	push	{r4, lr}
+	SysTick->LOAD = 6000 - 1;
+ 8000176:	605a      	str	r2, [r3, #4]
+	SysTick->VAL = 0;
+ 8000178:	2200      	movs	r2, #0
+	SysTick->CTRL |= SysTick_CTRL_ENABLE_Msk;
+ 800017a:	2101      	movs	r1, #1
+	SysTick->VAL = 0;
+ 800017c:	609a      	str	r2, [r3, #8]
+	SysTick->CTRL |= SysTick_CTRL_ENABLE_Msk;
+ 800017e:	681c      	ldr	r4, [r3, #0]
+ 8000180:	4321      	orrs	r1, r4
+ 8000182:	6019      	str	r1, [r3, #0]
+	for(int i = 0; i < msec; i++) {
+		while( !(SysTick->CTRL & SysTick_CTRL_COUNTFLAG_Msk) );
+ 8000184:	2180      	movs	r1, #128	; 0x80
+ 8000186:	0249      	lsls	r1, r1, #9
+	for(int i = 0; i < msec; i++) {
+ 8000188:	4282      	cmp	r2, r0
+ 800018a:	d104      	bne.n	8000196 <ms_wait+0x26>
+	}
+	SysTick->CTRL &= ~SysTick_CTRL_ENABLE_Msk;
+ 800018c:	2101      	movs	r1, #1
+ 800018e:	681a      	ldr	r2, [r3, #0]
+ 8000190:	438a      	bics	r2, r1
+ 8000192:	601a      	str	r2, [r3, #0]
+}
+ 8000194:	bd10      	pop	{r4, pc}
+		while( !(SysTick->CTRL & SysTick_CTRL_COUNTFLAG_Msk) );
+ 8000196:	681c      	ldr	r4, [r3, #0]
+ 8000198:	420c      	tst	r4, r1
+ 800019a:	d0fc      	beq.n	8000196 <ms_wait+0x26>
+	for(int i = 0; i < msec; i++) {
+ 800019c:	3201      	adds	r2, #1
+ 800019e:	e7f3      	b.n	8000188 <ms_wait+0x18>
+ 80001a0:	e000e010 	.word	0xe000e010
+ 80001a4:	0000176f 	.word	0x0000176f
+
+080001a8 <sysclk_HSI48_init>:
+
+void sysclk_HSI48_init(void) {
+	RCC->CR2 |= RCC_CR2_HSI48ON;
+ 80001a8:	2280      	movs	r2, #128	; 0x80
+ 80001aa:	4b0a      	ldr	r3, [pc, #40]	; (80001d4 <sysclk_HSI48_init+0x2c>)
+ 80001ac:	0252      	lsls	r2, r2, #9
+ 80001ae:	6b59      	ldr	r1, [r3, #52]	; 0x34
+ 80001b0:	430a      	orrs	r2, r1
+ 80001b2:	635a      	str	r2, [r3, #52]	; 0x34
+	while( !(RCC->CR2 & RCC_CR2_HSI48RDY) );
+ 80001b4:	2280      	movs	r2, #128	; 0x80
+ 80001b6:	0292      	lsls	r2, r2, #10
+ 80001b8:	6b59      	ldr	r1, [r3, #52]	; 0x34
+ 80001ba:	4211      	tst	r1, r2
+ 80001bc:	d0fc      	beq.n	80001b8 <sysclk_HSI48_init+0x10>
+	RCC->CFGR |= RCC_CFGR_SW_HSI48;
+ 80001be:	2203      	movs	r2, #3
+ 80001c0:	6859      	ldr	r1, [r3, #4]
+ 80001c2:	430a      	orrs	r2, r1
+	while( (RCC->CFGR & RCC_CFGR_SWS_Msk) != RCC_CFGR_SWS_HSI48 );
+ 80001c4:	210c      	movs	r1, #12
+	RCC->CFGR |= RCC_CFGR_SW_HSI48;
+ 80001c6:	605a      	str	r2, [r3, #4]
+	while( (RCC->CFGR & RCC_CFGR_SWS_Msk) != RCC_CFGR_SWS_HSI48 );
+ 80001c8:	685a      	ldr	r2, [r3, #4]
+ 80001ca:	400a      	ands	r2, r1
+ 80001cc:	2a0c      	cmp	r2, #12
+ 80001ce:	d1fb      	bne.n	80001c8 <sysclk_HSI48_init+0x20>
+}
+ 80001d0:	4770      	bx	lr
+ 80001d2:	46c0      	nop			; (mov r8, r8)
+ 80001d4:	40021000 	.word	0x40021000
+
+080001d8 <SystemInit>:
+                         before branch to main program. This call is made inside
+                         the "startup_stm32f0xx.s" file.
+                         User can setups the default system clock (System clock source, PLL Multiplier
+                         and Divider factors, AHB/APBx prescalers and Flash settings).
+   */
+}
+ 80001d8:	4770      	bx	lr
+	...
+
+080001dc <TIM2_IRQHandler>:
+	TIM2->ARR = 0xFFFF;
+	TIM2->CR1 |= TIM_CR1_CEN;
+}
+
+void TIM2_IRQHandler(void) {
+	if( TIM2->SR & TIM_SR_UIF ) {
+ 80001dc:	2380      	movs	r3, #128	; 0x80
+ 80001de:	2101      	movs	r1, #1
+ 80001e0:	05db      	lsls	r3, r3, #23
+ 80001e2:	691a      	ldr	r2, [r3, #16]
+ 80001e4:	420a      	tst	r2, r1
+ 80001e6:	d007      	beq.n	80001f8 <TIM2_IRQHandler+0x1c>
+		TIM2->SR &= ~TIM_SR_UIF;
+ 80001e8:	691a      	ldr	r2, [r3, #16]
+ 80001ea:	438a      	bics	r2, r1
+ 80001ec:	611a      	str	r2, [r3, #16]
+		GPIOB->ODR ^= 1 << 1;
+ 80001ee:	2302      	movs	r3, #2
+ 80001f0:	4a02      	ldr	r2, [pc, #8]	; (80001fc <TIM2_IRQHandler+0x20>)
+ 80001f2:	6951      	ldr	r1, [r2, #20]
+ 80001f4:	404b      	eors	r3, r1
+ 80001f6:	6153      	str	r3, [r2, #20]
+	}
+}
+ 80001f8:	4770      	bx	lr
+ 80001fa:	46c0      	nop			; (mov r8, r8)
+ 80001fc:	48000400 	.word	0x48000400
+
+08000200 <usart_init>:
+#include "stm32f0xx.h"
+
+void usart_init(void) {
+	RCC->APB2ENR |= RCC_APB2ENR_USART1EN;
+ 8000200:	2280      	movs	r2, #128	; 0x80
+ 8000202:	4b1d      	ldr	r3, [pc, #116]	; (8000278 <usart_init+0x78>)
+ 8000204:	01d2      	lsls	r2, r2, #7
+ 8000206:	6999      	ldr	r1, [r3, #24]
+ 8000208:	430a      	orrs	r2, r1
+ 800020a:	619a      	str	r2, [r3, #24]
+	RCC->AHBENR |= RCC_AHBENR_GPIOAEN;
+ 800020c:	2280      	movs	r2, #128	; 0x80
+ 800020e:	6959      	ldr	r1, [r3, #20]
+ 8000210:	0292      	lsls	r2, r2, #10
+ 8000212:	430a      	orrs	r2, r1
+ 8000214:	615a      	str	r2, [r3, #20]
+	GPIOA->MODER &= ~GPIO_MODER_MODER9_Msk;
+ 8000216:	2390      	movs	r3, #144	; 0x90
+ 8000218:	05db      	lsls	r3, r3, #23
+ 800021a:	681a      	ldr	r2, [r3, #0]
+ 800021c:	4917      	ldr	r1, [pc, #92]	; (800027c <usart_init+0x7c>)
+ 800021e:	400a      	ands	r2, r1
+ 8000220:	601a      	str	r2, [r3, #0]
+	GPIOA->MODER &= ~GPIO_MODER_MODER10_Msk;
+ 8000222:	681a      	ldr	r2, [r3, #0]
+ 8000224:	4916      	ldr	r1, [pc, #88]	; (8000280 <usart_init+0x80>)
+ 8000226:	400a      	ands	r2, r1
+ 8000228:	601a      	str	r2, [r3, #0]
+	GPIOA->MODER |= GPIO_MODE_AF_PP << GPIO_MODER_MODER9_Pos;
+ 800022a:	2280      	movs	r2, #128	; 0x80
+ 800022c:	6819      	ldr	r1, [r3, #0]
+ 800022e:	0312      	lsls	r2, r2, #12
+ 8000230:	430a      	orrs	r2, r1
+ 8000232:	601a      	str	r2, [r3, #0]
+	GPIOA->MODER |= GPIO_MODE_AF_PP << GPIO_MODER_MODER10_Pos;
+ 8000234:	2280      	movs	r2, #128	; 0x80
+ 8000236:	6819      	ldr	r1, [r3, #0]
+ 8000238:	0392      	lsls	r2, r2, #14
+ 800023a:	430a      	orrs	r2, r1
+	GPIOA->AFR[1] &= ~GPIO_AFRH_AFRH1_Msk;
+ 800023c:	21f0      	movs	r1, #240	; 0xf0
+	GPIOA->MODER |= GPIO_MODE_AF_PP << GPIO_MODER_MODER10_Pos;
+ 800023e:	601a      	str	r2, [r3, #0]
+	GPIOA->AFR[1] &= ~GPIO_AFRH_AFRH1_Msk;
+ 8000240:	6a5a      	ldr	r2, [r3, #36]	; 0x24
+ 8000242:	438a      	bics	r2, r1
+ 8000244:	625a      	str	r2, [r3, #36]	; 0x24
+	GPIOA->AFR[1] &= ~GPIO_AFRH_AFRH2_Msk;
+ 8000246:	6a5a      	ldr	r2, [r3, #36]	; 0x24
+ 8000248:	490e      	ldr	r1, [pc, #56]	; (8000284 <usart_init+0x84>)
+ 800024a:	400a      	ands	r2, r1
+ 800024c:	625a      	str	r2, [r3, #36]	; 0x24
+	GPIOA->AFR[1] |= GPIO_AF1_USART1 << GPIO_AFRH_AFRH1_Pos;
+ 800024e:	2210      	movs	r2, #16
+ 8000250:	6a59      	ldr	r1, [r3, #36]	; 0x24
+ 8000252:	430a      	orrs	r2, r1
+ 8000254:	625a      	str	r2, [r3, #36]	; 0x24
+	GPIOA->AFR[1] |= GPIO_AF1_USART1 << GPIO_AFRH_AFRH2_Pos;
+ 8000256:	2280      	movs	r2, #128	; 0x80
+ 8000258:	6a59      	ldr	r1, [r3, #36]	; 0x24
+ 800025a:	0052      	lsls	r2, r2, #1
+ 800025c:	430a      	orrs	r2, r1
+ 800025e:	625a      	str	r2, [r3, #36]	; 0x24
+
+	USART1->CR1 |= USART_CR1_TE | USART_CR1_RE;
+ 8000260:	220c      	movs	r2, #12
+ 8000262:	4b09      	ldr	r3, [pc, #36]	; (8000288 <usart_init+0x88>)
+ 8000264:	6819      	ldr	r1, [r3, #0]
+ 8000266:	430a      	orrs	r2, r1
+ 8000268:	601a      	str	r2, [r3, #0]
+//	USART1->BRR = 48e6 / 115200;
+	USART1->BRR = 48e6 / 230400;
+ 800026a:	22d0      	movs	r2, #208	; 0xd0
+ 800026c:	60da      	str	r2, [r3, #12]
+	USART1->CR1 |= USART_CR1_UE;
+ 800026e:	6819      	ldr	r1, [r3, #0]
+ 8000270:	3acf      	subs	r2, #207	; 0xcf
+ 8000272:	430a      	orrs	r2, r1
+ 8000274:	601a      	str	r2, [r3, #0]
+}
+ 8000276:	4770      	bx	lr
+ 8000278:	40021000 	.word	0x40021000
+ 800027c:	fff3ffff 	.word	0xfff3ffff
+ 8000280:	ffcfffff 	.word	0xffcfffff
+ 8000284:	fffff0ff 	.word	0xfffff0ff
+ 8000288:	40013800 	.word	0x40013800
+
+0800028c <_Z8usb_init12USB_InitType>:
+
+USBEndpointInfo ep_info[4];
+static USB_EP0Info ep0_data;
+
+// Init global Funcs {{{
+void usb_init(USB_InitType init) {
+ 800028c:	b084      	sub	sp, #16
+ 800028e:	b507      	push	{r0, r1, r2, lr}
+ 8000290:	9307      	str	r3, [sp, #28]
+	RCC->APB1ENR |= RCC_APB1ENR_USBEN;
+ 8000292:	2380      	movs	r3, #128	; 0x80
+void usb_init(USB_InitType init) {
+ 8000294:	9206      	str	r2, [sp, #24]
+	RCC->APB1ENR |= RCC_APB1ENR_USBEN;
+ 8000296:	4a1a      	ldr	r2, [pc, #104]	; (8000300 <_Z8usb_init12USB_InitType+0x74>)
+void usb_init(USB_InitType init) {
+ 8000298:	9004      	str	r0, [sp, #16]
+ 800029a:	9105      	str	r1, [sp, #20]
+	RCC->APB1ENR |= RCC_APB1ENR_USBEN;
+ 800029c:	69d1      	ldr	r1, [r2, #28]
+ 800029e:	041b      	lsls	r3, r3, #16
+ 80002a0:	430b      	orrs	r3, r1
+
+	USB->CNTR &= ~USB_CNTR_PDWN;
+ 80002a2:	2102      	movs	r1, #2
+	RCC->APB1ENR |= RCC_APB1ENR_USBEN;
+ 80002a4:	61d3      	str	r3, [r2, #28]
+	USB->CNTR &= ~USB_CNTR_PDWN;
+ 80002a6:	4b17      	ldr	r3, [pc, #92]	; (8000304 <_Z8usb_init12USB_InitType+0x78>)
+ 80002a8:	8fda      	ldrh	r2, [r3, #62]	; 0x3e
+ 80002aa:	438a      	bics	r2, r1
+ 80002ac:	87da      	strh	r2, [r3, #62]	; 0x3e
+	for(volatile int i=0; i<100; i++); // wait for voltage to be stable
+ 80002ae:	2200      	movs	r2, #0
+ 80002b0:	9201      	str	r2, [sp, #4]
+ 80002b2:	9a01      	ldr	r2, [sp, #4]
+ 80002b4:	2a63      	cmp	r2, #99	; 0x63
+ 80002b6:	dc02      	bgt.n	80002be <_Z8usb_init12USB_InitType+0x32>
+ 80002b8:	9a01      	ldr	r2, [sp, #4]
+ 80002ba:	3201      	adds	r2, #1
+ 80002bc:	e7f8      	b.n	80002b0 <_Z8usb_init12USB_InitType+0x24>
+	USB->CNTR &= ~USB_CNTR_FRES;
+ 80002be:	2101      	movs	r1, #1
+	USB->BCDR |= USB_BCDR_DPPU; // pull-up DP so as to notify the connection to the host
+ 80002c0:	2080      	movs	r0, #128	; 0x80
+	USB->CNTR &= ~USB_CNTR_FRES;
+ 80002c2:	8fda      	ldrh	r2, [r3, #62]	; 0x3e
+	USB->BCDR |= USB_BCDR_DPPU; // pull-up DP so as to notify the connection to the host
+ 80002c4:	0200      	lsls	r0, r0, #8
+	USB->CNTR &= ~USB_CNTR_FRES;
+ 80002c6:	438a      	bics	r2, r1
+	USB->BCDR |= USB_BCDR_DPPU; // pull-up DP so as to notify the connection to the host
+ 80002c8:	490f      	ldr	r1, [pc, #60]	; (8000308 <_Z8usb_init12USB_InitType+0x7c>)
+	USB->CNTR &= ~USB_CNTR_FRES;
+ 80002ca:	87da      	strh	r2, [r3, #62]	; 0x3e
+	USB->BCDR |= USB_BCDR_DPPU; // pull-up DP so as to notify the connection to the host
+ 80002cc:	880a      	ldrh	r2, [r1, #0]
+ 80002ce:	4302      	orrs	r2, r0
+ 80002d0:	800a      	strh	r2, [r1, #0]
+
+	USB->CNTR = USB_CNTR_RESETM; // enable reset interrupt
+ 80002d2:	2280      	movs	r2, #128	; 0x80
+ */
+__STATIC_INLINE void __NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
+{
+  if ((int32_t)(IRQn) >= 0)
+  {
+    NVIC->IP[_IP_IDX(IRQn)]  = ((uint32_t)(NVIC->IP[_IP_IDX(IRQn)]  & ~(0xFFUL << _BIT_SHIFT(IRQn))) |
+ 80002d4:	21c7      	movs	r1, #199	; 0xc7
+ 80002d6:	00d2      	lsls	r2, r2, #3
+ 80002d8:	87da      	strh	r2, [r3, #62]	; 0x3e
+ 80002da:	4a0c      	ldr	r2, [pc, #48]	; (800030c <_Z8usb_init12USB_InitType+0x80>)
+ 80002dc:	0089      	lsls	r1, r1, #2
+ 80002de:	5853      	ldr	r3, [r2, r1]
+	NVIC_SetPriority(USB_IRQn, 0); // Highest Priority
+	NVIC_EnableIRQ(USB_IRQn);
+
+	::init = init;
+ 80002e0:	480b      	ldr	r0, [pc, #44]	; (8000310 <_Z8usb_init12USB_InitType+0x84>)
+ 80002e2:	021b      	lsls	r3, r3, #8
+ 80002e4:	0a1b      	lsrs	r3, r3, #8
+ 80002e6:	5053      	str	r3, [r2, r1]
+    NVIC->ISER[0U] = (uint32_t)(1UL << (((uint32_t)IRQn) & 0x1FUL));
+ 80002e8:	2380      	movs	r3, #128	; 0x80
+ 80002ea:	061b      	lsls	r3, r3, #24
+ 80002ec:	6013      	str	r3, [r2, #0]
+ 80002ee:	a904      	add	r1, sp, #16
+ 80002f0:	2258      	movs	r2, #88	; 0x58
+ 80002f2:	f000 fb6f 	bl	80009d4 <memcpy>
+}
+ 80002f6:	b003      	add	sp, #12
+ 80002f8:	bc08      	pop	{r3}
+ 80002fa:	b004      	add	sp, #16
+ 80002fc:	4718      	bx	r3
+ 80002fe:	46c0      	nop			; (mov r8, r8)
+ 8000300:	40021000 	.word	0x40021000
+ 8000304:	40005c02 	.word	0x40005c02
+ 8000308:	40005c58 	.word	0x40005c58
+ 800030c:	e000e100 	.word	0xe000e100
+ 8000310:	20000028 	.word	0x20000028
+
+08000314 <_Z11usb_ep_senditt>:
+// Fundamental xfer/recv Funcs {{{
+static void usb_ep_set_status(int endp, uint16_t status, uint16_t mask) {
+	const auto reg = USB_EPnR(endp);
+	USB_EPnR(endp) = (reg & (USB_EPREG_MASK | mask)) ^ status;
+}
+void usb_ep_send(int ep_num, uint16_t addr, uint16_t size) {
+ 8000314:	b510      	push	{r4, lr}
+	ep_info[ep_num].pb_ptr->addr_tx = addr;
+ 8000316:	2414      	movs	r4, #20
+ 8000318:	4344      	muls	r4, r0
+ 800031a:	4b07      	ldr	r3, [pc, #28]	; (8000338 <_Z11usb_ep_senditt+0x24>)
+	const auto reg = USB_EPnR(endp);
+ 800031c:	0080      	lsls	r0, r0, #2
+	ep_info[ep_num].pb_ptr->addr_tx = addr;
+ 800031e:	191b      	adds	r3, r3, r4
+ 8000320:	685b      	ldr	r3, [r3, #4]
+	ep_info[ep_num].pb_ptr->count_tx = size;
+ 8000322:	805a      	strh	r2, [r3, #2]
+	ep_info[ep_num].pb_ptr->addr_tx = addr;
+ 8000324:	8019      	strh	r1, [r3, #0]
+	const auto reg = USB_EPnR(endp);
+ 8000326:	4b05      	ldr	r3, [pc, #20]	; (800033c <_Z11usb_ep_senditt+0x28>)
+	USB_EPnR(endp) = (reg & (USB_EPREG_MASK | mask)) ^ status;
+ 8000328:	4a05      	ldr	r2, [pc, #20]	; (8000340 <_Z11usb_ep_senditt+0x2c>)
+	const auto reg = USB_EPnR(endp);
+ 800032a:	18c0      	adds	r0, r0, r3
+ 800032c:	8803      	ldrh	r3, [r0, #0]
+	USB_EPnR(endp) = (reg & (USB_EPREG_MASK | mask)) ^ status;
+ 800032e:	401a      	ands	r2, r3
+ 8000330:	2330      	movs	r3, #48	; 0x30
+ 8000332:	4053      	eors	r3, r2
+ 8000334:	8003      	strh	r3, [r0, #0]
+	usb_ep_set_status(ep_num, USB_EP_TX_VALID, USB_EPTX_STAT);
+}
+ 8000336:	bd10      	pop	{r4, pc}
+ 8000338:	20000090 	.word	0x20000090
+ 800033c:	40005c00 	.word	0x40005c00
+ 8000340:	ffff8fbf 	.word	0xffff8fbf
+
+08000344 <_Z14usb_ep_receiveitt>:
+void usb_ep_receive(int ep_num, uint16_t addr, uint16_t size) {
+ 8000344:	b510      	push	{r4, lr}
+	if( ep_info[ep_num].pb_ptr->addr_rx == 0 ) {
+ 8000346:	2414      	movs	r4, #20
+ 8000348:	4344      	muls	r4, r0
+ 800034a:	4b0e      	ldr	r3, [pc, #56]	; (8000384 <_Z14usb_ep_receiveitt+0x40>)
+ 800034c:	191b      	adds	r3, r3, r4
+ 800034e:	685b      	ldr	r3, [r3, #4]
+ 8000350:	889c      	ldrh	r4, [r3, #4]
+ 8000352:	2c00      	cmp	r4, #0
+ 8000354:	d108      	bne.n	8000368 <_Z14usb_ep_receiveitt+0x24>
+		ep_info[ep_num].pb_ptr->addr_rx = addr;
+ 8000356:	8099      	strh	r1, [r3, #4]
+		if( size > 62 ) {
+ 8000358:	2a3e      	cmp	r2, #62	; 0x3e
+ 800035a:	d910      	bls.n	800037e <_Z14usb_ep_receiveitt+0x3a>
+			ep_info[ep_num].pb_ptr->count_rx = ((size / 32) - 1) << 10;
+ 800035c:	0952      	lsrs	r2, r2, #5
+ 800035e:	3a01      	subs	r2, #1
+			ep_info[ep_num].pb_ptr->count_rx |= 1 << 15;
+ 8000360:	4909      	ldr	r1, [pc, #36]	; (8000388 <_Z14usb_ep_receiveitt+0x44>)
+			ep_info[ep_num].pb_ptr->count_rx = ((size / 32) - 1) << 10;
+ 8000362:	0292      	lsls	r2, r2, #10
+			ep_info[ep_num].pb_ptr->count_rx |= 1 << 15;
+ 8000364:	430a      	orrs	r2, r1
+		}else{
+			ep_info[ep_num].pb_ptr->count_rx = size << 10;
+ 8000366:	80da      	strh	r2, [r3, #6]
+	const auto reg = USB_EPnR(endp);
+ 8000368:	4b08      	ldr	r3, [pc, #32]	; (800038c <_Z14usb_ep_receiveitt+0x48>)
+ 800036a:	0080      	lsls	r0, r0, #2
+ 800036c:	18c0      	adds	r0, r0, r3
+ 800036e:	8803      	ldrh	r3, [r0, #0]
+	USB_EPnR(endp) = (reg & (USB_EPREG_MASK | mask)) ^ status;
+ 8000370:	4a07      	ldr	r2, [pc, #28]	; (8000390 <_Z14usb_ep_receiveitt+0x4c>)
+ 8000372:	401a      	ands	r2, r3
+ 8000374:	23c0      	movs	r3, #192	; 0xc0
+ 8000376:	019b      	lsls	r3, r3, #6
+ 8000378:	4053      	eors	r3, r2
+ 800037a:	8003      	strh	r3, [r0, #0]
+		}
+	}
+	usb_ep_set_status(ep_num, USB_EP_RX_VALID, USB_EPRX_STAT);
+}
+ 800037c:	bd10      	pop	{r4, pc}
+			ep_info[ep_num].pb_ptr->count_rx = size << 10;
+ 800037e:	0292      	lsls	r2, r2, #10
+ 8000380:	e7f1      	b.n	8000366 <_Z14usb_ep_receiveitt+0x22>
+ 8000382:	46c0      	nop			; (mov r8, r8)
+ 8000384:	20000090 	.word	0x20000090
+ 8000388:	ffff8000 	.word	0xffff8000
+ 800038c:	40005c00 	.word	0x40005c00
+ 8000390:	ffffbf8f 	.word	0xffffbf8f
+
+08000394 <_ZL25usb_ep0_prepare_for_setupv>:
+		printf("bParityType: %d\n", line_coding_info[5]);
+		printf("bDataBits: %d\n", line_coding_info[6]);
+	}
+}
+
+static void usb_ep0_prepare_for_setup() {
+ 8000394:	b510      	push	{r4, lr}
+	if( pma_allocation_info.offsets.setup_packet == 0 ) {
+ 8000396:	4c07      	ldr	r4, [pc, #28]	; (80003b4 <_ZL25usb_ep0_prepare_for_setupv+0x20>)
+ 8000398:	8823      	ldrh	r3, [r4, #0]
+ 800039a:	2b00      	cmp	r3, #0
+ 800039c:	d103      	bne.n	80003a6 <_ZL25usb_ep0_prepare_for_setupv+0x12>
+		pma_allocation_info.offsets.setup_packet = Utils::alloc(64);
+ 800039e:	2040      	movs	r0, #64	; 0x40
+ 80003a0:	f000 fa70 	bl	8000884 <_ZN5Utils5allocEi>
+ 80003a4:	8020      	strh	r0, [r4, #0]
+	}
+	usb_ep_receive(0, pma_allocation_info.offsets.setup_packet, sizeof(USBSetupPacket));
+ 80003a6:	8821      	ldrh	r1, [r4, #0]
+ 80003a8:	2208      	movs	r2, #8
+ 80003aa:	2000      	movs	r0, #0
+ 80003ac:	f7ff ffca 	bl	8000344 <_Z14usb_ep_receiveitt>
+}
+ 80003b0:	bd10      	pop	{r4, pc}
+ 80003b2:	46c0      	nop			; (mov r8, r8)
+ 80003b4:	200000e0 	.word	0x200000e0
+
+080003b8 <_ZL34usb_ep0_handle_current_transactionv>:
+	}
+	if( ep0_data.fsm == EP_fsm::STATUS_IN ) {
+		usb_ep_send(0, ep_info[0].xfer_info.ptr, 0);
+	}
+}
+static void usb_ep0_handle_current_transaction() {
+ 80003b8:	b5f0      	push	{r4, r5, r6, r7, lr}
+	const auto now_state = ep0_data.fsm;
+ 80003ba:	4d71      	ldr	r5, [pc, #452]	; (8000580 <_ZL34usb_ep0_handle_current_transactionv+0x1c8>)
+static void usb_ep0_handle_current_transaction() {
+ 80003bc:	b085      	sub	sp, #20
+	switch(now_state) {
+ 80003be:	682b      	ldr	r3, [r5, #0]
+ 80003c0:	2b01      	cmp	r3, #1
+ 80003c2:	d007      	beq.n	80003d4 <_ZL34usb_ep0_handle_current_transactionv+0x1c>
+ 80003c4:	2b00      	cmp	r3, #0
+ 80003c6:	dd03      	ble.n	80003d0 <_ZL34usb_ep0_handle_current_transactionv+0x18>
+ 80003c8:	3b05      	subs	r3, #5
+ 80003ca:	2b01      	cmp	r3, #1
+ 80003cc:	d800      	bhi.n	80003d0 <_ZL34usb_ep0_handle_current_transactionv+0x18>
+ 80003ce:	e0c3      	b.n	8000558 <_ZL34usb_ep0_handle_current_transactionv+0x1a0>
+			usb_ep0_handle_status();
+			break;
+		default:
+			break;
+	}
+}
+ 80003d0:	b005      	add	sp, #20
+ 80003d2:	bdf0      	pop	{r4, r5, r6, r7, pc}
+	if( last_setup.bRequest == GET_DESCRIPTOR ) {
+ 80003d4:	796b      	ldrb	r3, [r5, #5]
+ 80003d6:	2b06      	cmp	r3, #6
+ 80003d8:	d11e      	bne.n	8000418 <_ZL34usb_ep0_handle_current_transactionv+0x60>
+		search_and_set_descriptor(last_setup.wValue);
+ 80003da:	88eb      	ldrh	r3, [r5, #6]
+ 80003dc:	4c69      	ldr	r4, [pc, #420]	; (8000584 <_ZL34usb_ep0_handle_current_transactionv+0x1cc>)
+	switch( desc_type ) {
+ 80003de:	0a1a      	lsrs	r2, r3, #8
+ 80003e0:	2a02      	cmp	r2, #2
+ 80003e2:	d100      	bne.n	80003e6 <_ZL34usb_ep0_handle_current_transactionv+0x2e>
+ 80003e4:	e070      	b.n	80004c8 <_ZL34usb_ep0_handle_current_transactionv+0x110>
+ 80003e6:	d836      	bhi.n	8000456 <_ZL34usb_ep0_handle_current_transactionv+0x9e>
+ 80003e8:	2a01      	cmp	r2, #1
+ 80003ea:	d058      	beq.n	800049e <_ZL34usb_ep0_handle_current_transactionv+0xe6>
+	xfer_info.completed_length = 0;
+ 80003ec:	2300      	movs	r3, #0
+ 80003ee:	8163      	strh	r3, [r4, #10]
+		usb_ep_send(0, xfer_info.ptr, std::min({last_setup.wLength, ep.packet_size, xfer_info.whole_length}));
+ 80003f0:	896e      	ldrh	r6, [r5, #10]
+ 80003f2:	8820      	ldrh	r0, [r4, #0]
+ 80003f4:	ab02      	add	r3, sp, #8
+ 80003f6:	8921      	ldrh	r1, [r4, #8]
+ 80003f8:	801e      	strh	r6, [r3, #0]
+ 80003fa:	8058      	strh	r0, [r3, #2]
+ 80003fc:	89a2      	ldrh	r2, [r4, #12]
+		  _Compare __comp)
+    {
+      if (__first == __last)
+	return __first;
+      _ForwardIterator __result = __first;
+      while (++__first != __last)
+ 80003fe:	3302      	adds	r3, #2
+ 8000400:	805a      	strh	r2, [r3, #2]
+	if (__comp(__first, __result))
+ 8000402:	4286      	cmp	r6, r0
+ 8000404:	d800      	bhi.n	8000408 <_ZL34usb_ep0_handle_current_transactionv+0x50>
+      _ForwardIterator __result = __first;
+ 8000406:	ab02      	add	r3, sp, #8
+	if (__comp(__first, __result))
+ 8000408:	8818      	ldrh	r0, [r3, #0]
+ 800040a:	4290      	cmp	r0, r2
+ 800040c:	d900      	bls.n	8000410 <_ZL34usb_ep0_handle_current_transactionv+0x58>
+      while (++__first != __last)
+ 800040e:	ab03      	add	r3, sp, #12
+ 8000410:	881a      	ldrh	r2, [r3, #0]
+ 8000412:	2000      	movs	r0, #0
+ 8000414:	f7ff ff7e 	bl	8000314 <_Z11usb_ep_senditt>
+	if( last_setup.bRequest == GET_CONFIGURATION ) {
+ 8000418:	796b      	ldrb	r3, [r5, #5]
+ 800041a:	2b08      	cmp	r3, #8
+ 800041c:	d114      	bne.n	8000448 <_ZL34usb_ep0_handle_current_transactionv+0x90>
+		if( state_addr == 0 ) {
+ 800041e:	4c5a      	ldr	r4, [pc, #360]	; (8000588 <_ZL34usb_ep0_handle_current_transactionv+0x1d0>)
+ 8000420:	8823      	ldrh	r3, [r4, #0]
+ 8000422:	2b00      	cmp	r3, #0
+ 8000424:	d103      	bne.n	800042e <_ZL34usb_ep0_handle_current_transactionv+0x76>
+			state_addr = Utils::alloc(1);
+ 8000426:	2001      	movs	r0, #1
+ 8000428:	f000 fa2c 	bl	8000884 <_ZN5Utils5allocEi>
+ 800042c:	8020      	strh	r0, [r4, #0]
+		Utils::pma_in(state_addr, &device_state, 1);
+ 800042e:	8820      	ldrh	r0, [r4, #0]
+ 8000430:	2201      	movs	r2, #1
+ 8000432:	4956      	ldr	r1, [pc, #344]	; (800058c <_ZL34usb_ep0_handle_current_transactionv+0x1d4>)
+ 8000434:	f000 fa4e 	bl	80008d4 <_ZN5Utils6pma_inEjPKvi>
+		xfer_info.whole_length = 1;
+ 8000438:	2201      	movs	r2, #1
+		xfer_info.ptr = state_addr;
+ 800043a:	4b52      	ldr	r3, [pc, #328]	; (8000584 <_ZL34usb_ep0_handle_current_transactionv+0x1cc>)
+ 800043c:	8821      	ldrh	r1, [r4, #0]
+		xfer_info.whole_length = 1;
+ 800043e:	819a      	strh	r2, [r3, #12]
+		xfer_info.ptr = state_addr;
+ 8000440:	8119      	strh	r1, [r3, #8]
+		usb_ep_send(0, xfer_info.ptr, xfer_info.whole_length);
+ 8000442:	2000      	movs	r0, #0
+ 8000444:	f7ff ff66 	bl	8000314 <_Z11usb_ep_senditt>
+	if( last_setup.bRequest == SET_CONFIGURATION ) {
+ 8000448:	796b      	ldrb	r3, [r5, #5]
+ 800044a:	2b09      	cmp	r3, #9
+ 800044c:	d173      	bne.n	8000536 <_ZL34usb_ep0_handle_current_transactionv+0x17e>
+		device_state = last_setup.wValue;
+ 800044e:	88ea      	ldrh	r2, [r5, #6]
+ 8000450:	4b4e      	ldr	r3, [pc, #312]	; (800058c <_ZL34usb_ep0_handle_current_transactionv+0x1d4>)
+ 8000452:	801a      	strh	r2, [r3, #0]
+ 8000454:	e7bc      	b.n	80003d0 <_ZL34usb_ep0_handle_current_transactionv+0x18>
+	switch( desc_type ) {
+ 8000456:	2a03      	cmp	r2, #3
+ 8000458:	d04b      	beq.n	80004f2 <_ZL34usb_ep0_handle_current_transactionv+0x13a>
+ 800045a:	2a22      	cmp	r2, #34	; 0x22
+ 800045c:	d1c6      	bne.n	80003ec <_ZL34usb_ep0_handle_current_transactionv+0x34>
+		const auto len = init.dep.hid_report_desc_length[index];
+ 800045e:	892e      	ldrh	r6, [r5, #8]
+ 8000460:	4b4b      	ldr	r3, [pc, #300]	; (8000590 <_ZL34usb_ep0_handle_current_transactionv+0x1d8>)
+		if( offsets.report_desc[index] == 0 ) {
+ 8000462:	4a4c      	ldr	r2, [pc, #304]	; (8000594 <_ZL34usb_ep0_handle_current_transactionv+0x1dc>)
+		const auto len = init.dep.hid_report_desc_length[index];
+ 8000464:	199b      	adds	r3, r3, r6
+ 8000466:	7c1f      	ldrb	r7, [r3, #16]
+		if( offsets.report_desc[index] == 0 ) {
+ 8000468:	1d33      	adds	r3, r6, #4
+ 800046a:	005b      	lsls	r3, r3, #1
+ 800046c:	18d3      	adds	r3, r2, r3
+ 800046e:	9300      	str	r3, [sp, #0]
+ 8000470:	88db      	ldrh	r3, [r3, #6]
+ 8000472:	2b00      	cmp	r3, #0
+ 8000474:	d10b      	bne.n	800048e <_ZL34usb_ep0_handle_current_transactionv+0xd6>
+			offsets.report_desc[index] = Utils::alloc(len);
+ 8000476:	0038      	movs	r0, r7
+ 8000478:	f000 fa04 	bl	8000884 <_ZN5Utils5allocEi>
+ 800047c:	9b00      	ldr	r3, [sp, #0]
+			Utils::pma_in(offsets.report_desc[index], init.dep.hid_report_desc[index], len);
+ 800047e:	4944      	ldr	r1, [pc, #272]	; (8000590 <_ZL34usb_ep0_handle_current_transactionv+0x1d8>)
+			offsets.report_desc[index] = Utils::alloc(len);
+ 8000480:	80d8      	strh	r0, [r3, #6]
+			Utils::pma_in(offsets.report_desc[index], init.dep.hid_report_desc[index], len);
+ 8000482:	1cb3      	adds	r3, r6, #2
+ 8000484:	009b      	lsls	r3, r3, #2
+ 8000486:	003a      	movs	r2, r7
+ 8000488:	5859      	ldr	r1, [r3, r1]
+ 800048a:	f000 fa23 	bl	80008d4 <_ZN5Utils6pma_inEjPKvi>
+		xfer_info.ptr = offsets.report_desc[index];
+ 800048e:	4b41      	ldr	r3, [pc, #260]	; (8000594 <_ZL34usb_ep0_handle_current_transactionv+0x1dc>)
+ 8000490:	3604      	adds	r6, #4
+ 8000492:	0076      	lsls	r6, r6, #1
+ 8000494:	199e      	adds	r6, r3, r6
+ 8000496:	88f3      	ldrh	r3, [r6, #6]
+		xfer_info.whole_length = len;
+ 8000498:	81a7      	strh	r7, [r4, #12]
+		xfer_info.ptr = offsets.report_desc[index];
+ 800049a:	8123      	strh	r3, [r4, #8]
+ 800049c:	e7a6      	b.n	80003ec <_ZL34usb_ep0_handle_current_transactionv+0x34>
+		const auto len = init.dep.dev_desc->bLength;
+ 800049e:	4f3c      	ldr	r7, [pc, #240]	; (8000590 <_ZL34usb_ep0_handle_current_transactionv+0x1d8>)
+		if( offsets.device_desc == 0 ) {
+ 80004a0:	4e3c      	ldr	r6, [pc, #240]	; (8000594 <_ZL34usb_ep0_handle_current_transactionv+0x1dc>)
+		const auto len = init.dep.dev_desc->bLength;
+ 80004a2:	683b      	ldr	r3, [r7, #0]
+ 80004a4:	781b      	ldrb	r3, [r3, #0]
+ 80004a6:	9300      	str	r3, [sp, #0]
+		if( offsets.device_desc == 0 ) {
+ 80004a8:	8873      	ldrh	r3, [r6, #2]
+ 80004aa:	2b00      	cmp	r3, #0
+ 80004ac:	d107      	bne.n	80004be <_ZL34usb_ep0_handle_current_transactionv+0x106>
+			offsets.device_desc = Utils::alloc(len);
+ 80004ae:	9800      	ldr	r0, [sp, #0]
+ 80004b0:	f000 f9e8 	bl	8000884 <_ZN5Utils5allocEi>
+			Utils::pma_in(offsets.device_desc, init.dep.dev_desc, len);
+ 80004b4:	9a00      	ldr	r2, [sp, #0]
+			offsets.device_desc = Utils::alloc(len);
+ 80004b6:	8070      	strh	r0, [r6, #2]
+			Utils::pma_in(offsets.device_desc, init.dep.dev_desc, len);
+ 80004b8:	6839      	ldr	r1, [r7, #0]
+ 80004ba:	f000 fa0b 	bl	80008d4 <_ZN5Utils6pma_inEjPKvi>
+		xfer_info.ptr = offsets.device_desc;
+ 80004be:	8873      	ldrh	r3, [r6, #2]
+		xfer_info.ptr = offsets.config_desc;
+ 80004c0:	8123      	strh	r3, [r4, #8]
+		xfer_info.whole_length = len;
+ 80004c2:	9b00      	ldr	r3, [sp, #0]
+ 80004c4:	81a3      	strh	r3, [r4, #12]
+ 80004c6:	e791      	b.n	80003ec <_ZL34usb_ep0_handle_current_transactionv+0x34>
+		const auto len = init.dep.conf_desc[2] | (init.dep.conf_desc[3] << 8);
+ 80004c8:	4f31      	ldr	r7, [pc, #196]	; (8000590 <_ZL34usb_ep0_handle_current_transactionv+0x1d8>)
+		if( offsets.config_desc == 0 ) {
+ 80004ca:	4e32      	ldr	r6, [pc, #200]	; (8000594 <_ZL34usb_ep0_handle_current_transactionv+0x1dc>)
+ 80004cc:	687b      	ldr	r3, [r7, #4]
+ 80004ce:	789a      	ldrb	r2, [r3, #2]
+ 80004d0:	78db      	ldrb	r3, [r3, #3]
+ 80004d2:	021b      	lsls	r3, r3, #8
+ 80004d4:	4313      	orrs	r3, r2
+ 80004d6:	9300      	str	r3, [sp, #0]
+ 80004d8:	88b3      	ldrh	r3, [r6, #4]
+ 80004da:	2b00      	cmp	r3, #0
+ 80004dc:	d107      	bne.n	80004ee <_ZL34usb_ep0_handle_current_transactionv+0x136>
+			offsets.config_desc = Utils::alloc(len);
+ 80004de:	9800      	ldr	r0, [sp, #0]
+ 80004e0:	f000 f9d0 	bl	8000884 <_ZN5Utils5allocEi>
+			Utils::pma_in(offsets.config_desc, init.dep.conf_desc, len);
+ 80004e4:	9a00      	ldr	r2, [sp, #0]
+			offsets.config_desc = Utils::alloc(len);
+ 80004e6:	80b0      	strh	r0, [r6, #4]
+			Utils::pma_in(offsets.config_desc, init.dep.conf_desc, len);
+ 80004e8:	6879      	ldr	r1, [r7, #4]
+ 80004ea:	f000 f9f3 	bl	80008d4 <_ZN5Utils6pma_inEjPKvi>
+		xfer_info.ptr = offsets.config_desc;
+ 80004ee:	88b3      	ldrh	r3, [r6, #4]
+ 80004f0:	e7e6      	b.n	80004c0 <_ZL34usb_ep0_handle_current_transactionv+0x108>
+		const auto len = string_desc[desc_no].bLength;
+ 80004f2:	212a      	movs	r1, #42	; 0x2a
+ 80004f4:	b2db      	uxtb	r3, r3
+ 80004f6:	4359      	muls	r1, r3
+ 80004f8:	4a27      	ldr	r2, [pc, #156]	; (8000598 <_ZL34usb_ep0_handle_current_transactionv+0x1e0>)
+		if( offsets.string_desc[desc_no] == 0 ) {
+ 80004fa:	005b      	lsls	r3, r3, #1
+ 80004fc:	9301      	str	r3, [sp, #4]
+		const auto len = string_desc[desc_no].bLength;
+ 80004fe:	5c8e      	ldrb	r6, [r1, r2]
+		if( offsets.string_desc[desc_no] == 0 ) {
+ 8000500:	4b24      	ldr	r3, [pc, #144]	; (8000594 <_ZL34usb_ep0_handle_current_transactionv+0x1dc>)
+ 8000502:	9a01      	ldr	r2, [sp, #4]
+		const auto len = string_desc[desc_no].bLength;
+ 8000504:	9100      	str	r1, [sp, #0]
+		if( offsets.string_desc[desc_no] == 0 ) {
+ 8000506:	189f      	adds	r7, r3, r2
+ 8000508:	88fb      	ldrh	r3, [r7, #6]
+ 800050a:	2b00      	cmp	r3, #0
+ 800050c:	d10b      	bne.n	8000526 <_ZL34usb_ep0_handle_current_transactionv+0x16e>
+			offsets.string_desc[desc_no] = Utils::alloc(len);
+ 800050e:	0030      	movs	r0, r6
+ 8000510:	f000 f9b8 	bl	8000884 <_ZN5Utils5allocEi>
+			Utils::pma_in(offsets.string_desc[desc_no], &string_desc[desc_no], len);
+ 8000514:	4a20      	ldr	r2, [pc, #128]	; (8000598 <_ZL34usb_ep0_handle_current_transactionv+0x1e0>)
+ 8000516:	9b00      	ldr	r3, [sp, #0]
+ 8000518:	4694      	mov	ip, r2
+ 800051a:	4463      	add	r3, ip
+			offsets.string_desc[desc_no] = Utils::alloc(len);
+ 800051c:	80f8      	strh	r0, [r7, #6]
+			Utils::pma_in(offsets.string_desc[desc_no], &string_desc[desc_no], len);
+ 800051e:	0019      	movs	r1, r3
+ 8000520:	0032      	movs	r2, r6
+ 8000522:	f000 f9d7 	bl	80008d4 <_ZN5Utils6pma_inEjPKvi>
+		xfer_info.ptr = offsets.string_desc[desc_no];
+ 8000526:	4a1b      	ldr	r2, [pc, #108]	; (8000594 <_ZL34usb_ep0_handle_current_transactionv+0x1dc>)
+ 8000528:	9b01      	ldr	r3, [sp, #4]
+ 800052a:	4694      	mov	ip, r2
+ 800052c:	4463      	add	r3, ip
+ 800052e:	88db      	ldrh	r3, [r3, #6]
+		xfer_info.whole_length = len;
+ 8000530:	81a6      	strh	r6, [r4, #12]
+		xfer_info.ptr = offsets.string_desc[desc_no];
+ 8000532:	8123      	strh	r3, [r4, #8]
+ 8000534:	e75a      	b.n	80003ec <_ZL34usb_ep0_handle_current_transactionv+0x34>
+	if( last_setup.bRequest == CDC_SET_LINECODING ) {
+ 8000536:	2b20      	cmp	r3, #32
+ 8000538:	d000      	beq.n	800053c <_ZL34usb_ep0_handle_current_transactionv+0x184>
+ 800053a:	e749      	b.n	80003d0 <_ZL34usb_ep0_handle_current_transactionv+0x18>
+		if( linecoding_adddr == 0 ) {
+ 800053c:	4c17      	ldr	r4, [pc, #92]	; (800059c <_ZL34usb_ep0_handle_current_transactionv+0x1e4>)
+ 800053e:	8823      	ldrh	r3, [r4, #0]
+ 8000540:	2b00      	cmp	r3, #0
+ 8000542:	d103      	bne.n	800054c <_ZL34usb_ep0_handle_current_transactionv+0x194>
+			linecoding_adddr = Utils::alloc(7);
+ 8000544:	2007      	movs	r0, #7
+ 8000546:	f000 f99d 	bl	8000884 <_ZN5Utils5allocEi>
+ 800054a:	8020      	strh	r0, [r4, #0]
+		usb_ep_receive(0, linecoding_adddr, 7);
+ 800054c:	8821      	ldrh	r1, [r4, #0]
+ 800054e:	2207      	movs	r2, #7
+ 8000550:	2000      	movs	r0, #0
+ 8000552:	f7ff fef7 	bl	8000344 <_Z14usb_ep_receiveitt>
+ 8000556:	e73b      	b.n	80003d0 <_ZL34usb_ep0_handle_current_transactionv+0x18>
+	if( ep0_data.last_setup.bRequest == SET_ADDRESS ) {
+ 8000558:	796b      	ldrb	r3, [r5, #5]
+ 800055a:	2b05      	cmp	r3, #5
+ 800055c:	d105      	bne.n	800056a <_ZL34usb_ep0_handle_current_transactionv+0x1b2>
+		USB->DADDR = USB_DADDR_EF | (ep0_data.last_setup.wValue & 0x7F);
+ 800055e:	79aa      	ldrb	r2, [r5, #6]
+ 8000560:	337b      	adds	r3, #123	; 0x7b
+ 8000562:	4313      	orrs	r3, r2
+ 8000564:	4a0e      	ldr	r2, [pc, #56]	; (80005a0 <_ZL34usb_ep0_handle_current_transactionv+0x1e8>)
+ 8000566:	8013      	strh	r3, [r2, #0]
+ 8000568:	e732      	b.n	80003d0 <_ZL34usb_ep0_handle_current_transactionv+0x18>
+	if( ep0_data.last_setup.bRequest == CDC_SET_LINECODING ) {
+ 800056a:	2b20      	cmp	r3, #32
+ 800056c:	d000      	beq.n	8000570 <_ZL34usb_ep0_handle_current_transactionv+0x1b8>
+ 800056e:	e72f      	b.n	80003d0 <_ZL34usb_ep0_handle_current_transactionv+0x18>
+		Utils::pma_out(line_coding_info, linecoding_adddr, 7);
+ 8000570:	4b0a      	ldr	r3, [pc, #40]	; (800059c <_ZL34usb_ep0_handle_current_transactionv+0x1e4>)
+ 8000572:	2207      	movs	r2, #7
+ 8000574:	8819      	ldrh	r1, [r3, #0]
+ 8000576:	480b      	ldr	r0, [pc, #44]	; (80005a4 <_ZL34usb_ep0_handle_current_transactionv+0x1ec>)
+ 8000578:	f000 f992 	bl	80008a0 <_ZN5Utils7pma_outEPvji>
+}
+ 800057c:	e728      	b.n	80003d0 <_ZL34usb_ep0_handle_current_transactionv+0x18>
+ 800057e:	46c0      	nop			; (mov r8, r8)
+ 8000580:	20000080 	.word	0x20000080
+ 8000584:	20000090 	.word	0x20000090
+ 8000588:	2000008c 	.word	0x2000008c
+ 800058c:	2000008e 	.word	0x2000008e
+ 8000590:	20000028 	.word	0x20000028
+ 8000594:	200000e0 	.word	0x200000e0
+ 8000598:	08000aea 	.word	0x08000aea
+ 800059c:	20000024 	.word	0x20000024
+ 80005a0:	40005c4c 	.word	0x40005c4c
+ 80005a4:	2000001c 	.word	0x2000001c
+
+080005a8 <USB_IRQHandler>:
+			break;
+	}
+	return EP_fsm::SETUP;
+} // }}}
+
+extern "C" void USB_IRQHandler() {
+ 80005a8:	b5f7      	push	{r0, r1, r2, r4, r5, r6, r7, lr}
+	auto flag = USB->ISTR;
+ 80005aa:	4b67      	ldr	r3, [pc, #412]	; (8000748 <USB_IRQHandler+0x1a0>)
+ 80005ac:	4f67      	ldr	r7, [pc, #412]	; (800074c <USB_IRQHandler+0x1a4>)
+ 80005ae:	8fda      	ldrh	r2, [r3, #62]	; 0x3e
+ 80005b0:	9300      	str	r3, [sp, #0]
+
+	if( flag & USB_ISTR_RESET ) {
+ 80005b2:	0553      	lsls	r3, r2, #21
+ 80005b4:	d562      	bpl.n	800067c <USB_IRQHandler+0xd4>
+		printf("\nRESET\n");
+		USB->ISTR &= ~USB_ISTR_RESET;
+		USB->CNTR |= USB_CNTR_CTRM | USB_CNTR_RESETM;
+ 80005b6:	2184      	movs	r1, #132	; 0x84
+		USB->ISTR &= ~USB_ISTR_RESET;
+ 80005b8:	9b00      	ldr	r3, [sp, #0]
+ 80005ba:	4a65      	ldr	r2, [pc, #404]	; (8000750 <USB_IRQHandler+0x1a8>)
+ 80005bc:	8fdb      	ldrh	r3, [r3, #62]	; 0x3e
+		USB->CNTR |= USB_CNTR_CTRM | USB_CNTR_RESETM;
+ 80005be:	0209      	lsls	r1, r1, #8
+		USB->ISTR &= ~USB_ISTR_RESET;
+ 80005c0:	4013      	ands	r3, r2
+ 80005c2:	9a00      	ldr	r2, [sp, #0]
+		pma_allocation_info = {};
+ 80005c4:	4863      	ldr	r0, [pc, #396]	; (8000754 <USB_IRQHandler+0x1ac>)
+		USB->ISTR &= ~USB_ISTR_RESET;
+ 80005c6:	87d3      	strh	r3, [r2, #62]	; 0x3e
+		USB->CNTR |= USB_CNTR_CTRM | USB_CNTR_RESETM;
+ 80005c8:	4a63      	ldr	r2, [pc, #396]	; (8000758 <USB_IRQHandler+0x1b0>)
+		USB->BTABLE = Utils::alloc(sizeof(PacketBuffer) * (init.nEndpoints + 1));
+		USB->DADDR = USB_DADDR_EF; // enable the functionality
+
+		// initialize EP0
+		ep0_data.fsm = EP_fsm::RESET;
+ 80005ca:	2500      	movs	r5, #0
+		USB->CNTR |= USB_CNTR_CTRM | USB_CNTR_RESETM;
+ 80005cc:	8fd3      	ldrh	r3, [r2, #62]	; 0x3e
+ 80005ce:	430b      	orrs	r3, r1
+ 80005d0:	87d3      	strh	r3, [r2, #62]	; 0x3e
+		pma_allocation_info = {};
+ 80005d2:	2100      	movs	r1, #0
+ 80005d4:	221a      	movs	r2, #26
+ 80005d6:	f000 fa19 	bl	8000a0c <memset>
+		USB->BTABLE = Utils::alloc(sizeof(PacketBuffer) * (init.nEndpoints + 1));
+ 80005da:	4c60      	ldr	r4, [pc, #384]	; (800075c <USB_IRQHandler+0x1b4>)
+ 80005dc:	6963      	ldr	r3, [r4, #20]
+ 80005de:	1c58      	adds	r0, r3, #1
+ 80005e0:	00c0      	lsls	r0, r0, #3
+ 80005e2:	f000 f94f 	bl	8000884 <_ZN5Utils5allocEi>
+		USB->DADDR = USB_DADDR_EF; // enable the functionality
+ 80005e6:	2180      	movs	r1, #128	; 0x80
+		USB->BTABLE = Utils::alloc(sizeof(PacketBuffer) * (init.nEndpoints + 1));
+ 80005e8:	4b5d      	ldr	r3, [pc, #372]	; (8000760 <USB_IRQHandler+0x1b8>)
+		USB->DADDR = USB_DADDR_EF; // enable the functionality
+ 80005ea:	4a5e      	ldr	r2, [pc, #376]	; (8000764 <USB_IRQHandler+0x1bc>)
+		USB->BTABLE = Utils::alloc(sizeof(PacketBuffer) * (init.nEndpoints + 1));
+ 80005ec:	8018      	strh	r0, [r3, #0]
+		USB->DADDR = USB_DADDR_EF; // enable the functionality
+ 80005ee:	8011      	strh	r1, [r2, #0]
+		ep0_data.fsm = EP_fsm::RESET;
+ 80005f0:	4a5d      	ldr	r2, [pc, #372]	; (8000768 <USB_IRQHandler+0x1c0>)
+		ep_info[0].packet_size = 64;
+ 80005f2:	3940      	subs	r1, #64	; 0x40
+		ep0_data.fsm = EP_fsm::RESET;
+ 80005f4:	6015      	str	r5, [r2, #0]
+		ep_info[0].packet_size = 64;
+ 80005f6:	4a5d      	ldr	r2, [pc, #372]	; (800076c <USB_IRQHandler+0x1c4>)
+ 80005f8:	8011      	strh	r1, [r2, #0]
+		ep_info[0].pb_ptr = reinterpret_cast<PacketBuffer *>(static_cast<uintptr_t>(USB->BTABLE) + USB_PMAADDR);
+ 80005fa:	881b      	ldrh	r3, [r3, #0]
+ 80005fc:	495c      	ldr	r1, [pc, #368]	; (8000770 <USB_IRQHandler+0x1c8>)
+ 80005fe:	185b      	adds	r3, r3, r1
+ 8000600:	6053      	str	r3, [r2, #4]
+		ep_info[0].pb_ptr->addr_rx = 0;
+ 8000602:	809d      	strh	r5, [r3, #4]
+		USB->EP0R = USB_EP_CONTROL;
+ 8000604:	2380      	movs	r3, #128	; 0x80
+ 8000606:	009b      	lsls	r3, r3, #2
+ 8000608:	803b      	strh	r3, [r7, #0]
+		usb_ep0_prepare_for_setup();
+ 800060a:	f7ff fec3 	bl	8000394 <_ZL25usb_ep0_prepare_for_setupv>
+
+		// Other EPs
+		for(int i = 0; i < init.nEndpoints; i++) {
+ 800060e:	6963      	ldr	r3, [r4, #20]
+ 8000610:	42ab      	cmp	r3, r5
+ 8000612:	dd33      	ble.n	800067c <USB_IRQHandler+0xd4>
+			const int ep_num = i + 1;
+ 8000614:	3501      	adds	r5, #1
+			init.ep[i].init(ep_num);
+ 8000616:	012b      	lsls	r3, r5, #4
+ 8000618:	18e3      	adds	r3, r4, r3
+ 800061a:	68db      	ldr	r3, [r3, #12]
+ 800061c:	0028      	movs	r0, r5
+ 800061e:	4798      	blx	r3
+		for(int i = 0; i < init.nEndpoints; i++) {
+ 8000620:	e7f5      	b.n	800060e <USB_IRQHandler+0x66>
+			if( last_setup.bmRequestType & 0x80 ) {
+ 8000622:	792a      	ldrb	r2, [r5, #4]
+ 8000624:	896b      	ldrh	r3, [r5, #10]
+ 8000626:	2a7f      	cmp	r2, #127	; 0x7f
+ 8000628:	d904      	bls.n	8000634 <USB_IRQHandler+0x8c>
+				return (last_setup.wLength != 0) ? EP_fsm::IN : EP_fsm::STATUS_IN;
+ 800062a:	2b00      	cmp	r3, #0
+ 800062c:	d16f      	bne.n	800070e <USB_IRQHandler+0x166>
+				// DIR = 0 : IRQ by IN direction. CTR_TX is set.
+				USB->EP0R = epreg & ~USB_EP_CTR_TX & USB_EPREG_MASK;
+				Utils::Dump::fsm();
+				usb_ep0_handle_current_transaction();
+			}
+			ep0_data.fsm = next_state_ep0();
+ 800062e:	2305      	movs	r3, #5
+ 8000630:	602b      	str	r3, [r5, #0]
+ 8000632:	e017      	b.n	8000664 <USB_IRQHandler+0xbc>
+				return (last_setup.wLength != 0) ? EP_fsm::OUT : EP_fsm::STATUS_IN;
+ 8000634:	2b00      	cmp	r3, #0
+ 8000636:	d0fa      	beq.n	800062e <USB_IRQHandler+0x86>
+			ep0_data.fsm = next_state_ep0();
+ 8000638:	2304      	movs	r3, #4
+ 800063a:	602b      	str	r3, [r5, #0]
+ 800063c:	e01e      	b.n	800067c <USB_IRQHandler+0xd4>
+				const bool cond = (ep_info[0].pb_ptr->count_tx == ep_info[0].packet_size);
+ 800063e:	4b4b      	ldr	r3, [pc, #300]	; (800076c <USB_IRQHandler+0x1c4>)
+				const auto length_to_be_xferred = cond ? xfer_info.whole_length - xfer_info.completed_length : 0;
+ 8000640:	2000      	movs	r0, #0
+				const bool cond = (ep_info[0].pb_ptr->count_tx == ep_info[0].packet_size);
+ 8000642:	685a      	ldr	r2, [r3, #4]
+ 8000644:	8851      	ldrh	r1, [r2, #2]
+ 8000646:	881a      	ldrh	r2, [r3, #0]
+				const auto length_to_be_xferred = cond ? xfer_info.whole_length - xfer_info.completed_length : 0;
+ 8000648:	4291      	cmp	r1, r2
+ 800064a:	d102      	bne.n	8000652 <USB_IRQHandler+0xaa>
+ 800064c:	8998      	ldrh	r0, [r3, #12]
+ 800064e:	895c      	ldrh	r4, [r3, #10]
+ 8000650:	1b00      	subs	r0, r0, r4
+				if( length_to_be_xferred > ep.packet_size ) {
+ 8000652:	4282      	cmp	r2, r0
+ 8000654:	db4b      	blt.n	80006ee <USB_IRQHandler+0x146>
+			ep0_data.fsm = next_state_ep0();
+ 8000656:	2206      	movs	r2, #6
+ 8000658:	602a      	str	r2, [r5, #0]
+		usb_ep_receive(0, ep_info[0].recv_info.ptr, 0);
+ 800065a:	2200      	movs	r2, #0
+ 800065c:	89d9      	ldrh	r1, [r3, #14]
+ 800065e:	0010      	movs	r0, r2
+ 8000660:	f7ff fe70 	bl	8000344 <_Z14usb_ep_receiveitt>
+	if( ep0_data.fsm == EP_fsm::STATUS_IN ) {
+ 8000664:	682b      	ldr	r3, [r5, #0]
+ 8000666:	2b05      	cmp	r3, #5
+ 8000668:	d108      	bne.n	800067c <USB_IRQHandler+0xd4>
+		usb_ep_send(0, ep_info[0].xfer_info.ptr, 0);
+ 800066a:	2200      	movs	r2, #0
+ 800066c:	4b3f      	ldr	r3, [pc, #252]	; (800076c <USB_IRQHandler+0x1c4>)
+ 800066e:	0010      	movs	r0, r2
+ 8000670:	8919      	ldrh	r1, [r3, #8]
+ 8000672:	e049      	b.n	8000708 <USB_IRQHandler+0x160>
+			ep0_data.fsm = next_state_ep0();
+ 8000674:	2301      	movs	r3, #1
+ 8000676:	602b      	str	r3, [r5, #0]
+			usb_ep0_prepare_for_setup();
+ 8000678:	f7ff fe8c 	bl	8000394 <_ZL25usb_ep0_prepare_for_setupv>
+	while( (flag = USB->ISTR) & USB_ISTR_CTR ) {
+ 800067c:	9b00      	ldr	r3, [sp, #0]
+ 800067e:	8fdd      	ldrh	r5, [r3, #62]	; 0x3e
+ 8000680:	b2ad      	uxth	r5, r5
+ 8000682:	b22b      	sxth	r3, r5
+ 8000684:	2b00      	cmp	r3, #0
+ 8000686:	da5e      	bge.n	8000746 <USB_IRQHandler+0x19e>
+ 8000688:	230f      	movs	r3, #15
+ 800068a:	401d      	ands	r5, r3
+		const auto epreg = USB_EPnR(ep_num);
+ 800068c:	4b2f      	ldr	r3, [pc, #188]	; (800074c <USB_IRQHandler+0x1a4>)
+ 800068e:	00ae      	lsls	r6, r5, #2
+ 8000690:	18f6      	adds	r6, r6, r3
+ 8000692:	8834      	ldrh	r4, [r6, #0]
+ 8000694:	b2a4      	uxth	r4, r4
+ 8000696:	b223      	sxth	r3, r4
+ 8000698:	9301      	str	r3, [sp, #4]
+		if( ep_num == 0 ) {
+ 800069a:	2d00      	cmp	r5, #0
+ 800069c:	d139      	bne.n	8000712 <USB_IRQHandler+0x16a>
+ 800069e:	4d32      	ldr	r5, [pc, #200]	; (8000768 <USB_IRQHandler+0x1c0>)
+			if( epreg & USB_EP_CTR_RX ) {
+ 80006a0:	2b00      	cmp	r3, #0
+ 80006a2:	da12      	bge.n	80006ca <USB_IRQHandler+0x122>
+				USB->EP0R = epreg & ~USB_EP_CTR_RX & USB_EPREG_MASK;
+ 80006a4:	4b33      	ldr	r3, [pc, #204]	; (8000774 <USB_IRQHandler+0x1cc>)
+ 80006a6:	4023      	ands	r3, r4
+ 80006a8:	803b      	strh	r3, [r7, #0]
+				if( epreg & USB_EP_SETUP ) {
+ 80006aa:	0523      	lsls	r3, r4, #20
+ 80006ac:	d509      	bpl.n	80006c2 <USB_IRQHandler+0x11a>
+					ep0_data.fsm = EP_fsm::SETUP;
+ 80006ae:	0028      	movs	r0, r5
+ 80006b0:	2301      	movs	r3, #1
+ 80006b2:	c008      	stmia	r0!, {r3}
+					Utils::pma_out(&ep0_data.last_setup, pma_allocation_info.offsets.setup_packet, sizeof(USBSetupPacket));
+ 80006b4:	4b27      	ldr	r3, [pc, #156]	; (8000754 <USB_IRQHandler+0x1ac>)
+ 80006b6:	2208      	movs	r2, #8
+ 80006b8:	8819      	ldrh	r1, [r3, #0]
+ 80006ba:	f000 f8f1 	bl	80008a0 <_ZN5Utils7pma_outEPvji>
+					Utils::Dump::setup_packet();
+ 80006be:	f000 f921 	bl	8000904 <_ZN5Utils4Dump12setup_packetEv>
+				Utils::Dump::fsm();
+ 80006c2:	f000 f920 	bl	8000906 <_ZN5Utils4Dump3fsmEv>
+				usb_ep0_handle_current_transaction();
+ 80006c6:	f7ff fe77 	bl	80003b8 <_ZL34usb_ep0_handle_current_transactionv>
+			if( epreg & USB_EP_CTR_TX ) {
+ 80006ca:	2380      	movs	r3, #128	; 0x80
+ 80006cc:	421c      	tst	r4, r3
+ 80006ce:	d006      	beq.n	80006de <USB_IRQHandler+0x136>
+				USB->EP0R = epreg & ~USB_EP_CTR_TX & USB_EPREG_MASK;
+ 80006d0:	4b29      	ldr	r3, [pc, #164]	; (8000778 <USB_IRQHandler+0x1d0>)
+ 80006d2:	401c      	ands	r4, r3
+ 80006d4:	803c      	strh	r4, [r7, #0]
+				Utils::Dump::fsm();
+ 80006d6:	f000 f916 	bl	8000906 <_ZN5Utils4Dump3fsmEv>
+				usb_ep0_handle_current_transaction();
+ 80006da:	f7ff fe6d 	bl	80003b8 <_ZL34usb_ep0_handle_current_transactionv>
+	switch(ep0_data.fsm) {
+ 80006de:	682b      	ldr	r3, [r5, #0]
+ 80006e0:	1e58      	subs	r0, r3, #1
+ 80006e2:	2803      	cmp	r0, #3
+ 80006e4:	d8c6      	bhi.n	8000674 <USB_IRQHandler+0xcc>
+ 80006e6:	f7ff fd0f 	bl	8000108 <__gnu_thumb1_case_sqi>
+ 80006ea:	aa9c      	.short	0xaa9c
+ 80006ec:	a2aa      	.short	0xa2aa
+			ep0_data.fsm = next_state_ep0();
+ 80006ee:	2003      	movs	r0, #3
+ 80006f0:	6028      	str	r0, [r5, #0]
+	xfer_info.completed_length += ep_info[0].pb_ptr->count_tx;
+ 80006f2:	8958      	ldrh	r0, [r3, #10]
+ 80006f4:	1809      	adds	r1, r1, r0
+	usb_ep_send(0, next_pos, xfer_info.whole_length - ep_info[0].packet_size);
+ 80006f6:	8998      	ldrh	r0, [r3, #12]
+	xfer_info.completed_length += ep_info[0].pb_ptr->count_tx;
+ 80006f8:	b289      	uxth	r1, r1
+	usb_ep_send(0, next_pos, xfer_info.whole_length - ep_info[0].packet_size);
+ 80006fa:	1a82      	subs	r2, r0, r2
+ 80006fc:	2000      	movs	r0, #0
+	xfer_info.completed_length += ep_info[0].pb_ptr->count_tx;
+ 80006fe:	8159      	strh	r1, [r3, #10]
+	usb_ep_send(0, next_pos, xfer_info.whole_length - ep_info[0].packet_size);
+ 8000700:	891b      	ldrh	r3, [r3, #8]
+ 8000702:	b292      	uxth	r2, r2
+ 8000704:	18c9      	adds	r1, r1, r3
+ 8000706:	b289      	uxth	r1, r1
+		usb_ep_send(0, ep_info[0].xfer_info.ptr, 0);
+ 8000708:	f7ff fe04 	bl	8000314 <_Z11usb_ep_senditt>
+ 800070c:	e7b6      	b.n	800067c <USB_IRQHandler+0xd4>
+			ep0_data.fsm = next_state_ep0();
+ 800070e:	2302      	movs	r3, #2
+ 8000710:	e793      	b.n	800063a <USB_IRQHandler+0x92>
+			usb_ep0_prepare_for_next_transaction();
+		}else{
+			if( epreg & USB_EP_CTR_TX ) {
+ 8000712:	2380      	movs	r3, #128	; 0x80
+ 8000714:	421c      	tst	r4, r3
+ 8000716:	d008      	beq.n	800072a <USB_IRQHandler+0x182>
+				USB_EPnR(ep_num) = epreg & ~USB_EP_CTR_TX & USB_EPREG_MASK;
+ 8000718:	4b17      	ldr	r3, [pc, #92]	; (8000778 <USB_IRQHandler+0x1d0>)
+				init.ep[ep_num - 1].tx_handler(ep_num);
+ 800071a:	4a10      	ldr	r2, [pc, #64]	; (800075c <USB_IRQHandler+0x1b4>)
+				USB_EPnR(ep_num) = epreg & ~USB_EP_CTR_TX & USB_EPREG_MASK;
+ 800071c:	4023      	ands	r3, r4
+ 800071e:	8033      	strh	r3, [r6, #0]
+				init.ep[ep_num - 1].tx_handler(ep_num);
+ 8000720:	1c6b      	adds	r3, r5, #1
+ 8000722:	011b      	lsls	r3, r3, #4
+ 8000724:	589b      	ldr	r3, [r3, r2]
+ 8000726:	0028      	movs	r0, r5
+ 8000728:	4798      	blx	r3
+			}
+			if( epreg & USB_EP_CTR_RX ) {
+ 800072a:	9b01      	ldr	r3, [sp, #4]
+ 800072c:	2b00      	cmp	r3, #0
+ 800072e:	daa5      	bge.n	800067c <USB_IRQHandler+0xd4>
+				USB_EPnR(ep_num) = epreg & ~USB_EP_CTR_RX & USB_EPREG_MASK;
+ 8000730:	4b10      	ldr	r3, [pc, #64]	; (8000774 <USB_IRQHandler+0x1cc>)
+				init.ep[ep_num - 1].rx_handler(ep_num);
+ 8000732:	1c6a      	adds	r2, r5, #1
+				USB_EPnR(ep_num) = epreg & ~USB_EP_CTR_RX & USB_EPREG_MASK;
+ 8000734:	401c      	ands	r4, r3
+				init.ep[ep_num - 1].rx_handler(ep_num);
+ 8000736:	4b09      	ldr	r3, [pc, #36]	; (800075c <USB_IRQHandler+0x1b4>)
+ 8000738:	0112      	lsls	r2, r2, #4
+				USB_EPnR(ep_num) = epreg & ~USB_EP_CTR_RX & USB_EPREG_MASK;
+ 800073a:	8034      	strh	r4, [r6, #0]
+				init.ep[ep_num - 1].rx_handler(ep_num);
+ 800073c:	189b      	adds	r3, r3, r2
+ 800073e:	685b      	ldr	r3, [r3, #4]
+ 8000740:	0028      	movs	r0, r5
+ 8000742:	4798      	blx	r3
+ 8000744:	e79a      	b.n	800067c <USB_IRQHandler+0xd4>
+			}
+		}
+	}
+}
+ 8000746:	bdf7      	pop	{r0, r1, r2, r4, r5, r6, r7, pc}
+ 8000748:	40005c06 	.word	0x40005c06
+ 800074c:	40005c00 	.word	0x40005c00
+ 8000750:	fffffbff 	.word	0xfffffbff
+ 8000754:	200000e0 	.word	0x200000e0
+ 8000758:	40005c02 	.word	0x40005c02
+ 800075c:	20000028 	.word	0x20000028
+ 8000760:	40005c50 	.word	0x40005c50
+ 8000764:	40005c4c 	.word	0x40005c4c
+ 8000768:	20000080 	.word	0x20000080
+ 800076c:	20000090 	.word	0x20000090
+ 8000770:	40006000 	.word	0x40006000
+ 8000774:	00000f8f 	.word	0x00000f8f
+ 8000778:	ffff8f0f 	.word	0xffff8f0f
+
+0800077c <_ZN12_GLOBAL__N_17Handler2Tx12null_handlerEi>:
+	USB_EPnR(3) = USB_EP_BULK | 0x03;
+}
+}
+namespace Handler {
+namespace Tx {
+	void null_handler(int){}
+ 800077c:	4770      	bx	lr
+	...
+
+08000780 <_ZN12_GLOBAL__N_14Init3ep3Ei>:
+	ep_info[3].packet_size = 64;
+ 8000780:	2040      	movs	r0, #64	; 0x40
+void ep3(int) {
+ 8000782:	b510      	push	{r4, lr}
+	ep_info[3].packet_size = 64;
+ 8000784:	4a07      	ldr	r2, [pc, #28]	; (80007a4 <_ZN12_GLOBAL__N_14Init3ep3Ei+0x24>)
+	ep_info[3].pb_ptr = reinterpret_cast<PacketBuffer *>(static_cast<uintptr_t>(USB->BTABLE) + USB_PMAADDR + sizeof(PacketBuffer) * 3);
+ 8000786:	4b08      	ldr	r3, [pc, #32]	; (80007a8 <_ZN12_GLOBAL__N_14Init3ep3Ei+0x28>)
+	ep_info[3].packet_size = 64;
+ 8000788:	8790      	strh	r0, [r2, #60]	; 0x3c
+	ep_info[3].pb_ptr = reinterpret_cast<PacketBuffer *>(static_cast<uintptr_t>(USB->BTABLE) + USB_PMAADDR + sizeof(PacketBuffer) * 3);
+ 800078a:	881b      	ldrh	r3, [r3, #0]
+ 800078c:	4907      	ldr	r1, [pc, #28]	; (80007ac <_ZN12_GLOBAL__N_14Init3ep3Ei+0x2c>)
+ 800078e:	185b      	adds	r3, r3, r1
+ 8000790:	6413      	str	r3, [r2, #64]	; 0x40
+	pma_allocation_info.offsets.cdc_data = Utils::alloc(64);
+ 8000792:	f000 f877 	bl	8000884 <_ZN5Utils5allocEi>
+	USB_EPnR(3) = USB_EP_BULK | 0x03;
+ 8000796:	2203      	movs	r2, #3
+	pma_allocation_info.offsets.cdc_data = Utils::alloc(64);
+ 8000798:	4b05      	ldr	r3, [pc, #20]	; (80007b0 <_ZN12_GLOBAL__N_14Init3ep3Ei+0x30>)
+ 800079a:	82d8      	strh	r0, [r3, #22]
+	USB_EPnR(3) = USB_EP_BULK | 0x03;
+ 800079c:	4b05      	ldr	r3, [pc, #20]	; (80007b4 <_ZN12_GLOBAL__N_14Init3ep3Ei+0x34>)
+ 800079e:	801a      	strh	r2, [r3, #0]
+}
+ 80007a0:	bd10      	pop	{r4, pc}
+ 80007a2:	46c0      	nop			; (mov r8, r8)
+ 80007a4:	20000090 	.word	0x20000090
+ 80007a8:	40005c50 	.word	0x40005c50
+ 80007ac:	40006018 	.word	0x40006018
+ 80007b0:	200000e0 	.word	0x200000e0
+ 80007b4:	40005c0c 	.word	0x40005c0c
+
+080007b8 <_ZN12_GLOBAL__N_14Init3ep2Ei>:
+void ep2(int) {
+ 80007b8:	b570      	push	{r4, r5, r6, lr}
+	ep_info[2].packet_size = 64;
+ 80007ba:	2540      	movs	r5, #64	; 0x40
+ 80007bc:	4e08      	ldr	r6, [pc, #32]	; (80007e0 <_ZN12_GLOBAL__N_14Init3ep2Ei+0x28>)
+	ep_info[2].pb_ptr = reinterpret_cast<PacketBuffer *>(static_cast<uintptr_t>(USB->BTABLE) + USB_PMAADDR + sizeof(PacketBuffer) * 2);
+ 80007be:	4b09      	ldr	r3, [pc, #36]	; (80007e4 <_ZN12_GLOBAL__N_14Init3ep2Ei+0x2c>)
+	ep_info[2].packet_size = 64;
+ 80007c0:	8535      	strh	r5, [r6, #40]	; 0x28
+	ep_info[2].pb_ptr = reinterpret_cast<PacketBuffer *>(static_cast<uintptr_t>(USB->BTABLE) + USB_PMAADDR + sizeof(PacketBuffer) * 2);
+ 80007c2:	881c      	ldrh	r4, [r3, #0]
+ 80007c4:	4b08      	ldr	r3, [pc, #32]	; (80007e8 <_ZN12_GLOBAL__N_14Init3ep2Ei+0x30>)
+	ep_info[2].pb_ptr->addr_rx = Utils::alloc(64);
+ 80007c6:	0028      	movs	r0, r5
+	ep_info[2].pb_ptr = reinterpret_cast<PacketBuffer *>(static_cast<uintptr_t>(USB->BTABLE) + USB_PMAADDR + sizeof(PacketBuffer) * 2);
+ 80007c8:	18e4      	adds	r4, r4, r3
+ 80007ca:	62f4      	str	r4, [r6, #44]	; 0x2c
+	ep_info[2].pb_ptr->addr_rx = Utils::alloc(64);
+ 80007cc:	f000 f85a 	bl	8000884 <_ZN5Utils5allocEi>
+	USB_EPnR(2) = USB_EP_BULK | 0x02;
+ 80007d0:	2202      	movs	r2, #2
+	ep_info[2].pb_ptr->count_rx = 64;
+ 80007d2:	6af3      	ldr	r3, [r6, #44]	; 0x2c
+	ep_info[2].pb_ptr->addr_rx = Utils::alloc(64);
+ 80007d4:	80a0      	strh	r0, [r4, #4]
+	ep_info[2].pb_ptr->count_rx = 64;
+ 80007d6:	80dd      	strh	r5, [r3, #6]
+	USB_EPnR(2) = USB_EP_BULK | 0x02;
+ 80007d8:	4b04      	ldr	r3, [pc, #16]	; (80007ec <_ZN12_GLOBAL__N_14Init3ep2Ei+0x34>)
+ 80007da:	801a      	strh	r2, [r3, #0]
+}
+ 80007dc:	bd70      	pop	{r4, r5, r6, pc}
+ 80007de:	46c0      	nop			; (mov r8, r8)
+ 80007e0:	20000090 	.word	0x20000090
+ 80007e4:	40005c50 	.word	0x40005c50
+ 80007e8:	40006010 	.word	0x40006010
+ 80007ec:	40005c08 	.word	0x40005c08
+
+080007f0 <_ZN12_GLOBAL__N_14Init3ep1Ei>:
+void ep1(int) {
+ 80007f0:	b570      	push	{r4, r5, r6, lr}
+	ep_info[1].packet_size = 64;
+ 80007f2:	2540      	movs	r5, #64	; 0x40
+ 80007f4:	4e08      	ldr	r6, [pc, #32]	; (8000818 <_ZN12_GLOBAL__N_14Init3ep1Ei+0x28>)
+	ep_info[1].pb_ptr = reinterpret_cast<PacketBuffer *>(static_cast<uintptr_t>(USB->BTABLE) + USB_PMAADDR + sizeof(PacketBuffer) * 1);
+ 80007f6:	4b09      	ldr	r3, [pc, #36]	; (800081c <_ZN12_GLOBAL__N_14Init3ep1Ei+0x2c>)
+	ep_info[1].packet_size = 64;
+ 80007f8:	82b5      	strh	r5, [r6, #20]
+	ep_info[1].pb_ptr = reinterpret_cast<PacketBuffer *>(static_cast<uintptr_t>(USB->BTABLE) + USB_PMAADDR + sizeof(PacketBuffer) * 1);
+ 80007fa:	881c      	ldrh	r4, [r3, #0]
+ 80007fc:	4b08      	ldr	r3, [pc, #32]	; (8000820 <_ZN12_GLOBAL__N_14Init3ep1Ei+0x30>)
+	ep_info[1].pb_ptr->addr_tx = Utils::alloc(64);
+ 80007fe:	0028      	movs	r0, r5
+	ep_info[1].pb_ptr = reinterpret_cast<PacketBuffer *>(static_cast<uintptr_t>(USB->BTABLE) + USB_PMAADDR + sizeof(PacketBuffer) * 1);
+ 8000800:	18e4      	adds	r4, r4, r3
+ 8000802:	61b4      	str	r4, [r6, #24]
+	ep_info[1].pb_ptr->addr_tx = Utils::alloc(64);
+ 8000804:	f000 f83e 	bl	8000884 <_ZN5Utils5allocEi>
+	ep_info[1].pb_ptr->count_tx = 64;
+ 8000808:	69b3      	ldr	r3, [r6, #24]
+	ep_info[1].pb_ptr->addr_tx = Utils::alloc(64);
+ 800080a:	8020      	strh	r0, [r4, #0]
+	USB_EPnR(1) = USB_EP_INTERRUPT | 0x01;
+ 800080c:	4a05      	ldr	r2, [pc, #20]	; (8000824 <_ZN12_GLOBAL__N_14Init3ep1Ei+0x34>)
+	ep_info[1].pb_ptr->count_tx = 64;
+ 800080e:	805d      	strh	r5, [r3, #2]
+	USB_EPnR(1) = USB_EP_INTERRUPT | 0x01;
+ 8000810:	4b05      	ldr	r3, [pc, #20]	; (8000828 <_ZN12_GLOBAL__N_14Init3ep1Ei+0x38>)
+ 8000812:	801a      	strh	r2, [r3, #0]
+}
+ 8000814:	bd70      	pop	{r4, r5, r6, pc}
+ 8000816:	46c0      	nop			; (mov r8, r8)
+ 8000818:	20000090 	.word	0x20000090
+ 800081c:	40005c50 	.word	0x40005c50
+ 8000820:	40006008 	.word	0x40006008
+ 8000824:	00000601 	.word	0x00000601
+ 8000828:	40005c04 	.word	0x40005c04
+
+0800082c <_ZN12_GLOBAL__N_17Handler2Rx12null_handlerEi>:
+ 800082c:	4770      	bx	lr
+	...
+
+08000830 <usb_cdc_init>:
+};
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+void usb_cdc_init(void) {
+ 8000830:	b510      	push	{r4, lr}
+	usb_init(ep_handle);
+ 8000832:	4c06      	ldr	r4, [pc, #24]	; (800084c <usb_cdc_init+0x1c>)
+void usb_cdc_init(void) {
+ 8000834:	b092      	sub	sp, #72	; 0x48
+	usb_init(ep_handle);
+ 8000836:	0021      	movs	r1, r4
+ 8000838:	2248      	movs	r2, #72	; 0x48
+ 800083a:	3110      	adds	r1, #16
+ 800083c:	4668      	mov	r0, sp
+ 800083e:	f000 f8c9 	bl	80009d4 <memcpy>
+ 8000842:	cc0f      	ldmia	r4!, {r0, r1, r2, r3}
+ 8000844:	f7ff fd22 	bl	800028c <_Z8usb_init12USB_InitType>
+}
+ 8000848:	b012      	add	sp, #72	; 0x48
+ 800084a:	bd10      	pop	{r4, pc}
+ 800084c:	08000a3c 	.word	0x08000a3c
+
+08000850 <usb_cdc_send>:
+void usb_cdc_send(const char *str, int size) {
+ 8000850:	b570      	push	{r4, r5, r6, lr}
+ 8000852:	1e0c      	subs	r4, r1, #0
+ 8000854:	4e09      	ldr	r6, [pc, #36]	; (800087c <usb_cdc_send+0x2c>)
+					   is_copy_assignable<_Tp>>;
+	  // trivial types can have deleted assignment
+	  static_assert( __assignable::type::value, "type is not assignable" );
+#endif
+	  const ptrdiff_t _Num = __last - __first;
+	  if (_Num)
+ 8000856:	d004      	beq.n	8000862 <usb_cdc_send+0x12>
+	    __builtin_memmove(__result, __first, sizeof(_Tp) * _Num);
+ 8000858:	000a      	movs	r2, r1
+ 800085a:	0001      	movs	r1, r0
+ 800085c:	0030      	movs	r0, r6
+ 800085e:	f000 f8c2 	bl	80009e6 <memmove>
+	std::copy(str, str + size, cdc_buf);
+	const auto addr = pma_allocation_info.offsets.cdc_data;
+ 8000862:	4b07      	ldr	r3, [pc, #28]	; (8000880 <usb_cdc_send+0x30>)
+	Utils::pma_in(addr, cdc_buf, size);
+ 8000864:	0031      	movs	r1, r6
+	const auto addr = pma_allocation_info.offsets.cdc_data;
+ 8000866:	8add      	ldrh	r5, [r3, #22]
+	Utils::pma_in(addr, cdc_buf, size);
+ 8000868:	0022      	movs	r2, r4
+ 800086a:	0028      	movs	r0, r5
+ 800086c:	f000 f832 	bl	80008d4 <_ZN5Utils6pma_inEjPKvi>
+	usb_ep_send(3, addr, size);
+ 8000870:	0029      	movs	r1, r5
+ 8000872:	b2a2      	uxth	r2, r4
+ 8000874:	2003      	movs	r0, #3
+ 8000876:	f7ff fd4d 	bl	8000314 <_Z11usb_ep_senditt>
+}
+ 800087a:	bd70      	pop	{r4, r5, r6, pc}
+ 800087c:	200000fa 	.word	0x200000fa
+ 8000880:	200000e0 	.word	0x200000e0
+
+08000884 <_ZN5Utils5allocEi>:
+#define printf(...)
+extern PMAInfo pma_allocation_info;
+
+namespace Utils {
+	uint16_t alloc(int size) {
+		const auto ret = pma_allocation_info.sp;
+ 8000884:	4a05      	ldr	r2, [pc, #20]	; (800089c <_ZN5Utils5allocEi+0x18>)
+ 8000886:	8b11      	ldrh	r1, [r2, #24]
+		pma_allocation_info.sp += size;
+ 8000888:	180b      	adds	r3, r1, r0
+ 800088a:	b29b      	uxth	r3, r3
+		if( size & 1 ) pma_allocation_info.sp++;
+ 800088c:	07c0      	lsls	r0, r0, #31
+ 800088e:	d402      	bmi.n	8000896 <_ZN5Utils5allocEi+0x12>
+		return ret;
+	}
+ 8000890:	0008      	movs	r0, r1
+		if( size & 1 ) pma_allocation_info.sp++;
+ 8000892:	8313      	strh	r3, [r2, #24]
+	}
+ 8000894:	4770      	bx	lr
+		if( size & 1 ) pma_allocation_info.sp++;
+ 8000896:	3301      	adds	r3, #1
+ 8000898:	e7fa      	b.n	8000890 <_ZN5Utils5allocEi+0xc>
+ 800089a:	46c0      	nop			; (mov r8, r8)
+ 800089c:	200000e0 	.word	0x200000e0
+
+080008a0 <_ZN5Utils7pma_outEPvji>:
+	void pma_out(void* dest, const uintptr_t src, int size) {
+		uintptr_t src_global_addr = src + USB_PMAADDR;
+ 80008a0:	4b0b      	ldr	r3, [pc, #44]	; (80008d0 <_ZN5Utils7pma_outEPvji+0x30>)
+	void pma_out(void* dest, const uintptr_t src, int size) {
+ 80008a2:	b530      	push	{r4, r5, lr}
+		uintptr_t src_global_addr = src + USB_PMAADDR;
+ 80008a4:	18c9      	adds	r1, r1, r3
+		auto* src_p = (uint16_t *)src_global_addr;
+		auto* dest_p = (uint8_t *)dest;
+		if( size & 1 ) size++;
+ 80008a6:	2301      	movs	r3, #1
+ 80008a8:	4013      	ands	r3, r2
+ 80008aa:	18d2      	adds	r2, r2, r3
+		for(int i = 0; i < size / 2; i++) {
+ 80008ac:	0fd3      	lsrs	r3, r2, #31
+ 80008ae:	189a      	adds	r2, r3, r2
+ 80008b0:	2300      	movs	r3, #0
+ 80008b2:	1052      	asrs	r2, r2, #1
+ 80008b4:	1a09      	subs	r1, r1, r0
+ 80008b6:	429a      	cmp	r2, r3
+ 80008b8:	dd08      	ble.n	80008cc <_ZN5Utils7pma_outEPvji+0x2c>
+ 80008ba:	180c      	adds	r4, r1, r0
+			dest_p[2 * i] = src_p[i] & 0xFF;
+ 80008bc:	8825      	ldrh	r5, [r4, #0]
+		for(int i = 0; i < size / 2; i++) {
+ 80008be:	3301      	adds	r3, #1
+			dest_p[2 * i] = src_p[i] & 0xFF;
+ 80008c0:	7005      	strb	r5, [r0, #0]
+			dest_p[2 * i + 1] = src_p[i] >> 8;
+ 80008c2:	8824      	ldrh	r4, [r4, #0]
+ 80008c4:	1224      	asrs	r4, r4, #8
+ 80008c6:	7044      	strb	r4, [r0, #1]
+ 80008c8:	3002      	adds	r0, #2
+		for(int i = 0; i < size / 2; i++) {
+ 80008ca:	e7f4      	b.n	80008b6 <_ZN5Utils7pma_outEPvji+0x16>
+		}
+	}
+ 80008cc:	bd30      	pop	{r4, r5, pc}
+ 80008ce:	46c0      	nop			; (mov r8, r8)
+ 80008d0:	40006000 	.word	0x40006000
+
+080008d4 <_ZN5Utils6pma_inEjPKvi>:
+	void pma_in(uintptr_t dest, const void* src, int size) {
+		uintptr_t dest_global_addr = dest + USB_PMAADDR;
+ 80008d4:	4b0a      	ldr	r3, [pc, #40]	; (8000900 <_ZN5Utils6pma_inEjPKvi+0x2c>)
+	void pma_in(uintptr_t dest, const void* src, int size) {
+ 80008d6:	b530      	push	{r4, r5, lr}
+		uintptr_t dest_global_addr = dest + USB_PMAADDR;
+ 80008d8:	18c0      	adds	r0, r0, r3
+		auto* src_p = (uint8_t *)src;
+		auto* dest_p = (uint16_t *)dest_global_addr;
+		if( size & 1 ) size++;
+ 80008da:	2301      	movs	r3, #1
+ 80008dc:	4013      	ands	r3, r2
+ 80008de:	18d2      	adds	r2, r2, r3
+		for(int i = 0; i < size / 2; i++) {
+ 80008e0:	0fd3      	lsrs	r3, r2, #31
+ 80008e2:	189a      	adds	r2, r3, r2
+ 80008e4:	2300      	movs	r3, #0
+ 80008e6:	1052      	asrs	r2, r2, #1
+			dest_p[i] = src_p[2 * i] | (src_p[2 * i + 1] << 8);
+ 80008e8:	1a40      	subs	r0, r0, r1
+		for(int i = 0; i < size / 2; i++) {
+ 80008ea:	429a      	cmp	r2, r3
+ 80008ec:	dd07      	ble.n	80008fe <_ZN5Utils6pma_inEjPKvi+0x2a>
+			dest_p[i] = src_p[2 * i] | (src_p[2 * i + 1] << 8);
+ 80008ee:	784d      	ldrb	r5, [r1, #1]
+ 80008f0:	780c      	ldrb	r4, [r1, #0]
+ 80008f2:	022d      	lsls	r5, r5, #8
+ 80008f4:	432c      	orrs	r4, r5
+ 80008f6:	5244      	strh	r4, [r0, r1]
+		for(int i = 0; i < size / 2; i++) {
+ 80008f8:	3301      	adds	r3, #1
+ 80008fa:	3102      	adds	r1, #2
+ 80008fc:	e7f5      	b.n	80008ea <_ZN5Utils6pma_inEjPKvi+0x16>
+		}
+	}
+ 80008fe:	bd30      	pop	{r4, r5, pc}
+ 8000900:	40006000 	.word	0x40006000
+
+08000904 <_ZN5Utils4Dump12setup_packetEv>:
+			printf("bmResuestType: 0x%02x\n", ep_info[0].last_setup.bmRequestType);
+			printf("bRequest: 0x%02x\n", ep_info[0].last_setup.bRequest);
+			printf("wValue: 0x%x\n", ep_info[0].last_setup.wValue);
+			printf("wIndex: 0x%x\n", ep_info[0].last_setup.wIndex);
+			printf("wLength: 0x%x\n", ep_info[0].last_setup.wLength);
+		}
+ 8000904:	4770      	bx	lr
+
+08000906 <_ZN5Utils4Dump3fsmEv>:
+ 8000906:	4770      	bx	lr
+
+08000908 <Reset_Handler>:
+
+  .section .text.Reset_Handler
+  .weak Reset_Handler
+  .type Reset_Handler, %function
+Reset_Handler:
+  ldr   r0, =_estack
+ 8000908:	4813      	ldr	r0, [pc, #76]	; (8000958 <LoopForever+0x2>)
+  mov   sp, r0          /* set stack pointer */
+ 800090a:	4685      	mov	sp, r0
+
+/*Check if boot space corresponds to test memory*/
+ 
+    LDR R0,=0x00000004
+ 800090c:	4813      	ldr	r0, [pc, #76]	; (800095c <LoopForever+0x6>)
+    LDR R1, [R0]
+ 800090e:	6801      	ldr	r1, [r0, #0]
+    LSRS R1, R1, #24
+ 8000910:	0e09      	lsrs	r1, r1, #24
+    LDR R2,=0x1F
+ 8000912:	4a13      	ldr	r2, [pc, #76]	; (8000960 <LoopForever+0xa>)
+    CMP R1, R2
+ 8000914:	4291      	cmp	r1, r2
+    BNE ApplicationStart
+ 8000916:	d105      	bne.n	8000924 <ApplicationStart>
+
+ /*SYSCFG clock enable*/
+
+    LDR R0,=0x40021018
+ 8000918:	4812      	ldr	r0, [pc, #72]	; (8000964 <LoopForever+0xe>)
+    LDR R1,=0x00000001
+ 800091a:	4913      	ldr	r1, [pc, #76]	; (8000968 <LoopForever+0x12>)
+    STR R1, [R0]
+ 800091c:	6001      	str	r1, [r0, #0]
+
+/*Set CFGR1 register with flash memory remap at address 0*/
+    LDR R0,=0x40010000
+ 800091e:	4813      	ldr	r0, [pc, #76]	; (800096c <LoopForever+0x16>)
+    LDR R1,=0x00000000
+ 8000920:	4913      	ldr	r1, [pc, #76]	; (8000970 <LoopForever+0x1a>)
+    STR R1, [R0]
+ 8000922:	6001      	str	r1, [r0, #0]
+
+08000924 <ApplicationStart>:
+
+ApplicationStart:
+/* Copy the data segment initializers from flash to SRAM */
+  ldr r0, =_sdata
+ 8000924:	4813      	ldr	r0, [pc, #76]	; (8000974 <LoopForever+0x1e>)
+  ldr r1, =_edata
+ 8000926:	4914      	ldr	r1, [pc, #80]	; (8000978 <LoopForever+0x22>)
+  ldr r2, =_sidata
+ 8000928:	4a14      	ldr	r2, [pc, #80]	; (800097c <LoopForever+0x26>)
+  movs r3, #0
+ 800092a:	2300      	movs	r3, #0
+  b LoopCopyDataInit
+ 800092c:	e002      	b.n	8000934 <LoopCopyDataInit>
+
+0800092e <CopyDataInit>:
+
+CopyDataInit:
+  ldr r4, [r2, r3]
+ 800092e:	58d4      	ldr	r4, [r2, r3]
+  str r4, [r0, r3]
+ 8000930:	50c4      	str	r4, [r0, r3]
+  adds r3, r3, #4
+ 8000932:	3304      	adds	r3, #4
+
+08000934 <LoopCopyDataInit>:
+
+LoopCopyDataInit:
+  adds r4, r0, r3
+ 8000934:	18c4      	adds	r4, r0, r3
+  cmp r4, r1
+ 8000936:	428c      	cmp	r4, r1
+  bcc CopyDataInit
+ 8000938:	d3f9      	bcc.n	800092e <CopyDataInit>
+  
+/* Zero fill the bss segment. */
+  ldr r2, =_sbss
+ 800093a:	4a11      	ldr	r2, [pc, #68]	; (8000980 <LoopForever+0x2a>)
+  ldr r4, =_ebss
+ 800093c:	4c11      	ldr	r4, [pc, #68]	; (8000984 <LoopForever+0x2e>)
+  movs r3, #0
+ 800093e:	2300      	movs	r3, #0
+  b LoopFillZerobss
+ 8000940:	e001      	b.n	8000946 <LoopFillZerobss>
+
+08000942 <FillZerobss>:
+
+FillZerobss:
+  str  r3, [r2]
+ 8000942:	6013      	str	r3, [r2, #0]
+  adds r2, r2, #4
+ 8000944:	3204      	adds	r2, #4
+
+08000946 <LoopFillZerobss>:
+
+LoopFillZerobss:
+  cmp r2, r4
+ 8000946:	42a2      	cmp	r2, r4
+  bcc FillZerobss
+ 8000948:	d3fb      	bcc.n	8000942 <FillZerobss>
+
+/* Call the clock system intitialization function.*/
+  bl  SystemInit
+ 800094a:	f7ff fc45 	bl	80001d8 <SystemInit>
+/* Call static constructors */
+  bl __libc_init_array
+ 800094e:	f000 f81d 	bl	800098c <__libc_init_array>
+/* Call the application's entry point.*/
+  bl main
+ 8000952:	f7ff fbf3 	bl	800013c <main>
+
+08000956 <LoopForever>:
+
+LoopForever:
+    b LoopForever
+ 8000956:	e7fe      	b.n	8000956 <LoopForever>
+  ldr   r0, =_estack
+ 8000958:	20001800 	.word	0x20001800
+    LDR R0,=0x00000004
+ 800095c:	00000004 	.word	0x00000004
+    LDR R2,=0x1F
+ 8000960:	0000001f 	.word	0x0000001f
+    LDR R0,=0x40021018
+ 8000964:	40021018 	.word	0x40021018
+    LDR R1,=0x00000001
+ 8000968:	00000001 	.word	0x00000001
+    LDR R0,=0x40010000
+ 800096c:	40010000 	.word	0x40010000
+    LDR R1,=0x00000000
+ 8000970:	00000000 	.word	0x00000000
+  ldr r0, =_sdata
+ 8000974:	20000000 	.word	0x20000000
+  ldr r1, =_edata
+ 8000978:	20000000 	.word	0x20000000
+  ldr r2, =_sidata
+ 800097c:	08000b9c 	.word	0x08000b9c
+  ldr r2, =_sbss
+ 8000980:	20000000 	.word	0x20000000
+  ldr r4, =_ebss
+ 8000984:	2000013c 	.word	0x2000013c
+
+08000988 <ADC1_IRQHandler>:
+ * @retval : None
+*/
+    .section .text.Default_Handler,"ax",%progbits
+Default_Handler:
+Infinite_Loop:
+  b Infinite_Loop
+ 8000988:	e7fe      	b.n	8000988 <ADC1_IRQHandler>
+	...
+
+0800098c <__libc_init_array>:
+ 800098c:	b570      	push	{r4, r5, r6, lr}
+ 800098e:	2600      	movs	r6, #0
+ 8000990:	4d0c      	ldr	r5, [pc, #48]	; (80009c4 <__libc_init_array+0x38>)
+ 8000992:	4c0d      	ldr	r4, [pc, #52]	; (80009c8 <__libc_init_array+0x3c>)
+ 8000994:	1b64      	subs	r4, r4, r5
+ 8000996:	10a4      	asrs	r4, r4, #2
+ 8000998:	42a6      	cmp	r6, r4
+ 800099a:	d109      	bne.n	80009b0 <__libc_init_array+0x24>
+ 800099c:	2600      	movs	r6, #0
+ 800099e:	f000 f83d 	bl	8000a1c <_init>
+ 80009a2:	4d0a      	ldr	r5, [pc, #40]	; (80009cc <__libc_init_array+0x40>)
+ 80009a4:	4c0a      	ldr	r4, [pc, #40]	; (80009d0 <__libc_init_array+0x44>)
+ 80009a6:	1b64      	subs	r4, r4, r5
+ 80009a8:	10a4      	asrs	r4, r4, #2
+ 80009aa:	42a6      	cmp	r6, r4
+ 80009ac:	d105      	bne.n	80009ba <__libc_init_array+0x2e>
+ 80009ae:	bd70      	pop	{r4, r5, r6, pc}
+ 80009b0:	00b3      	lsls	r3, r6, #2
+ 80009b2:	58eb      	ldr	r3, [r5, r3]
+ 80009b4:	4798      	blx	r3
+ 80009b6:	3601      	adds	r6, #1
+ 80009b8:	e7ee      	b.n	8000998 <__libc_init_array+0xc>
+ 80009ba:	00b3      	lsls	r3, r6, #2
+ 80009bc:	58eb      	ldr	r3, [r5, r3]
+ 80009be:	4798      	blx	r3
+ 80009c0:	3601      	adds	r6, #1
+ 80009c2:	e7f2      	b.n	80009aa <__libc_init_array+0x1e>
+ 80009c4:	08000b94 	.word	0x08000b94
+ 80009c8:	08000b94 	.word	0x08000b94
+ 80009cc:	08000b94 	.word	0x08000b94
+ 80009d0:	08000b98 	.word	0x08000b98
+
+080009d4 <memcpy>:
+ 80009d4:	2300      	movs	r3, #0
+ 80009d6:	b510      	push	{r4, lr}
+ 80009d8:	429a      	cmp	r2, r3
+ 80009da:	d100      	bne.n	80009de <memcpy+0xa>
+ 80009dc:	bd10      	pop	{r4, pc}
+ 80009de:	5ccc      	ldrb	r4, [r1, r3]
+ 80009e0:	54c4      	strb	r4, [r0, r3]
+ 80009e2:	3301      	adds	r3, #1
+ 80009e4:	e7f8      	b.n	80009d8 <memcpy+0x4>
+
+080009e6 <memmove>:
+ 80009e6:	b510      	push	{r4, lr}
+ 80009e8:	4288      	cmp	r0, r1
+ 80009ea:	d902      	bls.n	80009f2 <memmove+0xc>
+ 80009ec:	188b      	adds	r3, r1, r2
+ 80009ee:	4298      	cmp	r0, r3
+ 80009f0:	d303      	bcc.n	80009fa <memmove+0x14>
+ 80009f2:	2300      	movs	r3, #0
+ 80009f4:	e007      	b.n	8000a06 <memmove+0x20>
+ 80009f6:	5c8b      	ldrb	r3, [r1, r2]
+ 80009f8:	5483      	strb	r3, [r0, r2]
+ 80009fa:	3a01      	subs	r2, #1
+ 80009fc:	d2fb      	bcs.n	80009f6 <memmove+0x10>
+ 80009fe:	bd10      	pop	{r4, pc}
+ 8000a00:	5ccc      	ldrb	r4, [r1, r3]
+ 8000a02:	54c4      	strb	r4, [r0, r3]
+ 8000a04:	3301      	adds	r3, #1
+ 8000a06:	429a      	cmp	r2, r3
+ 8000a08:	d1fa      	bne.n	8000a00 <memmove+0x1a>
+ 8000a0a:	e7f8      	b.n	80009fe <memmove+0x18>
+
+08000a0c <memset>:
+ 8000a0c:	0003      	movs	r3, r0
+ 8000a0e:	1812      	adds	r2, r2, r0
+ 8000a10:	4293      	cmp	r3, r2
+ 8000a12:	d100      	bne.n	8000a16 <memset+0xa>
+ 8000a14:	4770      	bx	lr
+ 8000a16:	7019      	strb	r1, [r3, #0]
+ 8000a18:	3301      	adds	r3, #1
+ 8000a1a:	e7f9      	b.n	8000a10 <memset+0x4>
+
+08000a1c <_init>:
+ 8000a1c:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
+ 8000a1e:	46c0      	nop			; (mov r8, r8)
+ 8000a20:	bcf8      	pop	{r3, r4, r5, r6, r7}
+ 8000a22:	bc08      	pop	{r3}
+ 8000a24:	469e      	mov	lr, r3
+ 8000a26:	4770      	bx	lr
+
+08000a28 <_fini>:
+ 8000a28:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
+ 8000a2a:	46c0      	nop			; (mov r8, r8)
+ 8000a2c:	bcf8      	pop	{r3, r4, r5, r6, r7}
+ 8000a2e:	bc08      	pop	{r3}
+ 8000a30:	469e      	mov	lr, r3
+ 8000a32:	4770      	bx	lr

@@ -1,0 +1,4 @@
+lcd.c:19:6:lcd_cmd	16	static
+lcd.c:23:6:lcd_data	16	static
+lcd.c:27:6:lcd_str	8	static
+lcd.c:34:6:lcd_init	16	static

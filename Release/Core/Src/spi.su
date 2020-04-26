@@ -1,0 +1,2 @@
+spi.c:15:6:spi_init	0	static
+spi.c:25:6:spi_send	8	static

@@ -1,0 +1,7 @@
+let g:syntastic_c_compiler = 'arm-none-eabi-gcc'
+let g:syntastic_c_compiler_options .= '-DUSE_HAL_DRIVER -DSTM32F042x6 -DDEBUG -IDrivers/STM32F0xx_HAL_Driver/Inc -IDrivers/CMSIS/Include -ICore/Inc -IDrivers/STM32F0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32F0xx/Include '
+let g:syntastic_cpp_compiler = 'arm-none-eabi-g++'
+let g:syntastic_cpp_compiler_options .= '-std=c++2a -DUSE_HAL_DRIVER -DSTM32F042x6 -DDEBUG -IDrivers/STM32F0xx_HAL_Driver/Inc -IDrivers/CMSIS/Include -ICore/Inc -IDrivers/STM32F0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32F0xx/Include '
+
+nnoremap <silent> <Leader>f :!dfu-util -d 0483:df11 -a 0 -s 0x08000000 -D Debug/Registers_F042.bin<CR>
+nnoremap <silent> <Leader>t :!screen /dev/cu.usbserial-DM00RC36 230400<CR>

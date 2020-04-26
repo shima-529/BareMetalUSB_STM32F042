@@ -1,0 +1,5 @@
+usb.c:202:16:next_state_ep0	0	static
+usb.c:189:13:usb_ep0_handle_status	0	static
+usb.c:176:13:usb_ep0_prepare_for_status	0	static
+usb.c:103:6:usb_init	8	static
+usb.c:228:6:USB_IRQHandler	32	static

@@ -1,0 +1,5 @@
+utils.cpp:11:11:uint16_t Utils::alloc(int)	0	static
+utils.cpp:17:7:void Utils::pma_out(void*, uintptr_t, int)	12	static
+utils.cpp:27:7:void Utils::pma_in(uintptr_t, const void*, int)	12	static
+utils.cpp:37:8:void Utils::Dump::setup_packet()	0	static
+utils.cpp:44:8:void Utils::Dump::fsm()	0	static
